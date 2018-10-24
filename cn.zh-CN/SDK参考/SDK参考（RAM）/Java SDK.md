@@ -6,6 +6,8 @@ RAM SDK包含阿里云Java SDK公共部分和RAM部分，公共部分依赖`aliy
 
 每个接口的详细使用方法请参考RAM API文档。
 
+SDK Demo 代码自动生成和在线 API 调试，请关注 [API Explorer](https://api.aliyun.com/)。
+
 ## 安装 {#section_nvs_p5v_xdb .section}
 
 您可以使用Maven仓库引入RAM SDK或手动下载RAM SDK jar后手动添加到项目中。
