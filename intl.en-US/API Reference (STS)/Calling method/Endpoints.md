@@ -51,7 +51,10 @@ The following tables list the STS endpoint in each region. Two endpoint types ar
 
 |Region|Region ID|Endpoint|
 |:-----|:--------|:-------|
-|Singapore|ap-southeast-1|Public network: sts.ap-southeast-1.aliyuncs.com|
+|Singapore|ap-southeast-1|Public network: sts.ap-southeast-1.aliyuncs.com
+-   VPC: sts-vpc.ap-southeast-1.aliyuncs.com
+
+ |
 |Australia \(Sydney\)|ap-southeast-2|Public network: sts.ap-southeast-2.aliyuncs.com|
 |Malaysia \(Kuala Lumpur\)|ap-southeast-3|Public network: sts.ap-southeast-3.aliyuncs.com|
 |Indonesia \(Jakarta\)|ap-southeast-5|Public network: sts.ap-southeast-5.aliyuncs.com|
