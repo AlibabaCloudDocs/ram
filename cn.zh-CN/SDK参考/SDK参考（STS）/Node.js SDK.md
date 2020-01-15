@@ -19,7 +19,7 @@ const Core = require('@alicloud/pop-core');
 // 构建阿里云client时需要设置AccessKey ID和AccessKey Secret
 var client = new Core({
   accessKeyId: '<accessKeyId>',
-  AccessKeysecret: '<accessSecret>',
+  accessKeySecret: '<accessSecret>',
   endpoint: 'https://sts.aliyuncs.com',
   apiVersion: '2015-04-01'
 });
