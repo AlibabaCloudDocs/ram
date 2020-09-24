@@ -1,12 +1,15 @@
-# RAM SDK概览 {#reference_w5t_25v_xdb .concept}
+# RAM SDK概览
 
-本文主要介绍RAM SDK的使用，在使用SDK前您需要了解RAM API，熟悉各个接口的具体功能。
+RAM SDK支持Java、.NET、Python、PHP、Node.js和Go语言。
 
-## RAM SDK支持的语言 {#section_cb2_35v_xdb .section}
+下表提供了各语言SDK的下载地址和示例文档链接。
 
--   [Java SDK](intl.zh-CN/SDK参考/SDK参考（RAM）/Java SDK.md#)
--   [.NET SDK](intl.zh-CN/SDK参考/SDK参考（RAM）/.NET SDK.md#)
--   [Python SDK](intl.zh-CN/SDK参考/SDK参考（RAM）/Python SDK.md#)
--   [PHP SDK](intl.zh-CN/SDK参考/SDK参考（RAM）/PHP SDK.md#)
--   [Node.js SDK](intl.zh-CN/SDK参考/SDK参考（RAM）/Node.js SDK.md#)
+|阿里云SDK|RAM SDK|示例文档|
+|:-----|:------|:---|
+|[Alibaba Cloud SDK for Java](https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-core)|[Alibaba Cloud RAM SDK for Java](https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-ram)|[Java示例](/intl.zh-CN/SDK参考/SDK参考（RAM）/Java SDK.md)|
+|[Alibaba Cloud SDK for .NET](https://github.com/aliyun/aliyun-openapi-net-sdk/tree/master/aliyun-net-sdk-core)|[Alibaba Cloud RAM SDK for .NET](https://github.com/aliyun/aliyun-openapi-net-sdk/tree/master/aliyun-net-sdk-ram)|[.NET示例](/intl.zh-CN/SDK参考/SDK参考（RAM）/.NET SDK.md)|
+|[Alibaba Cloud SDK for Python](https://pypi.python.org/pypi/aliyun-python-sdk-core)|[Alibaba Cloud RAM SDK for Python](https://pypi.python.org/pypi/aliyun-python-sdk-ram)|[Python示例](/intl.zh-CN/SDK参考/SDK参考（RAM）/Python SDK.md)|
+|[Alibaba Cloud SDK for PHP](https://github.com/aliyun/openapi-sdk-php)|[Alibaba Cloud RAM SDK for PHP](https://github.com/aliyun/openapi-sdk-php/tree/master/src/Ram)|[PHP示例](/intl.zh-CN/SDK参考/SDK参考（RAM）/PHP SDK.md)|
+|[Alibaba Cloud SDK for Node.js](https://www.npmjs.com/package/@alicloud/pop-core)|[Alibaba Cloud RAM SDK for Node.js](https://www.npmjs.com/package/@alicloud/ram-2015-05-01)|[Node.js示例](/intl.zh-CN/SDK参考/SDK参考（RAM）/Node.js SDK.md)|
+|[Alibaba Cloud SDK for Go](https://github.com/aliyun/alibaba-cloud-sdk-go)|[Alibaba Cloud RAM SDK for Go](https://github.com/aliyun/alibaba-cloud-sdk-go/tree/master/services/ram)|[Go示例]()|
 
