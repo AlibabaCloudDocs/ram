@@ -47,10 +47,10 @@ This topic provides an example of how to implement user-based single sign-on \(S
 
 9.  In the **Configure SAML** step, set the parameters and click **Next**.
 
-    ![Configure SAML ](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/2320549951/p139878.png)
+    ![Configure SAML ](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/9111322061/p139878.png)
 
-    -   In the **Single sign on URL** field, enter the value of `entityID` that you obtained in [Step 1: Download the SAML SP metadata file of Alibaba Cloud](#section_7q5_glq_tbn).
-    -   In the **Audience URI** field, enter the value of `Location` that you obtained in [Step 1: Download the SAML SP metadata file of Alibaba Cloud](#section_7q5_glq_tbn).
+    -   In the **Single sign on URL** field, enter the value of `Location` that you obtained in [Step 1: Download the SAML SP metadata file of Alibaba Cloud](#section_7q5_glq_tbn).
+    -   In the **Audience URI** field, enter the value of `entityID` that you obtained in [Step 1: Download the SAML SP metadata file of Alibaba Cloud](#section_7q5_glq_tbn).
     -   Enter a URL in the **Default RelayState** field. A user is redirected to the URL after logon.
 
         **Note:** For security purposes, you must specify a URL that points to an Alibaba website. For example, the domain name in the URL can be \*.aliyun.com, \*.hichina.com, \*.yunos.com, \*.taobao.com, \*.tmall.com, \*.alibabacloud.com, or \*.alipay.com. If the URL that you specify does not point to an Alibaba website, the setting is invalid. If this field is left empty, a user is redirected to the homepage of the Alibaba Cloud Management Console by default after logon.
