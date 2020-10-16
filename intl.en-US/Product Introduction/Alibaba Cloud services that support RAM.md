@@ -287,10 +287,6 @@ Each table contains the following columns:
 
 |[Use RAM to manage user permissions for API Gateway]()|
 |Blockchain as a Service|√|√|Resource|-|[Hyperledger Fabric RAM authentication](/intl.en-US/API reference/Hyperledger Fabric RAM authentication.md)|
-|Logic Composer|√|√|Resource|-   AliyunLogicComposerFullAccess
--   AliyunLogicComposerReadOnlyAccess
-
-|[Custom policies](https://help.aliyun.com/document_detail/127020.html)|
 |Mini Program Cloud|√|√|Operation|-   AliyunMPCAFullAccess
 -   AliyunMPCAReadOnlyAccess
 
@@ -376,7 +372,7 @@ Each table contains the following columns:
 |Image Search|√|√|Resource|-   AliyunImagesearchReadOnlyAccess
 -   AliyunImagesearchFullAccess
 
-|[Authorization policies](https://www.alibabacloud.com/help/zh/doc-detail/66586.htm)|
+|[Authorization policies](https://www.alibabacloud.com/help/doc-detail/179180.htm)|
 
 ## Security
 
