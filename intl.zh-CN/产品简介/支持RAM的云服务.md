@@ -259,7 +259,7 @@
 -   AliyunKMSReadOnlyAccess
 -   AliyunKMSCryptoAccess
 
-|[使用RAM实现对资源的访问控制](/intl.zh-CN/用户指南/使用RAM实现访问控制.md)|
+|[使用RAM实现对资源的访问控制](/intl.zh-CN/用户指南/使用RAM实现对资源的访问控制.md)|
 |智能顾问|×|×|操作级别|-|-|
 |资源管理|√|○|资源级别|-   AliyunResourceDirectoryFullAccess
 -   AliyunResourceDirectoryReadOnlyAccess
@@ -268,7 +268,7 @@
 |配置审计|√|○|服务级别|-   AliyunConfigFullAccess
 -   AliyunConfigReadOnlyAccess
 
-|[RAM鉴权]()|
+|[RAM鉴权](/intl.zh-CN/API参考/RAM鉴权.md)|
 
 ## 应用服务
 
@@ -372,7 +372,7 @@
 |图像搜索|√|√|资源级别|-   AliyunImagesearchReadOnlyAccess
 -   AliyunImagesearchFullAccess
 
-|[授权访问鉴权规则](https://www.alibabacloud.com/help/zh/doc-detail/66586.htm)|
+|[授权访问鉴权规则](https://www.alibabacloud.com/help/zh/doc-detail/179180.htm)|
 
 ## 安全（云盾）
 
