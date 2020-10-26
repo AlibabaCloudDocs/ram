@@ -29,5 +29,3 @@ This topic lists the limits of Resource Access Management \(RAM\).
 |The number of IdP descriptors that an IdP metadata file can contain|1|
 |The number of certificates that an IdP descriptor in an IdP metadata file can contain|2|
 
-**Note:** This topic lists only the default quotas for the items. You can increase the quota for certain items. To apply for quota increase, go to the [Quota Center](https://quotas.console.aliyun.com) page. You can configure quotas for a wide range of Alibaba Cloud services in Quota Center. For more information, see [Alibaba Cloud services that are supported by Quota Center]().
-
