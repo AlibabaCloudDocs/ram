@@ -247,7 +247,7 @@ Each table contains the following columns:
 |Cloud Monitor|√|√|Operation|-   AliyunCloudMonitorFullAccess
 -   AliyunCloudMonitorReadOnlyAccess
 
-|[RAM for CloudMonitor](/intl.en-US/Appendix 3 account authorization/RAM for CloudMonitor.md)|
+|[RAM for CloudMonitor](/intl.en-US/Appendix 3 account authorization/Control permissions of RAM users.md)|
 |ActionTrail|√|√|Resource|-
 
 |[RAM authentication](/intl.en-US/API Reference/RAM account authentication.md)|
@@ -372,7 +372,7 @@ Each table contains the following columns:
 |Image Search|√|√|Resource|-   AliyunImagesearchReadOnlyAccess
 -   AliyunImagesearchFullAccess
 
-|[Authorization policies](https://www.alibabacloud.com/help/zh/doc-detail/66586.htm)|
+|[Grant permissions to RAM users](https://www.alibabacloud.com/help/doc-detail/179180.htm)|
 
 ## Security
 
