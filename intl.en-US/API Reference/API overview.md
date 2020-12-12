@@ -1,92 +1,28 @@
-# API overview {#concept_vdd_rmk_xdb .concept}
+# API overview
 
-This topic lists all RAM API actions.
+The following table describes common scenarios and the API operations that can be called in those scenarios.
 
-## Debug {#section_ia8_53n_ako .section}
+|Scenario|Description|API selection|Difference|
+|--------|-----------|-------------|----------|
+|User management|Manage Resource Access Management \(RAM\) users, AccessKey pairs, logon passwords, and multi-factor authentication \(MFA\) devices.|-   [IMS API](/intl.en-US/API Reference/API Reference (IMS)/List of operations by function.md)
+-   [RAM API](/intl.en-US/API Reference/API Reference (RAM)/List of operations by function.md)
 
-Use [OpenAPI Explorer](https://api.aliyun.com/#product=Ram&api=CreateUser) to perform debug operations and generate SDK code examples.
+|-   Some of the RAM API operations have the same features as Identity Management Service \(IMS\) API operations. You can call these RAM API operations or IMS API operations to achieve the same results.
+-   IMS API operations support more new features. For example, you can call IMS API operations to query the time when an AccessKey pair was last used, modify the default domain name, and obtain user credential reports.
+-   New features related to user management, user group management, and security settings will be supported by IMS API operations. Therefore, we recommend that you use IMS API operations. |
+|User group management|Manage RAM user groups, and add or remove RAM users in RAM user groups.|
+|Security settings|Manage password policies, global security preferences, default domain names, user credential reports, and security reports of Alibaba Cloud accounts.|
+|Policy management|Manage policies and grant permissions to or revoke permissions from a RAM user, RAM role, or RAM user group.|-   [RAM API](/intl.en-US/API Reference/API Reference (RAM)/List of operations by function.md)
+-   [Resource Management API]()
 
-## User management API actions {#section_fhn_1nj_3gb .section}
-
-|Action|Description|
-|:-----|:----------|
-|[CreateUser](reseller.en-US/API Reference/User management APIs/CreateUser.md#)|Creates a RAM user.|
-|[GetUser](reseller.en-US/API Reference/User management APIs/GetUser.md#)|Obtains the detailed information about a RAM user.|
-|[UpdateUser](reseller.en-US/API Reference/User management APIs/UpdateUser.md#)|Updates the basic information about a RAM user.|
-|[DeleteUser](reseller.en-US/API Reference/User management APIs/DeleteUser.md#)|Deletes a RAM user.|
-|[ListUsers](reseller.en-US/API Reference/User management APIs/ListUsers.md#)|Lists all RAM users.|
-|[CreateLoginProfile](reseller.en-US/API Reference/User management APIs/CreateLoginProfile.md#)|Enables console logon for a RAM user.|
-|[GetLoginProfile](reseller.en-US/API Reference/User management APIs/GetLoginProfile.md#)|Views the logon configurations of a RAM user.|
-|[DeleteLoginProfile](reseller.en-US/API Reference/User management APIs/DeleteLoginProfile.md#)|Disables console logon for a RAM user.|
-|[DeleteLoginProfile](reseller.en-US/API Reference/User management APIs/DeleteLoginProfile.md#)|Modifies the logon configurations of a RAM user.|
-|[CreateAccessKey](reseller.en-US/API Reference/User management APIs/CreateAccessKey.md#)|Creates an AccessKey for a RAM user.|
-|[UpdateAccessKey](reseller.en-US/API Reference/User management APIs/UpdateAccessKey.md#)|Changes the AccessKey status of a RAM user.|
-|[DeleteAccessKey](reseller.en-US/API Reference/User management APIs/DeleteAccessKey.md#)|Deletes the AccessKey of a RAM user.|
-|[ListAccessKeys](reseller.en-US/API Reference/User management APIs/ListAccessKeys.md#)|Lists the AccessKey of a RAM user.|
-|[CreateVirtualMFADevice](reseller.en-US/API Reference/User management APIs/CreateVirtualMFADevice.md#)|Creates a virtual Multi-Factor Authentication \(MFA\) device.|
-|[ListVirtualMFADevices](reseller.en-US/API Reference/User management APIs/ListVirtualMFADevices.md#)|Lists virtual MFA devices.|
-|[DeleteVirtualMFADevice](reseller.en-US/API Reference/User management APIs/DeleteVirtualMFADevice.md#)|Deletes a virtual MFA device.|
-|[BindMFADevice](reseller.en-US/API Reference/User management APIs/BindMFADevice.md#)|Attaches an MFA device to a RAM user.|
-|[UnbindMFADevice](reseller.en-US/API Reference/User management APIs/UnbindMFADevice.md#)|Removes an MFA device from a RAM user.|
-|[GetUserMFAInfo](reseller.en-US/API Reference/User management APIs/GetUserMFAInfo.md#)|Obtains the MFA device information of a RAM user.|
-|[ChangePassword](reseller.en-US/API Reference/User management APIs/ChangePassword.md#)|Changes the password for a RAM user.|
-
-## Group management API actions {#section_ot3_dnj_3gb .section}
-
-|Action|Description|
-|:-----|:----------|
-|[CreateGroup](reseller.en-US/API Reference/Group management APIs/CreateGroup.md#)|Creates a RAM user group.|
-|[GetGroup](reseller.en-US/API Reference/Group management APIs/GetGroup.md#)|Obtains RAM user group information.|
-|[UpdateGroup](reseller.en-US/API Reference/Group management APIs/UpdateGroup.md#)|Updates RAM user group information.|
-|[ListGroups](reseller.en-US/API Reference/Group management APIs/ListGroups.md#)|Lists all RAM user groups.|
-|[DeleteGroup](reseller.en-US/API Reference/Group management APIs/DeleteGroup.md#)|Deletes a RAM user group.|
-|[AddUserToGroup](reseller.en-US/API Reference/Group management APIs/AddUserToGroup.md#)|Adds a RAM user to a RAM user group.|
-|[RemoveUserFromGroup](reseller.en-US/API Reference/Group management APIs/RemoveUserFromGroup.md#)|Removes a RAM user from a RAM user group.|
-|[ListGroupsForUser](reseller.en-US/API Reference/Group management APIs/ListGroupsForUser.md#)|Lists information about the RAM user groups to which a specified RAM user is added.|
-|[ListUsersForGroup](reseller.en-US/API Reference/Group management APIs/ListUsersForGroup.md#)|Lists the RAM users in a RAM user group.|
-
-## Role management API actions {#section_b3r_dnj_3gb .section}
-
-|Action|Description|
-|:-----|:----------|
-|[CreateRole](reseller.en-US/API Reference/Role management APIs/CreateRole.md#)|Creates a RAM role.|
-|[GetRole](reseller.en-US/API Reference/Role management APIs/GetRole.md#)|Obtains information about a RAM role.|
-|[UpdateRole](reseller.en-US/API Reference/Role management APIs/UpdateRole.md#)|Updates information about a RAM role.|
-|[ListRoles](reseller.en-US/API Reference/Role management APIs/ListRoles.md#)|Lists RAM roles.|
-|[DeleteRole](reseller.en-US/API Reference/Role management APIs/DeleteRole.md#)|Deletes a RAM role.|
-
-## Policy management API actions {#section_pds_dnj_3gb .section}
-
-|Action|Description|
-|:-----|:----------|
-|[CreatePolicy](reseller.en-US/API Reference/Policy management APIs/CreatePolicy.md#)|Creates a policy.|
-|[GetPolicy](reseller.en-US/API Reference/Policy management APIs/GetPolicy.md#)|Obtains information about a policy.|
-|[DeletePolicy](reseller.en-US/API Reference/Policy management APIs/DeletePolicy.md#)|Deletes a policy.|
-|[ListPolicies](reseller.en-US/API Reference/Policy management APIs/ListPolicies.md#)|Lists policies.|
-|[CreatePolicyVersion](reseller.en-US/API Reference/Policy management APIs/CreatePolicyVersion.md#)|Creates a version for a policy.|
-|[GetPolicyVersion](reseller.en-US/API Reference/Policy management APIs/GetPolicyVersion.md#)|Obtains information about the version of a policy.|
-|[DeletePolicyVersion](reseller.en-US/API Reference/Policy management APIs/DeletePolicyVersion.md#)|Deletes a version of a policy.|
-|[ListPolicyVersions](reseller.en-US/API Reference/Policy management APIs/ListPolicyVersions.md#)|Lists all versions of a policy.|
-|[SetDefaultPolicyVersion](reseller.en-US/API Reference/Policy management APIs/SetDefaultPolicyVersion.md#)|Sets the default version of a policy.|
-|[AttachPolicyToUser](reseller.en-US/API Reference/Policy management APIs/AttachPolicyToUser.md#)|Attaches a policy to a RAM user.|
-|[DetachPolicyFromUser](reseller.en-US/API Reference/Policy management APIs/DetachPolicyFromUser.md#)|Removes a policy from a RAM user.|
-|[AttachPolicyToGroup](reseller.en-US/API Reference/Policy management APIs/AttachPolicyToGroup.md#)|Attaches a policy to a RAM user group.|
-|[DetachPolicyFromGroup](reseller.en-US/API Reference/Policy management APIs/DetachPolicyFromGroup.md#)|Removes a policy from a RAM user group.|
-|[AttachPolicyToRole](reseller.en-US/API Reference/Policy management APIs/AttachPolicyToRole.md#)|Attaches a policy to a RAM role.|
-|[DetachPolicyFromRole](reseller.en-US/API Reference/Policy management APIs/DetachPolicyFromRole.md#)|Removes a policy from a RAM role.|
-|[ListEntitiesForPolicy](reseller.en-US/API Reference/Policy management APIs/ListEntitiesForPolicy.md#)|Lists the entities that use a policy.|
-|[ListPoliciesForUser](reseller.en-US/API Reference/Policy management APIs/ListPoliciesForUser.md#)|Lists the policies attached to a RAM user.|
-|[ListPoliciesForGroup](reseller.en-US/API Reference/Policy management APIs/ListPoliciesForGroup.md#)|Lists the policies attached to a RAM user group.|
-|[ListPoliciesForRole](reseller.en-US/API Reference/Policy management APIs/ListPoliciesForRole.md#)|Lists the policies attached to a RAM role.|
-
-## Security management API actions {#section_zbt_dnj_3gb .section}
-
-|Action|Description|
-|:-----|:----------|
-|[SetAccountAlias](reseller.en-US/API Reference/Security management APIs/SetAccountAlias.md#)|Sets an alias for an Alibaba Cloud account.|
-|[GetAccountAlias](reseller.en-US/API Reference/Security management APIs/GetAccountAlias.md#)|Views the alias of an Alibaba Cloud account.|
-|[ClearAccountAlias](reseller.en-US/API Reference/Security management APIs/ClearAccountAlias.md#)|Deletes the alias of an Alibaba Cloud account.|
-|[SetPasswordPolicy](reseller.en-US/API Reference/Security management APIs/SetPasswordPolicy.md#)|Sets the password policy, including the password strength, for a RAM user.|
-|[GetPasswordPolicy](reseller.en-US/API Reference/Security management APIs/GetPasswordPolicy.md#)|Obtains the password policy, including the password strength, of a RAM user.|
-|[SetSecurityPreference](reseller.en-US/API Reference/Security management APIs/SetSecurityPreference.md#)|Sets the security preferences.|
+|-   Some of the RAM API operations have the same features as Resource Management API operations. You can call these RAM API operations or Resource Management API operations to achieve the same results.
+-   You can call the Resource Management API to grant permissions to a resource group. You cannot call the RAM API to grant permissions to a resource group.
+-   Resource Management API operations support more new features, such as service-linked roles.
+-   Resource Management API operations are easy to use. For example, you can call the AttachPolicy operation to grant permissions to a RAM user, a RAM role, or a RAM user group.
+-   New features related to policy management and user management will be supported by Resource Management API operations. Therefore, we recommend that you use Resource Management API operations. |
+|Role management|Manage RAM roles.|
+|Role usage|Assume a RAM role by using a Security Token Service \(STS\) token.|[STS API](/intl.en-US/API Reference/API Reference (STS)/Operation interfaces/AssumeRole.md)|None.|
+|Single sign-on \(SSO\) management|Manage identity providers \(IdPs\) for user-based SSO and role-based SSO.|[IMS API](/intl.en-US/API Reference/API Reference (IMS)/List of operations by function.md)|None.|
+|Role-based SSO usage|Use an STS token for role-based SSO.|[STS API](/intl.en-US/API Reference/API Reference (STS)/Operation interfaces/AssumeRoleWithSAML.md)|None.|
+|Open authorization \(OAuth \) management|Manage applications and application secrets.|[IMS API](/intl.en-US/API Reference/API Reference (IMS)/List of operations by function.md)|None.|
 
