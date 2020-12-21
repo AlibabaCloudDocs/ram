@@ -113,7 +113,7 @@
 |云数据库HBase|√|√|资源级别|-   AliyunHBaseFullAccess
 -   AliyunHBaseReadOnlyAccess
 
-|[子账号管理集群]()|
+|[子账号管理集群](t1857011.md#)|
 |时序时空数据库TSDB|√|√|操作级别|-   AliyunHiTSDBReadOnlyAccess
 -   AliyunHiTSDBFullAccess
 
@@ -134,12 +134,12 @@
 -   AliyunDTSReadOnlyAccess
 
 |[通过系统策略授权子账号管理DTS](/cn.zh-CN/访问控制/通过系统策略授权子账号管理DTS.md)|
-|数据管理DMS|√|○|资源级别|-|[云资源授权](https://help.aliyun.com/document_detail/47571.html)|
+|数据管理DMS|√|√|资源级别|-|[云资源授权](https://help.aliyun.com/document_detail/47571.html)|
 |数据库备份DBS|√|√|服务级别|-   AliyunDBSFullAccess
 -   AliyunDBSReadOnlyAccess
 
 |-|
-|数据库自治服务DAS|√|○|服务级别|-   AliyunHDMReadOnlyAccess
+|数据库自治服务DAS|√|√|服务级别|-   AliyunHDMReadOnlyAccess
 -   AliyunHDMFullAccess
 
 |[子账号如何使用DAS](https://help.aliyun.com/knowledge_detail/66674.html)|
@@ -181,7 +181,7 @@
 -   AliyunOSSReadOnlyAccess
 
 |[基于RAM Policy的权限控制](/cn.zh-CN/开发指南/数据安全/访问控制/RAM Policy/基于RAM Policy的权限控制.md)|
-|文件存储NAS|√|○|操作级别|-   AliyunNASFullAccess
+|文件存储NAS|√|√|操作级别|-   AliyunNASFullAccess
 -   AliyunNASReadOnlyAccess
 
 |[管理权限组]()|
@@ -190,7 +190,7 @@
 -   AliyunOTSWriteOnlyAccess
 
 |[自定义权限](/cn.zh-CN/功能介绍/授权管理/自定义权限.md)|
-|云存储网关|√|○|服务级别|AliyunHCSSGWFullAccess|-|
+|云存储网关|√|√|服务级别|AliyunHCSSGWFullAccess|-|
 |智能云相册|√|√|资源级别|-   AliyunCloudPhotoFullAccess
 -   AliyunCloudPhotoReadOnlyAccess
 
@@ -372,25 +372,25 @@
 |操作审计|√|√|资源级别|-   AliyunActionTrailFullAccess
 -   AliyunActionTrailReadOnlyAccess
 
-|[RAM鉴权](/cn.zh-CN/API参考/RAM鉴权.md)|
+|[RAM鉴权](/cn.zh-CN/API参考/API参考（2017-12-04）/RAM鉴权.md)|
 |访问控制|√|√|资源级别|-   AliyunRAMFullAccess
 -   AliyunRAMReadOnlyAccess
 
-|[RAM鉴权](/cn.zh-CN/API参考（RAM）/RAM鉴权.md)|
+|[RAM鉴权](/cn.zh-CN/API参考/API参考（RAM）/RAM鉴权.md)|
 |密钥管理服务|√|√|资源级别|-   AliyunKMSFullAccess
 -   AliyunKMSReadOnlyAccess
 -   AliyunKMSCryptoAccess
 
-|[使用RAM实现对资源的访问控制](/cn.zh-CN/用户指南/使用RAM实现对资源的访问控制.md)|
+|[使用RAM实现对资源的访问控制](/cn.zh-CN/访问控制与审计/使用RAM实现对资源的访问控制.md)|
 |智能顾问|√|√|操作级别|-   AliyunAdvisorFullAccess
 -   AliyunAdvisorReadOnlyAccess
 
 |-|
-|资源管理|√|○|资源级别|-   AliyunResourceDirectoryFullAccess
+|资源管理|√|√|资源级别|-   AliyunResourceDirectoryFullAccess
 -   AliyunResourceDirectoryReadOnlyAccess
 
 |[RAM鉴权]()|
-|配置审计|√|○|服务级别|-   AliyunConfigFullAccess
+|配置审计|√|√|服务级别|-   AliyunConfigFullAccess
 -   AliyunConfigReadOnlyAccess
 
 |[RAM鉴权](/cn.zh-CN/API参考/RAM鉴权.md)|
@@ -532,19 +532,19 @@
 |应用实时监控服务ARMS|√|√|服务级别|AliyunARMSFullAccess|[借助RAM用户实现分权](/cn.zh-CN/访问控制/借助RAM用户实现分权.md)|
 |云服务总线|√|√|资源级别|AliyunCSBFullAccess|[如何为RAM用户授权使用CSB]()|
 |应用配置管理|√|√|资源级别|AliyunACMFullAccess|[访问权限控制](/cn.zh-CN/访问控制/访问权限控制.md)|
-|链路追踪|√|○|服务级别|AliyunTracingAnalysisFullAccess|-|
-|应用高可用服务|√|○|服务级别|-   AliyunAHASFullAccess
+|链路追踪|√|√|服务级别|AliyunTracingAnalysisFullAccess|-|
+|应用高可用服务|√|√|服务级别|-   AliyunAHASFullAccess
 -   AliyunAHASReadOnlyAccess
 
 |-|
-|全局事务服务|√|○|服务级别|-   AliyunGTSFullAccess
+|全局事务服务|√|√|服务级别|-   AliyunGTSFullAccess
 -   AliyunGTSReadOnlyAccess
 
 |-|
-|微服务引擎MSE|√|○|服务级别|-   AliyunMSEFullAccess
+|微服务引擎MSE|√|√|服务级别|-   AliyunMSEFullAccess
 -   AliyunMSEReadOnlyAccess
 
-|[RAM用户使用MSE](/cn.zh-CN/用户指南/微服务组件托管/RAM用户使用MSE.md)|
+|[RAM用户使用MSE](/cn.zh-CN/微服务组件托管/RAM用户使用MSE.md)|
 
 ## 移动研发平台EMAS
 
@@ -594,7 +594,7 @@
 
 |-|
 |视频监控|√|√|操作级别|AliyunVSFullAccess|-|
-|视觉计算服务|√|○|服务级别|AliyunVCSFullAccess|-|
+|视觉计算服务|√|√|服务级别|AliyunVCSFullAccess|-|
 |云视频会议|√|○|资源级别|-   AliyunCVCFullAccess
 -   AliyunCVCReadOnlyAccess
 
@@ -645,19 +645,19 @@
 
 |服务名|控制台|API|授权粒度|系统策略|相关文档|
 |:--|:--|:--|:---|:---|:---|
-|云安全中心（态势感知）|√|○|服务级别|-   AliyunYundunSASFullAccess
+|云安全中心（态势感知）|√|√|服务级别|-   AliyunYundunSASFullAccess
 -   AliyunYundunSASReadOnlyAccess
 
 |-|
-|云安全中心（安骑士）|√|○|服务级别|-   AliyunYundunAegisFullAccess
+|云安全中心（安骑士）|√|√|服务级别|-   AliyunYundunAegisFullAccess
 -   AliyunYundunAegisReadOnlyAccess
 
 |-|
-|DDoS基础防护|√|○|服务级别|-   AliyunYundunDDosFullAccess
+|DDoS基础防护|√|√|服务级别|-   AliyunYundunDDosFullAccess
 -   AliyunYundunDDosReadOnlyAccess
 
 |-|
-|DDoS高防|√|○|服务级别|-   AliyunYundunHighFullAccess
+|DDoS高防|√|√|服务级别|-   AliyunYundunHighFullAccess
 -   AliyunYundunHighReadOnlyAccess
 
 |-|
@@ -665,15 +665,15 @@
 -   AliyunYundunGameShieldFullAccess
 
 |-|
-|Web应用防火墙（网络安全）|√|○|服务级别|-   AliyunYundunWAFFullAccess
+|Web应用防火墙（网络安全）|√|√|服务级别|-   AliyunYundunWAFFullAccess
 -   AliyunYundunWAFReadOnlyAccess
 
 |-|
-|SSL证书（应用安全）|√|○|服务级别|-   AliyunYundunCertFullAccess
+|SSL证书（应用安全）|√|√|服务级别|-   AliyunYundunCertFullAccess
 -   AliyunYundunCertReadOnlyAccess
 
 |-|
-|风险识别（业务安全）|√|○|服务级别|-   AliyunYundunSAFFullAccess
+|风险识别（业务安全）|√|√|服务级别|-   AliyunYundunSAFFullAccess
 -   AliyunYundunSAFReadOnlyAccess
 
 |-|
@@ -681,25 +681,25 @@
 -   AliyunYundunXianzhiReadOnlyAccess
 
 |-|
-|云防火墙|√|○|服务级别|-   AliyunYundunCloudFirewallReadOnlyAccess
+|云防火墙|√|√|服务级别|-   AliyunYundunCloudFirewallReadOnlyAccess
 -   AliyunYundunCloudFirewallFullAccess
 
 |-|
-|实人认证|√|○|服务级别|-   AliyunYundunCloudAuthReadOnlyAccess
+|实人认证|√|√|服务级别|-   AliyunYundunCloudAuthReadOnlyAccess
 -   AliyunYundunCloudAuthFullAccess
 
 |-|
-|漏洞扫描（应用安全）|√|○|服务级别|AliyunYundunAvdsFullAccess|-|
+|漏洞扫描（应用安全）|√|√|服务级别|AliyunYundunAvdsFullAccess|-|
 |安全管家（安全服务）|√|○|服务级别|-|-|
 |加密服务（数据安全）|√|○|服务级别|-   AliyunYundunHSMFullAccess
 -   AliyunYundunHSMReadOnlyAccess
 
 |-|
-|内容安全（业务安全）|√|○|服务级别|AliyunYundunGreenWebFullAccess|-|
-|数据风控（业务安全）|√|○|服务级别|AliyunYundunAFSFullAccess|-|
+|内容安全（业务安全）|√|√|服务级别|AliyunYundunGreenWebFullAccess|-|
+|数据风控（业务安全）|√|√|服务级别|AliyunYundunAFSFullAccess|-|
 |移动安全|√|○|服务级别|AliyunYundunJaqFullAccess|-|
 |合作伙伴中心|√|○|服务级别|AliyunYundunPartnerFullAccess|-|
-|数据库审计（数据安全）|√|○|服务级别|-   AliyunYundunDbAuditFullAccess
+|数据库审计（数据安全）|√|√|服务级别|-   AliyunYundunDbAuditFullAccess
 -   AliyunYundunDbAuditReadOnlyAccess
 
 |-|
@@ -713,11 +713,11 @@
 -   AliyunYundunAntibotReadOnlyAccess
 
 |-|
-|敏感数据保护（数据安全）|√|○|服务级别|-   AliyunYundunSDDPFullAccess
+|敏感数据保护（数据安全）|√|√|服务级别|-   AliyunYundunSDDPFullAccess
 -   AliyunYundunSDDPReadOnlyAccess
 
 |-|
-|金融级实人认证|√|○|服务级别|-   AliyunAntCloudAuthFullAccess
+|金融级实人认证|√|√|服务级别|-   AliyunAntCloudAuthFullAccess
 -   AliyunAntCloudAuthReadOnlyAccess
 
 |-|
@@ -736,7 +736,7 @@
 
 |服务名|控制台|API|授权粒度|系统策略|相关文档|
 |:--|:--|:--|:---|:---|:---|
-|云解析DNS|√|○|资源级别|-   AliyunDNSFullAccess
+|云解析DNS|√|√|资源级别|-   AliyunDNSFullAccess
 -   AliyunDNSReadOnlyAccess
 
 |-|
@@ -747,7 +747,6 @@
 |弹性Web托管|×|×|-|-|-|
 |商标服务|×|×|-|-|-|
 |工商财税|√|○|服务级别|-|-|
-|计算机软件著作权登记|√|○|服务级别|-|-|
 |IP地理位置库|√|√|资源级别|-   AliyunGeoipFullAccess
 -   AliyunGeoipReadOnlyAccess
 
@@ -763,7 +762,7 @@
 
 |服务名|控制台|API|授权粒度|系统策略|相关文档|
 |:--|:--|:--|:---|:---|:---|
-|费用中心|√|×|服务级别|-   AliyunBSSFullAccess
+|费用中心|√|√|服务级别|-   AliyunBSSFullAccess
 -   AliyunBSSReadOnlyAccess
 -   AliyunBSSOrderAccess
 -   AliyunBSSRefundAccess
@@ -776,7 +775,7 @@
 
 |服务名|控制台|API|授权粒度|系统策略|相关文档|
 |:--|:--|:--|:---|:---|:---|
-|工单|√|○|服务级别|AliyunSupportFullAccess|-|
+|工单|√|√|服务级别|AliyunSupportFullAccess|-|
 
 ## 消息
 
