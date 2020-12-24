@@ -56,13 +56,9 @@
 
             **说明：** 出于安全原因，您只能填写阿里巴巴旗下的域名URL作为**中继状态**的值，例如：\*.aliyun.com、\*.hichina.com、\*.yunos.com、\*.taobao.com、\*.tmall.com、\*.alibabacloud.com、\*.alipay.com，否则配置无效。若不配置，默认跳转到阿里云控制台首页。
 
-    3.  在**SAML签名证书**区域，执行以下操作，获取**联合元数据XML**。
+    3.  在**SAML签名证书**区域，单击**下载**，获取**联合元数据XML**。
 
-        1.  单击**添加证书**。
-        2.  添加新证书并单击**保存**。
-        3.  刷新当前页面，单击**下载**，获取**联合元数据XML**。
-
-            ![下载联合元数据XML](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0929896061/p44054.png)
+        ![下载联合元数据XML](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0929896061/p44054.png)
 
 
 ## 步骤4：在AAD分配用户
