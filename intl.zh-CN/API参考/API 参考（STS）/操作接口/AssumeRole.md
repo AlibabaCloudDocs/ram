@@ -1,111 +1,117 @@
-# AssumeRole {#reference_clc_3sv_xdb .reference}
+# AssumeRole
 
-## 接口描述 {#section_lgj_jsv_xdb .section}
+调用AssumeRole接口获取一个扮演该角色的临时身份，此处RAM用户扮演的是受信实体为阿里云账号类型的RAM角色。
 
-通过该接口，获取一个扮演该角色的临时身份。
+**说明：**
 
-## 请求参数 {#section_it1_ksv_xdb .section}
+AssumeRole接口调用次数限制：每分钟最多调用6000次，且一个阿里云账号及该账号下的RAM用户、RAM角色共用这6000次。当请求量超过6000次时，超出部分会报错，报错信息如下：
 
-**Action**
+```
+Request was denied due to user flow control.
+```
 
--   类型：String
--   必须：是
--   描述：系统规定参数，取值：AssumeRole
+## 请求参数
 
-**RoleArn**
+|名称|类型|是否必选|示例值|描述|
+|:-|:-|:---|:--|:-|
+|Action|String|是|AssumeRole|要执行的操作。取值：AssumeRole|
+|RoleArn|String|是|acs:ram::123456789012\*\*\*\*:role/adminrole|指定角色的ARN。格式：`acs:ram::$accountID:role/$roleName` 。 **说明：**
 
--   类型：String
--   必须：是
--   描述：指定角色的全局资源描述符\(Aliyun Resource Name，简称Arn\)。每个角色都有一个唯一的全局资源描述符，规定格式为 acs:ram::$accountID:role/$roleName ，一个样例：acs:ram::1234567890123456:role/samplerole 。您可以在RAM控制台的角色管理页面RAM控制台的角色管理列表中，进入角色详情页可以查看一个角色的RoleArn。
+-   `$accountID`：阿里云账号ID。您可以通过登录阿里云控制台，将鼠标悬停在右上角头像的位置，单击**安全设置**进行查看。
+-   `$roleName`：RAM角色名称。您可以通过登录RAM控制台，单击左侧导航栏的**RAM角色管理**，在**RAM角色名称**列表下进行查看。 |
+|RoleSessionName|String|是|alice|用户自定义参数。此参数用来区分不同的令牌，可用于用户级别的访问审计。
 
-**RoleSessionName**
+长度为2~32个字符，可包含英文字母、数字、英文句点（.）、at（@）、短划线（-）和下划线（\_）。 |
+|Policy|String|否|\{"Statement": \[\{"Action": \["\*"\],"Effect": "Allow","Resource": \["\*"\]\}\],"Version":"1"\}|权限策略。
 
--   类型：String
--   必须：是
--   描述：用户自定义参数。此参数用来区分不同的Token，可用于用户级别的访问审计。
--   格式：
+生成STS Token时可以指定一个额外的权限策略，以进一步限制STS Token的权限。若不指定则返回的Token拥有指定角色的所有权限。
 
-    ```
-    ^[a-zA-Z0-9\.@\-_]+$
-    ```
+长度为1~1024个字符。 |
+|DurationSeconds|Long|否|3600|过期时间，单位为秒。
 
-    **说明：** 支持输入 2-32 个字符，请输入至少 2 个字符，如果只有 1 个字符，会出现错误。
+过期时间最小值为900秒，最大值为MaxSessionDuration设置的时间。默认值为3600秒。
 
+**说明：** 您可以通过CreateRole或UpdateRole接口设置角色最大会话时间MaxSessionDuration。详情请参见[CreateRole](/intl.zh-CN/API参考/API参考（RAM）/角色管理接口/CreateRole.md)或[UpdateRole](/intl.zh-CN/API参考/API参考（RAM）/角色管理接口/UpdateRole.md)。 |
 
-**Policy**
+## 返回数据
 
--   名称：Policy
--   类型：String
--   必须：否
--   描述：授权策略[Policy 语法结构](../../../../intl.zh-CN/用户指南/授权策略语言/Policy 语法结构.md)，Policy长度限制为1024字节；您可以通过此参数限制生成的Token的权限，不指定则返回的Token将拥有指定角色的所有权限。
+|名称|类型|示例值|描述|
+|:-|:-|:--|:-|
+|RequestId|String|6894B13B-6D71-4EF5-88FA-F32781734A7F|请求ID。|
+|Credentials| | |访问凭证。|
+|└AccessKeyId|String|STS.L4aBSCSJVMuKg5U1\*\*\*\*|访问密钥标识。|
+|└AccessKeySecret|String|wyLTSmsyPGP1ohvvw8xYgB29dlGI8KMiH2pK\*\*\*\*|访问密钥。|
+|└SecurityToken|String|\*\*\*\*\*\*\*\*|安全令牌。|
+|└Expiration|String|2015-04-09T11:52:19Z|失效时间。|
+|AssumedRoleUser| | |角色扮演临时身份。|
+|└Arn|String|acs:ram::123456789012\*\*\*\*:role/adminrole/alice|指定角色的ARN。格式：`acs:ram::$accountID:role/$roleName/$RoleSessionName` 。 **说明：**
 
-**DurationSeconds**
+-   `$accountID`：阿里云账号ID。您可以通过登录阿里云控制台，将鼠标悬停在右上角头像的位置，单击**安全设置**进行查看。
+-   `$roleName`：RAM角色名称。您可以通过登录RAM控制台，单击左侧导航栏的**RAM角色管理**，在**RAM角色名称**列表下进行查看。 |
+|└AssumedRoleId|String|34458433936495\*\*\*\*:alice|该角色临时身份的用户ID。|
 
--   名称：DurationSeconds
--   类型：Integer
--   必须：否
--   描述：指定的过期时间，单位为秒。过期时间范围：900 ~ 3600，默认值为3600。
+## 示例
 
-## 返回参数 {#section_tqj_lsv_xdb .section}
-
-**Credentials**
-
--   类型：[Credentials](intl.zh-CN/API参考/API 参考（STS）/数据类型/Credentials.md)
--   描述：访问凭证
-
-**AssumedRoleUser**
-
--   描述：角色扮演临时身份
-
-## 操作示例 {#section_tdy_lsv_xdb .section}
-
-**HTTP Request**
+请求示例
 
 ```
 https://sts.aliyuncs.com?Action=AssumeRole
-&RoleArn=acs:ram::1234567890123456:role/adminrole
+&RoleArn=acs:ram::123456789012****:role/adminrole
 &RoleSessionName=alice
 &DurationSeconds=3600
 &Policy=<url_encoded_policy>
 &<公共请求参数>
 ```
 
-**HTTP Response**
+返回示例
 
--   **XML格式**
+`XML`格式
 
-    ```
-    <AssumeRoleResponse>
-        <RequestId>6894B13B-6D71-4EF5-88FA-F32781734A7F</RequestId>
-        <AssumedRoleUser>
-            <arn>acs:sts::1234567890123456:assumed-role/AdminRole/alice</arn>
-            <AssumedRoleUserId>344584339364951186:alice<AssumedRoleUserId>
-        </AssumedRoleUser>
-        <Credentials>
-            <AccessKeyId>STS.L4aBSCSJVMuKg5U1vFDw</AccessKeyId>
-            <AccessKeySecret>wyLTSmsyPGP1ohvvw8xYgB29dlGI8KMiH2pKCNZ9</AccessKeySecret>
-            <SecurityToken>CAESrAIIARKAAShQquMnLIlbvEcIxO6wCoqJufs8sWwieUxu45hS9AvKNEte8KRUWiJWJ6Y+YHAPgNwi7yfRecMFydL2uPOgBI7LDio0RkbYLmJfIxHM2nGBPdml7kYEOXmJp2aDhbvvwVYIyt/8iES/R6N208wQh0Pk2bu+/9dvalp6wOHF4gkFGhhTVFMuTDRhQlNDU0pWTXVLZzVVMXZGRHciBTQzMjc0KgVhbGljZTCpnJjwySk6BlJzYU1ENUJuCgExGmkKBUFsbG93Eh8KDEFjdGlvbkVxdWFscxIGQWN0aW9uGgcKBW9zczoqEj8KDlJlc291cmNlRXF1YWxzEghSZXNvdXJjZRojCiFhY3M6b3NzOio6NDMyNzQ6c2FtcGxlYm94L2FsaWNlLyo=</SecurityToken>
-            <Expiration>2015-04-09T11:52:19Z</Expiration>
-        </Credentials>
-    </AssumeRoleResponse>
-    ```
+```
+<AssumeRoleResponse>
+    <RequestId>6894B13B-6D71-4EF5-88FA-F32781734A7F</RequestId>
+    <AssumedRoleUser>
+        <Arn>acs:ram::123456789012****:role/adminrole/alice</arn>
+        <AssumedRoleId>34458433936495****:alice</AssumedRoleId>
+    </AssumedRoleUser>
+    <Credentials>
+        <AccessKeyId>STS.L4aBSCSJVMuKg5U1****</AccessKeyId>
+        <AccessKeySecret>wyLTSmsyPGP1ohvvw8xYgB29dlGI8KMiH2pK****</AccessKeySecret>
+        <SecurityToken>********</SecurityToken>
+        <Expiration>2015-04-09T11:52:19Z</Expiration>
+    </Credentials>
+</AssumeRoleResponse>
+```
 
--   **JSON格式**
+`JSON`格式
 
-    ```
-    {
-        "Credentials": {
-            "AccessKeyId": "STS.L4aBSCSJVMuKg5U1vFDw",
-            "AccessKeySecret": "wyLTSmsyPGP1ohvvw8xYgB29dlGI8KMiH2pKCNZ9",
-            "Expiration": "2015-04-09T11:52:19Z",
-            "SecurityToken": "CAESrAIIARKAAShQquMnLIlbvEcIxO6wCoqJufs8sWwieUxu45hS9AvKNEte8KRUWiJWJ6Y+YHAPgNwi7yfRecMFydL2uPOgBI7LDio0RkbYLmJfIxHM2nGBPdml7kYEOXmJp2aDhbvvwVYIyt/8iES/R6N208wQh0Pk2bu+/9dvalp6wOHF4gkFGhhTVFMuTDRhQlNDU0pWTXVLZzVVMXZGRHciBTQzMjc0KgVhbGljZTCpnJjwySk6BlJzYU1ENUJuCgExGmkKBUFsbG93Eh8KDEFjdGlvbkVxdWFscxIGQWN0aW9uGgcKBW9zczoqEj8KDlJlc291cmNlRXF1YWxzEghSZXNvdXJjZRojCiFhY3M6b3NzOio6NDMyNzQ6c2FtcGxlYm94L2FsaWNlLyo="
+```
+{
+    "Credentials": {
+        "AccessKeyId": "STS.L4aBSCSJVMuKg5U1****",
+        "AccessKeySecret": "wyLTSmsyPGP1ohvvw8xYgB29dlGI8KMiH2pK****",
+        "Expiration": "2015-04-09T11:52:19Z",
+        "SecurityToken": "********"
+    },
+    "AssumedRoleUser": {
+        "Arn": "acs:ram::123456789012****:role/adminrole/alice",
+        "AssumedRoleId":"34458433936495****:alice"
         },
-        "AssumedRoleUser": {
-            "arn": "acs:sts::1234567890123456:assumed-role/AdminRole/alice",
-            "AssumedRoleUserId":"344584339364951186:alice"
-            },
-        "RequestId": "6894B13B-6D71-4EF5-88FA-F32781734A7F"
-    }
-    ```
+    "RequestId": "6894B13B-6D71-4EF5-88FA-F32781734A7F"
+}
+```
 
+## 错误码
+
+|HttpCode|错误码|错误信息|描述|
+|--------|---|----|--|
+|400|InvalidParameter|The parameter RoleArn is wrongly formed.|角色ARN格式错误。|
+|400|InvalidParameter.RoleArn|The parameter RoleArn is wrongly formed.|角色ARN格式错误。|
+|400|InvalidParameter.RoleSessionName|The parameter RoleSessionName is wrongly formed.|RoleSessionName格式错误，支持输入2~32个字符，请输入至少2个字符，允许输入英文字母、数字、英文句点（.）、at（@）、短划线（-）和下划线（\_）。|
+|400|InvalidParameter.DurationSeconds|The Min/Max value of DurationSeconds is 15min/1hr.|DurationSeconds参数设置错误，过期时间最小值为900秒，最大值为MaxSessionDuration设置的时间。|
+|400|InvalidParameter.PolicyGrammar|The parameter Policy has not passed grammar check.|权限策略语法错误。|
+|400|InvalidParameter.PolicySize|The size of Policy must be smaller than 1024 bytes.|权限策略长度超限，最大不超过1024字符。|
+|403|NoPermission|You are not authorized to do this action. You should be authorized by RAM.|STS Token没有权限。解决方法请参见[为什么使用STS时会报错](/intl.zh-CN/常见问题/RAM角色和STS Token常见问题.md)。|
+|404|EntityNotExist.Role|The specified Role not exists.|指定的RAM角色不存在。|
+|500|InternalError|STS Server Internal Error happened.|服务器内部错误。|
 
