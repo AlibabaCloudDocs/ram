@@ -63,13 +63,9 @@
         -   在**命名空间**区域，输入`https://www.aliyun.com/SAML-Role/Attributes`。
         -   在**源**区域，选择**属性**。
         -   在**源属性**区域，从下拉列表中选择`user.userprincipalname`。
-    6.  在**SAML签名证书**区域，执行以下操作，获取**联合元数据XML**。
+    6.  在**SAML签名证书**区域，单击**下载**，获取**联合元数据XML**。
 
-        1.  单击**添加证书**。
-        2.  添加新证书并单击**保存**。
-        3.  刷新当前页面，单击**下载**，获取**联合元数据XML**。
-
-            ![下载联合元数据XML](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0929896061/p44054.png)
+        ![下载联合元数据XML](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0929896061/p44054.png)
 
 
 ## 步骤3：在阿里云创建身份提供商
