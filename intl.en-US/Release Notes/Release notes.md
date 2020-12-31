@@ -1,19 +1,19 @@
 # Release notes
 
-This topic describes the release history of major Resource Access Management \(RAM\) features and provides links to relevant documentation.
+This topic describes the release history of Resource Access Management \(RAM\) features and provides links to relevant documentation.
 
 ## July 2020
 
 |Feature|Description|Release date|Region|Documentation|
 |-------|-----------|------------|------|-------------|
-|Resource group-based authorization in the Alibaba Cloud Management Console![New feature](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/4244359951/p73094.png)|This feature allows you to grant a RAM user, RAM user group, or RAM role the permissions on all the resources that belong to an Alibaba Cloud account or on a specific resource group in the RAM or Resource Management console. It also allows you to revoke the permissions from the RAM user, RAM user group, or RAM role.|2020-07|All|None|
+|Resource group-based authorization in the Alibaba Cloud Management Console![New feature](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/4244359951/p73094.png)|This feature allows you to grant a RAM user, RAM user group, or RAM role the permissions on all resources that belong to an Alibaba Cloud account or on a specific resource group in the RAM or Resource Management console. It also allows you to revoke the permissions from a RAM user, RAM user group, or RAM role.|2020-07|All|N/A|
 
 ## June 2020
 
 |Feature|Description|Release date|Region|Documentation|
 |-------|-----------|------------|------|-------------|
 |Alibaba Cloud services that support RAM|Time Series Database \(TSDB\) for InfluxDB supports RAM.|2020-06|N/A|[Alibaba Cloud services that support RAM](/intl.en-US/Product Introduction/Alibaba Cloud services that support RAM.md)|
-|Version rotation of custom policies|If you modify a custom policy in the console and the policy already has five versions, the earliest version that is not in use is deleted and a version is created.|2020-06|All|[Manage custom policy versions](/intl.en-US/Policy Management/Custom policies/Manage custom policy versions.md)|
+|Version rotation of custom policies|If you modify a custom policy in the console and the policy already has five versions, the earliest version that is not in use is deleted and the latest version is created.|2020-06|All|[Manage custom policy versions](/intl.en-US/Policy Management/Custom policies/Manage custom policy versions.md)|
 
 ## May 2020
 
@@ -27,7 +27,7 @@ This topic describes the release history of major Resource Access Management \(R
 |-------|-----------|------------|------|-------------|
 |Alibaba Cloud services that support RAM|AnalyticDB for MySQL supports RAM.|2020-03|N/A|[Alibaba Cloud services that support RAM](/intl.en-US/Product Introduction/Alibaba Cloud services that support RAM.md)|
 |Alibaba Cloud services that support Security Token Service \(STS\)|Elastic High Performance Computing \(E-HPC\) supports STS.|2020-03|N/A|[Alibaba Cloud services that support STS](/intl.en-US/Product Introduction/Alibaba Cloud services that support STS.md)|
-|Service-linked roles|An Alibaba Cloud service may need to access other services to implement a feature. In this case, the Alibaba Cloud service must be authorized. Alibaba Cloud provides service-linked roles to simplify the authorization in such scenarios.|2020-03|All|[Service linked roles](/intl.en-US/RAM Role Management/Service linked roles.md)|
+|Service-linked roles|An Alibaba Cloud service may need to access other services to implement a feature. In this case, the Alibaba Cloud service must be authorized. Alibaba Cloud provides service-linked roles to simplify the authorization in such scenarios.|2020-03|All|[Service-linked roles](/intl.en-US/RAM Role Management/Service linked roles.md)|
 |Configuration of the maximum role session duration|A new parameter named `MaxSessionDuration` is provided in API operations that are used to manage RAM roles. This parameter specifies the maximum session duration of a RAM role.|2020-03|All|-   [CreateRole](/intl.en-US/API Reference/API Reference (RAM)/Role management APIs/CreateRole.md)
 -   [UpdateRole](/intl.en-US/API Reference/API Reference (RAM)/Role management APIs/UpdateRole.md)
 -   [AssumeRole](/intl.en-US/API Reference/API Reference (STS)/Operation interfaces/AssumeRole.md)
@@ -72,20 +72,20 @@ This topic describes the release history of major Resource Access Management \(R
 
 |Feature|Description|Release date|Region|Documentation|
 |-------|:----------|:-----------|------|-------------|
-|Enabling or disabling of console logons for RAM users|This feature allows you to enable or disable the access of RAM users to the RAM console. You can keep the password, MFA, and other logon settings while you disable RAM user access to the RAM console. You can also clear console logon settings.|2019-09-09|All|[Manage logon settings for a RAM user](/intl.en-US/Security Settings/Basic security settings/Manage logon settings for a RAM user.md)|
+|Enable or disable console logon for RAM users|This feature allows you to enable or disable the access of RAM users to the RAM console. You can retain the password, MFA, and other logon settings when you disable RAM user access to the RAM console. You can also clear console logon settings.|2019-09-09|All|[Manage logon settings for a RAM user](/intl.en-US/Security Settings/Basic security settings/Manage logon settings for a RAM user.md)|
 |Alibaba Cloud services that support RAM|Logic Composer supports RAM.|2019-09|N/A|[Alibaba Cloud services that support RAM](/intl.en-US/Product Introduction/Alibaba Cloud services that support RAM.md)|
 
 ## June 2019
 
 |Feature|Description|Release date|Region|Documentation|
 |-------|:----------|:-----------|------|:------------|
-|Auxiliary domain name for user-based SSO|This feature helps you simplify the configuration of user-based SSO.|2019-06-28|All|[Overview of user-based SSO](/intl.en-US/SSO Management/User-based SSO/Overview of user-based SSO.md)|
+|Auxiliary domain name for identity-based SSO|This feature simplifies the configuration of identity-based SSO.|2019-06-28|All|[Overview of user-based SSO](/intl.en-US/SSO Management/User-based SSO/Overview of user-based SSO.md)|
 
 ## April 2019
 
 |Feature|Description|Release date|Region|Documentation|
 |-------|:----------|:-----------|------|:------------|
-|SSO|Alibaba Cloud supports SAML 2.0-based SSO, which is also known as identity federation. SSO can be implemented between an enterprise identity service and Alibaba Cloud.|2019-04-04|All|[SSO overview](/intl.en-US/SSO Management/SSO overview.md)|
+|SSO|Alibaba Cloud supports SAML 2.0-based SSO. This feature is also known as identity federation. SSO can be implemented between an enterprise identity service and Alibaba Cloud.|2019-04-04|All|[SSO overview](/intl.en-US/SSO Management/SSO overview.md)|
 
 ## November 2018
 
