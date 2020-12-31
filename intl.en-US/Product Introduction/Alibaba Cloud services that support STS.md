@@ -2,48 +2,48 @@
 
 This topic lists the Alibaba Cloud services that support Security Token Service \(STS\).
 
-For information about STS and its application scenarios, see [What is STS?](/intl.en-US/API Reference (STS)/What is STS?.md) and [RAM role overview](/intl.en-US/RAM Role Management/RAM role overview.md).
+For more information about STS and the scenarios where STS is used, see [What is STS?](/intl.en-US/API Reference/API Reference (STS)/What is STS?.md) and [RAM role overview](/intl.en-US/RAM Role Management/RAM role overview.md).
 
-## STS-supported Alibaba Cloud services
+## Alibaba Cloud services that support STS
 
-The following Alibaba Cloud products support STS:[Elastic computing](#section_01), [Database](#section_02), [Storage and CDN](#section_03), [Networking](#section_04), [Analytics](#section_05), [Cloud communications](#section_06), [Management and monitoring](#section_07), [Application](#section_08), [IoT](#section_3wj_33b_9ak), [Middleware](#section_09), [Message queuing](#section_10),[Media services](#section_12), [Big data](#section_13), [Security](#section_14), [Marketplace](#section_15), [Domain and hosting](#section_16),[Membership services](#section_17),[Billing management](#section_18), [Ticket services](#section_19), and[Messaging](#section_20).
+The following Alibaba Cloud services support STS: [Elastic computing](#section_01), [Database](#section_02), [Storage and CDN](#section_03), [Networking](#section_04), [Analytics](#section_05), [Cloud communications](#section_06), [Management and monitoring](#section_07), [Application](#section_08), [IoT](#section_3wj_33b_9ak), [Middleware](#section_09), [Message queueing](#section_10),[Media services](#section_12), [Big data](#section_13), [Security](#section_14), [Marketplace](#section_15), [Domains and websites](#section_16), [Membership services](#section_17),[Billing management](#section_18), [Support](#section_19), and [Messaging](#section_20).
 
-Each table contains the following columns:
+Each table in this topic contains the following columns:
 
 -   Service: the name of the service that supports STS.
 -   Console: indicates whether STS can be used to implement access control in the console of the service. A check sign \(√\) indicates that STS is supported. A cross sign \(×\) indicates that STS is not supported.
--   API: indicates whether STS can be used to implement access control based on the API of the service. A check sign \(√\) indicates that STS is supported. A cross sign \(×\) indicates that STS is not supported. A circle \(○\) indicates that no API is provided for the service.
+-   API: indicates whether STS can be used to implement access control when you call the API of the service. A check sign \(√\) indicates that STS is supported when you call the API of the service. A cross sign \(×\) indicates that STS is not supported when you call the API of the service. A circle \(○\) indicates that no API is provided for the service.
 
 ## Elastic computing
 
 |Service|Console|API|
 |:------|:------|:--|
-|Elastic Compute Service|√|√|
-|Auto Scaling|√|√|
-|Container Service for Kubernetes|√|√|
+|Elastic Compute Service \(ECS\)|√|√|
+|Auto Scaling \(ESS\)|√|√|
+|Container Service for Kubernetes \(ACK\)|√|√|
 |Container Registry|√|√|
-|Resource Orchestration Service|√|√|
-|BatchCompute|√|√|
+|Resource Orchestration Service \(ROS\)|√|√|
+|Batch Compute|√|√|
 |Function Compute|√|√|
-|Elastic High Performance Computing|√|√|
+|Elastic High Performance Computing \(E-HPC\)|√|√|
 |Simple Application Server|×|○|
-|Elastic Container Instance|√|√|
+|Elastic Container Instance \(ECI\)|√|√|
 |Web App Service|√|√|
-|Operation Orchestration Service|√|√|
+|Operation Orchestration Service \(OOS\)|√|√|
 
 ## Database
 
 |Service|Console|API|
 |:------|:------|:--|
-|ApsaraDB for RDS|√|√|
+|ApsaraDB RDS|√|√|
 |ApsaraDB for MongoDB|√|√|
 |ApsaraDB for Redis|√|√|
 |ApsaraDB for Memcache|√|√|
-|Time Series and Spatial-Temporal Database|√|√|
+|Time Series Database \(TSDB\)|√|√|
 |AnalyticDB for PostgreSQL|√|√|
-|Data Transmission Service|√|√|
+|Data Transmission Service \(DTS\)|√|√|
 |Database Backup|√|√|
-|Distributed Relational Database Service|√|√|
+|PolarDB-X \(formerly DRDS\)|√|√|
 |Database Gateway|√|√|
 |LedgerDB|√|√|
 
@@ -51,26 +51,26 @@ Each table contains the following columns:
 
 |Service|Console|API|
 |:------|:------|:--|
-|Object Storage Service|√|√|
-|Apsara File Storage NAS|√|○|
+|Object Storage Service \(OSS\)|√|√|
+|Apsara File Storage NAS \(NAS\)|√|○|
 |Tablestore|√|√|
 |CDN|√|√|
-|Dynamic Route for CDN|√|√|
-|Cloud Storage Gateway|√|○|
-|Hybrid Backup Recovery|√|○|
+|Dynamic Route for CDN \(DCDN\)|√|√|
+|Cloud Storage Gateway \(CSG\)|√|○|
+|Hybrid Backup Recovery \(HBR\)|√|○|
 |Lightning Cube|×|○|
 
 ## Networking
 
 |Service|Console|API|
 |:------|:------|:--|
-|Virtual Private Cloud|√|√|
-|Server Load Balancer|√|√|
-|Elastic IP Address|√|√|
+|Virtual Private Cloud \(VPC\)|√|√|
+|Server Load Balancer \(SLB\)|√|√|
+|Elastic IP Address \(EIP\)|√|√|
 |Express Connect|√|√|
-|NAT Gateway|√|√|
+|NAT Gateway \(NAT\)|√|√|
 |VPN Gateway|√|√|
-|Global Accelerator|√|√|
+|Global Accelerator \(GA\)|√|√|
 |Smart Access Gateway|√|√|
 |Cloud Enterprise Network|√|√|
 
@@ -79,13 +79,13 @@ Each table contains the following columns:
 |Service|Console|API|
 |:------|:------|:--|
 |E-MapReduce|√|√|
-|Data Lake Analytics|×|×|
+|Data Lake Analytics \(DLA\)|×|×|
 
 ## Cloud communications
 
 |Service|Console|API|
 |:------|:------|:--|
-|Short Message Service|√|√|
+|Short Message Service \(SMS\)|√|√|
 
 ## Management and monitoring
 
@@ -93,10 +93,12 @@ Each table contains the following columns:
 |:------|:------|:--|
 |Cloud Monitor|√|√|
 |ActionTrail|√|√|
-|Resource Access Management|√|√|
-|Key Management Service|√|√|
+|Resource Access Management \(RAM\)|√|√|
+|Key Management Service \(KMS\)|√|√|
 |Intelligent Advisor|×|×|
 |Cloud Config|√|○|
+|Resource Management|√|√|
+|Prometheus Monitoring|√|√|
 
 ## Application
 
@@ -105,37 +107,37 @@ Each table contains the following columns:
 |Log Service|√|√|
 |Direct Mail|√|√|
 |API Gateway|√|√|
-|Blockchain as a Service|√|√|
+|Blockchain as a Service \(BaaS\)|√|√|
 
 ## IoT
 
 |Service|Console|API|
 |:------|:------|:--|
-|IoT Platform|√|√|
+|IoT Platform \(IOT\)|√|√|
 |IoT Edge|×|×|
 
 ## Middleware
 
 |Service|Console|API|
 |:------|:------|:--|
-|Enterprise Distributed Application Service|×|√|
-|Application Real-Time Monitoring Service|×|×|
+|Enterprise Distributed Application Service \(EDAS\)|×|√|
+|Application Real-Time Monitoring Service \(ARMS\)|×|×|
 |Application Configuration Management|√|√|
 
-## Message queuing
+## Message queueing
 
 |Service|Console|API|
 |:------|:------|:--|
 |Message Queue for Apache RocketMQ|√|√|
-|Message Service|√|√|
+|Message Service \(MNS\)|√|√|
 |EventBridge|√|√|
 
 ## Media services
 
 |Service|Console|API|
 |:------|:------|:--|
-|ApsaraVideo Media Processing|√|√|
-|ApsaraVideo VOD|√|√|
+|ApsaraVideo for Media Processing \(MTS\)|√|√|
+|ApsaraVideo VOD \(VOD\)|√|√|
 |ApsaraVideo Live|√|√|
 |Real-Time Communication|×|×|
 
@@ -143,12 +145,12 @@ Each table contains the following columns:
 
 |Service|Console|API|
 |:------|:------|:--|
-|DataWorks|×|×|
+|DataWorks|√|√|
 |Quick BI|×|×|
-|Machine Learning|×|×|
+|Machine Learning Platform for AI|×|×|
 |Public Recognition|×|×|
 |DataV|×|×|
-|MaxCompute|×|×|
+|MaxCompute|√|√|
 |Elasticsearch|√|√|
 |Machine Translation|×|×|
 |Image Search|√|√|
@@ -157,13 +159,13 @@ Each table contains the following columns:
 
 |Service|Console|API|
 |:------|:------|:--|
-|Security Center|√|○|
+|Security Center \(SAS\)|√|○|
 |Server Guard|√|○|
 |Anti-DDoS Basic|√|○|
-|Anti-DDoS Premium and Anti-DDoS Pro|√|○|
+|Anti-DDoS Pro|√|○|
 |Anti-DDoS Premium|√|○|
 |GameShield|√|○|
-|Web Application Firewall|√|○|
+|Web Application Firewall \(WAF\)|√|○|
 |SSL Certificates Service|√|○|
 |Cloud Security Scanner|√|○|
 |Content Moderation|√|○|
@@ -175,11 +177,11 @@ Each table contains the following columns:
 |:------|:------|:--|
 |Alibaba Cloud Marketplace|√|○|
 
-## Domain and hosting
+## Domains and websites
 
 |Service|Console|API|
 |:------|:------|:--|
-|Alibaba Cloud DNS|√|○|
+|Alibaba Cloud DNS \(DNS\)|√|○|
 |Domains|√|√|
 |Cloud Web Hosting|×|×|
 |Alibaba Mail|×|×|
@@ -194,13 +196,13 @@ Each table contains the following columns:
 
 |Service|Console|API|
 |:------|:------|:--|
-|Billing Management|√|×|
+|Billing Management|√|√|
 
-## Ticket services
+## Support
 
 |Service|Console|API|
 |:------|:------|:--|
-|Ticket Management|√|○|
+|Ticket Management|√|√|
 
 ## Messaging
 
