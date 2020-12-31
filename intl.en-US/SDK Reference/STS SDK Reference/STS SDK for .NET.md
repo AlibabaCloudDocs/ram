@@ -1,17 +1,17 @@
 # STS SDK for .NET
 
-This topic describes how to install STS SDK for .NET and provides an example about how to use the SDK for .NET.
+This topic describes how to install STS SDK for .NET and provides an example on how to use STS SDK for .NET.
 
 ## Background information
 
--   To use an SDK for .NET, you must install the core library of Alibaba Cloud SDK for .NET\(`aliyun-net-sdk-core`\) and the STS SDK \(`aliyun-net-sdk-sts`\).
+-   To use STS SDK for .NET, you must install the core library of Alibaba Cloud SDK for .NET \(`aliyun-net-sdk-core`\) and the STS SDK \(`aliyun-net-sdk-sts`\).
 -   Alibaba Cloud provides [OpenAPI Explorer](https://api.aliyun.com/) to simplify API usage. You can use OpenAPI Explorer to debug API operations and dynamically generate SDK sample code.
--   For information about STS API operations, see [What is STS?](/intl.en-US/API Reference (STS)/What is STS?.md).
--   For information about endpoints to access STS, see [Endpoints](/intl.en-US/API Reference (STS)/Endpoints.md).
+-   For more information about STS API operations, see [What is STS?](/intl.en-US/API Reference/API Reference (STS)/What is STS?.md).
+-   For more information about the endpoint of STS, see [Endpoints](/intl.en-US/API Reference/API Reference (STS)/Endpoints.md).
 
 ## Install the SDK for .NET
 
-For information about how to install the SDK for .NET, see [Get started]().
+For more information about how to install the SDK for .NET, see [Get started]().
 
 You can download the installation packages of the SDK for .NET from the following links:
 
@@ -20,7 +20,7 @@ You can download the installation packages of the SDK for .NET from the followin
 
 ## Example
 
-The following code provides an example on how to call the AssumeRole API operation by using the SDK for .NET. For information about other API operations, visit [OpenAPI Explorer](https://api.aliyun.com/), debug API operations, and obtain sample code.
+The following code provides an example on how to call the [AssumeRole](/intl.en-US/API Reference/API Reference (STS)/Operation interfaces/AssumeRole.md) API operation by using the SDK for .NET. You can visit [OpenAPI Explorer](https://api.aliyun.com/) to debug other API operations and obtain their sample code.
 
 ```
 using System;
@@ -36,12 +36,12 @@ namespace StsDemo
     {
         static void Main(string[] args)
         {
-            // Construct an Alibaba Cloud client that is used to initiate requests.
-            // When you construct the client, specify the AccessKey ID and AccessKey secret.
+            // Create an Alibaba Cloud client that is used to initiate requests.
+            // When you create the client, specify your AccessKey ID and AccessKey secret.
             IClientProfile profile = DefaultProfile.GetProfile("cn-hangzhou", "<accessKeyId>", "<accessSecret>");
             DefaultAcsClient client = new DefaultAcsClient(profile);
 
-            // Construct a request and configure the request parameters.
+            // Make a request and set the request parameters. For more information about the parameters, see API reference.
             var request = new AssumeRoleRequest();
             request.RoleArn = "<RoleArn>";
             request.RoleSessionName = "<RoleSessionName>";
