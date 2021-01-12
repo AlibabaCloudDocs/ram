@@ -45,7 +45,7 @@
 |云数据库Memcache版|√|√|
 |云数据库HybridDB for MySQL|√|√|
 |云数据库HBase|√|√|
-|时序时空数据库TSDB|√|√|
+|时序数据库TSDB|√|√|
 |云原生数据仓库ADB PostgreSQL版|√|√|
 |云数据库OceanBase|√|○|
 |云原生数据仓库ADB MySQL版|√|√|
