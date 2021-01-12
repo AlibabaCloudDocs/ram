@@ -53,7 +53,7 @@ Make sure that each SAML response that is sent by your IdP to Alibaba Cloud incl
     -   Only one `SubjectConfirmation` sub-element that contains a `SubjectConfirmationData` sub-element. The `SubjectConfirmationData` sub-element must contain the following attributes:
 
         -   `NotOnOrAfter`: specifies the validity period of a SAML assertion.
-        -   `Recipient`: Alibaba Cloud checks whether it is the recipient of the SAML assertion based on the value of this attribute. Therefore, you must set this attribute to`https://signin-intl.aliyun.com/${accountId}/saml/SSO`. `${accountId}` specifies the ID of the Alibaba Cloud account.
+        -   `Recipient`: Alibaba Cloud checks whether it is the recipient of the SAML assertion based on the value of this attribute. Therefore, you must set this attribute to `https://signin-intl.aliyun.com/${accountId}/saml/SSO`. `${accountId}` specifies the ID of the Alibaba Cloud account.
 The following script provides an example of the `Subject` element:
 
         ```
@@ -84,12 +84,12 @@ The following script provides an example of the `Conditions` element:
 
     The value of the `NameID` element must include one of the following suffixes:
 
-    -   The **domain alias** of your Alibaba Cloud account: `<username>@<domain_alias>`.`` `<username>` specifies the username of a RAM user. `<domain_alias>` specifies the domain alias. For more information, see [Create and verify a domain alias](/intl.en-US/Security Settings/Advanced settings/Create and verify a domain alias.md).
-    -   The **auxiliary domain name**: `<username>@<auxiliary_domain>`.`` `<username>` specifies the username of the RAM user. `<auxiliary_domain>` specifies the auxiliary domain name. For information about how to configure an auxiliary domain name, see [Configure the SAML settings of Alibaba Cloud for user-based SSO](/intl.en-US/SSO Management/User-based SSO/Configure the SAML settings of Alibaba Cloud for user-based SSO.md).
+    -   The **domain alias** of your Alibaba Cloud account: `<username>@<domain_alias>`.```<username>` specifies the username of a RAM user. `<domain_alias>` specifies the domain alias. For more information, see [Create and verify a domain alias](/intl.en-US/Security Settings/Advanced settings/Create and verify a domain alias.md).
+    -   The **auxiliary domain name**: `<username>@<auxiliary_domain>`.```<username>` specifies the username of the RAM user. `<auxiliary_domain>` specifies the auxiliary domain name. For information about how to configure an auxiliary domain name, see [Configure the SAML settings of Alibaba Cloud for user-based SSO](/intl.en-US/SSO Management/User-based SSO/Configure the SAML settings of Alibaba Cloud for user-based SSO.md).
 
         **Note:** If you configure both a domain alias and an auxiliary domain name, the value of the `NameID` element is suffixed with the domain alias.
 
-    -   The **default domain name** of your Alibaba Cloud account: `<username>@<default_domain>`.`` `<username>` specifies the username of a RAM user. `<default_domain>` specifies the default domain name. For more information, see [Manage the default domain name](/intl.en-US/Security Settings/Advanced settings/Manage the default domain name.md).
+    -   The **default domain name** of your Alibaba Cloud account: `<username>@<default_domain>`.```<username>` specifies the username of a RAM user. `<default_domain>` specifies the default domain name. For more information, see [Manage the default domain name](/intl.en-US/Security Settings/Advanced settings/Manage the default domain name.md).
 
         **Note:** You can use the default domain name of your Alibaba Cloud account as the suffix of the `NameID` element even if you have configured a domain alias or an auxiliary domain name.
 
