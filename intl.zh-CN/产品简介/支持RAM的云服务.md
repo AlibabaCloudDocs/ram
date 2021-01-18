@@ -81,7 +81,7 @@
 |云数据库PolarDB|√|√|操作级别|-   AliyunPolardbReadOnlyAccess
 -   AliyunPolardbFullAccess
 
-|[创建和使用子账号](/intl.zh-CN/用户指南/账号和数据库/创建和使用子账号.md)|
+|[创建和使用子账号](/intl.zh-CN/用户指南/账号和数据库/创建和管理RAM用户.md)|
 |云数据库RDS版|√|√|资源级别|-   AliyunRDSFullAccess
 -   AliyunRDSReadOnlyAccess
 
@@ -102,7 +102,7 @@
 -   AliyunHBaseReadOnlyAccess
 
 |[子账号管理集群](t1857011.md#)|
-|时序时空数据库TSDB|√|√|操作级别|-
+|时序数据库TSDB|√|√|操作级别|-
 
 |-|
 |云原生数据仓库ADB PostgreSQL版|√|√|资源级别|-   AliyunGPDBFullAccess
@@ -149,7 +149,7 @@
 |对象存储OSS|√|√|资源级别|-   AliyunOSSFullAccess
 -   AliyunOSSReadOnlyAccess
 
-|[基于RAM Policy的权限控制](/intl.zh-CN/开发指南/数据安全/访问控制/RAM Policy/基于RAM Policy的权限控制.md)|
+|[RAM Policy概述](/intl.zh-CN/开发指南/数据安全/访问控制/RAM Policy/基于RAM Policy的权限控制.md)|
 |文件存储NAS|√|√|操作级别|-   AliyunNASFullAccess
 -   AliyunNASReadOnlyAccess
 
@@ -185,7 +185,7 @@
 |负载均衡|√|√|资源级别|-   AliyunSLBReadOnlyAccess
 -   AliyunSLBFullAccess
 
-|[RAM鉴权](/intl.zh-CN/开发指南/API参考/RAM鉴权.md)|
+|[RAM鉴权](/intl.zh-CN/传统型负载均衡CLB/开发指南/API参考/RAM鉴权.md)|
 |弹性公网IP|√|√|资源级别|-   AliyunEIPFullAccess
 -   AliyunEIPReadOnlyAccess
 
@@ -299,7 +299,7 @@
 |物联网平台|√|√|资源级别|-   AliyunIOTFullAccess
 -   AliyunIOTReadOnlyAccess
 
-|[子账号访问](/intl.zh-CN/账号与登录/账号授权/RAM授权管理/子账号访问.md)|
+|[RAM用户访问](/intl.zh-CN/账号与登录/账号授权/RAM授权管理/RAM用户访问.md)|
 |物联网边缘计算|√|√|资源级别|-   AliyunIOTFullAccess
 -   AliyunIOTReadOnlyAccess
 
