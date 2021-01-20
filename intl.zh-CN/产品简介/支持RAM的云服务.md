@@ -424,7 +424,7 @@
 
 |服务名|控制台|API|授权粒度|系统策略|相关文档|
 |:--|:--|:--|:---|:---|:---|
-|云市场|√|○|服务级别|AliyunMarketplaceFullAccess|-|
+|云市场|√|×|服务级别|AliyunMarketplaceFullAccess|-|
 
 ## 域名与网站
 
