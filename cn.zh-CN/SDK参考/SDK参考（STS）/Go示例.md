@@ -5,8 +5,8 @@
 ## 背景信息
 
 -   [OpenAPI Explorer](https://api.aliyun.com/)提供在线调试API和动态生成SDK示例代码的功能，能显著降低API的使用难度，推荐您使用。
--   关于STS API的详情，请参见[什么是STS](/cn.zh-CN/API 参考（STS）/什么是STS.md)。
--   关于STS的接入地址，请参见[接入地址](/cn.zh-CN/API 参考（STS）/接入地址.md)。
+-   关于STS API的详情，请参见[什么是STS](/cn.zh-CN/API参考/API 参考（STS）/什么是STS.md)。
+-   关于STS的接入地址，请参见[接入地址](/cn.zh-CN/API参考/API 参考（STS）/接入地址.md)。
 
 ## Go SDK的安装方法
 
@@ -19,7 +19,7 @@ Go SDK安装包下载地址如下：
 
 ## Go SDK示例
 
-下面为您提供AssumeRole API的Go SDK示例代码。关于其他API，请访问[OpenAPI Explorer](https://api.aliyun.com/)调试并获取示例代码。
+下面为您提供[AssumeRole](/cn.zh-CN/API参考/API 参考（STS）/操作接口/AssumeRole.md) API的Go SDK示例代码。关于其他API，请访问[OpenAPI Explorer](https://api.aliyun.com/)调试并获取示例代码。
 
 ```
 package main
@@ -33,13 +33,13 @@ func main() {
     
     //构建一个阿里云客户端, 用于发起请求。
     //构建阿里云客户端时，需要设置AccessKey ID和AccessKey Secret。
-    client, err := sts.NewClientWithAccessKey("cn-hangzhou", "<accessKeyId>", "<accessSecret>")
+    client, err := sts.NewClientWithAccessKey("cn-hangzhou", "<AccessKeyId>", "<AccessKeySecret>")
     
     //构建请求对象。
     request := sts.CreateAssumeRoleRequest()
     request.Scheme = "https"
     
-    //设置参数。
+    //设置参数。关于参数含义和设置方法，请参见API参考。
     request.RoleArn = "<RoleArn>"
     request.RoleSessionName = "<RoleSessionName>"
     
