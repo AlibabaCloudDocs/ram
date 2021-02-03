@@ -81,6 +81,15 @@
 
 |[鉴权规则](https://help.aliyun.com/document_detail/156144.html)|
 |服务网格ASM|√|√|资源级别|-|[授权概述](https://help.aliyun.com/document_detail/169466.html)|
+|弹性云桌面|√|√|资源级别|-   AliyunECDFullAccess
+-   AliyunECDReadOnlyAccess
+-   AliyunECDRamUserAccess
+
+|[创建RAM用户并授权]()|
+|弹性加速计算实例|√|√|资源级别|-   AliyunEAISFullAccess
+-   AliyunEAISReadOnlyAccess
+
+|-|
 
 ## 数据库
 
@@ -113,7 +122,7 @@
 |云数据库HBase|√|√|资源级别|-   AliyunHBaseFullAccess
 -   AliyunHBaseReadOnlyAccess
 
-|[子账号管理集群](t1857011.md#)|
+|[RAM资源授权]()|
 |时序数据库TSDB|√|√|操作级别|-   AliyunHiTSDBReadOnlyAccess
 -   AliyunHiTSDBFullAccess
 
@@ -280,6 +289,8 @@
 -   AliyunCENFullAccess
 
 |[RAM鉴权]()|
+|私网连接|√|√|资源级别|-|-   [使用RAM对私网连接进行权限管理]()
+-   [RAM鉴权]() |
 
 ## 分析
 
@@ -350,6 +361,15 @@
 |工业视觉智能|√|○|服务级别|-|-|
 |阿里云视觉智能开放平台|√|√|服务级别|-|-|
 |地址标准化|√|√|服务级别|-|-|
+|工业大脑开放平台|√|○|资源级别|-   AliyunBrainIndustrialFullAccess
+-   AliyunBrainIndustrialReadOnlyAccess
+
+|-   [步骤一：开通PlatSimu服务]()
+-   [步骤一：开通CloudPID服务]() |
+|短视频生产平台|√|○|服务级别|-   AliyunSVGPFullAccess
+-   AliyunSVGPReadOnlyAccess
+
+|-|
 
 ## 数字金融
 
@@ -394,6 +414,18 @@
 -   AliyunConfigReadOnlyAccess
 
 |[RAM鉴权](/cn.zh-CN/API参考/RAM鉴权.md)|
+|云架构设计工具|√|○|服务级别|-   AliyunCADTFullAccess
+-   AliyunCADTReadOnlyAccess
+
+|-|
+|配额中心|√|√|资源级别|-   AliyunQuotasFullAccess
+-   AliyunQuotasReadOnlyAccess
+
+|[为RAM用户授权]()|
+|标签|√|√|操作级别|-   AliyunTAGFullAccess
+-   AliyunTAGReadOnlyAccess
+
+|[标签鉴权列表]()|
 
 ## 应用服务
 
@@ -465,6 +497,15 @@
 -   AliyunMPCAReadOnlyAccess
 
 |-|
+|智能双录质检|√|√|服务级别|-   AliyunIdrsServiceFullAccess
+-   AliyunIdrsServiceReadOnly
+
+|[RAM鉴权]()|
+|微服务网关|√|√|资源级别|-   AliyunMicrogatewayFullAccess
+-   AliyunMicrogatewayReadOnlyAccess
+
+|[访问控制概述]()|
+|智能数据助理|√|○|服务级别|AliyunChatbotFullAccess|-|
 
 ## 物联网IOT
 
@@ -491,6 +532,10 @@
 -   AliyunIOTReadOnlyAccess
 
 |[云资源访问](/cn.zh-CN/用户指南/云资源访问.md)|
+|IoT安全运营中心|√|√|操作级别|-   AliyunISOCFullAccess
+-   AliyunISOCReadOnlyAccess
+
+|-|
 
 ## 消息队列MQ
 
@@ -725,6 +770,10 @@
 -   AliyunYundunIdaasReadOnlyAccess
 
 |-|
+|特权访问服务|√|○|操作级别|-   AliyunBastionhostPamFullAccess
+-   AliyunBastionhostPamReadOnlyAccess
+
+|[用户授权]()|
 
 ## 云市场
 
