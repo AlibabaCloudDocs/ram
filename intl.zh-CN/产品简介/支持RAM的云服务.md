@@ -101,7 +101,7 @@
 |云数据库HBase|√|√|资源级别|-   AliyunHBaseFullAccess
 -   AliyunHBaseReadOnlyAccess
 
-|[子账号管理集群](t1857011.md#)|
+|[RAM资源授权]()|
 |时序数据库TSDB|√|√|操作级别|-
 
 |-|
@@ -149,7 +149,7 @@
 |对象存储OSS|√|√|资源级别|-   AliyunOSSFullAccess
 -   AliyunOSSReadOnlyAccess
 
-|[RAM Policy概述](/intl.zh-CN/开发指南/数据安全/访问控制/RAM Policy/基于RAM Policy的权限控制.md)|
+|[RAM Policy概述](/intl.zh-CN/开发指南/数据安全/访问控制/RAM Policy/RAM Policy概述.md)|
 |文件存储NAS|√|√|操作级别|-   AliyunNASFullAccess
 -   AliyunNASReadOnlyAccess
 
@@ -217,6 +217,8 @@
 -   AliyunCENFullAccess
 
 |[RAM鉴权]()|
+|私网连接|√|√|资源级别|-|-   [使用RAM对私网连接进行权限管理]()
+-   [RAM鉴权]() |
 
 ## 分析
 
@@ -269,6 +271,14 @@
 -   AliyunConfigReadOnlyAccess
 
 |[RAM鉴权](/intl.zh-CN/API参考/RAM鉴权.md)|
+|配额中心|√|√|资源级别|-   AliyunQuotasFullAccess
+-   AliyunQuotasReadOnlyAccess
+
+|[为RAM用户授权]()|
+|标签|√|√|操作级别|-   AliyunTAGFullAccess
+-   AliyunTAGReadOnlyAccess
+
+|[标签鉴权列表](section_zqv_es3_ege)|
 
 ## 应用服务
 
