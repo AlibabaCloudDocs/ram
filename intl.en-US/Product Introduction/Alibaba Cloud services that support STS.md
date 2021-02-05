@@ -6,7 +6,7 @@ For more information about STS and the scenarios where STS is used, see [What is
 
 ## Alibaba Cloud services that support STS
 
-The following Alibaba Cloud services support STS: [Elastic computing](#section_01), [Database](#section_02), [Storage and CDN](#section_03), [Networking](#section_04), [Analytics](#section_05), [Cloud communications](#section_06), [Management and monitoring](#section_07), [Application](#section_08), [IoT](#section_3wj_33b_9ak), [Middleware](#section_09), [Message queueing](#section_10),[Media services](#section_12), [Big data](#section_13), [Security](#section_14), [Marketplace](#section_15), [Domains and websites](#section_16), [Membership services](#section_17),[Billing management](#section_18), [Support](#section_19), and [Messaging](#section_20).
+The following Alibaba Cloud products support STS: [Elastic computing](#section_01), [Database](#section_02), [Storage and CDN](#section_03), [Networking](#section_04), [Analytics](#section_05), [Cloud communications](#section_06), [Management and monitoring](#section_07), [Application](#section_08), [IoT](#section_3wj_33b_9ak), [Middleware](#section_09), [Message queueing](#section_10), [Media services](#section_12), [Big data](#section_13), [Security](#section_14), [Marketplace](#section_15), [Domains and websites](#section_16), [Membership services](#section_17), [Billing management](#section_18), [Ticket services](#section_19), and [Messaging](#section_20).
 
 Each table in this topic contains the following columns:
 
@@ -98,7 +98,7 @@ Each table in this topic contains the following columns:
 |Intelligent Advisor|×|×|
 |Cloud Config|√|○|
 |Resource Management|√|√|
-|Prometheus Monitoring|√|√|
+|Prometheus Service|√|√|
 
 ## Application
 
@@ -147,7 +147,7 @@ Each table in this topic contains the following columns:
 |:------|:------|:--|
 |DataWorks|√|√|
 |Quick BI|×|×|
-|Machine Learning Platform for AI|×|×|
+|Machine Learning Platform for AI \(PAI\)|×|×|
 |Public Recognition|×|×|
 |DataV|×|×|
 |MaxCompute|√|√|
@@ -198,7 +198,7 @@ Each table in this topic contains the following columns:
 |:------|:------|:--|
 |Billing Management|√|√|
 
-## Support
+## Ticket services
 
 |Service|Console|API|
 |:------|:------|:--|
