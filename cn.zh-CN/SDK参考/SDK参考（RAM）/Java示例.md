@@ -4,9 +4,9 @@
 
 ## 背景信息
 
--   Java SDK包含阿里云Java SDK核心库（`aliyun-java-sdk-core`）和RAM SDK（`aliyun-java-sdk-ram`），两者都需要安装。
--   [OpenAPI Explorer](https://api.aliyun.com/)提供在线调试API和动态生成SDK示例代码的功能，能显著降低API的使用难度，推荐您使用。
--   关于RAM API的详情，请参见[API概览](/cn.zh-CN/API参考（RAM）/API概览.md)。
+-   Java SDK包含阿里云Java SDK基础包（`aliyun-java-sdk-core`）和RAM接口定义包（`aliyun-java-sdk-ram`），两者都需要安装。
+-   [OpenAPI开发者门户](https://next.api.aliyun.com)提供在线调试API和动态生成SDK示例代码的功能，能显著降低API的使用难度，推荐您使用。
+-   关于RAM API的详情，请参见[API概览](/cn.zh-CN/API参考/API参考（RAM）/API概览.md)。
 
 ## Java SDK的安装方法
 
@@ -33,7 +33,7 @@
         <dependency>
             <groupId>com.aliyun</groupId>
             <artifactId>aliyun-java-sdk-core</artifactId>
-            <version>4.4.6</version>
+            <version>4.5.18</version>
         </dependency>
         ```
 
@@ -43,12 +43,12 @@
 
     无论您使用Eclipse还是IntelliJ作为集成开发环境，都可以通过手动下载并导入JAR文件的方式安装Java SDK。JAR文件下载地址如下：
 
-    -   [Java SDK](https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-core)
-    -   [RAM SDK](https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-ram)
+    -   [阿里云Java SDK基础包](https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-core)
+    -   [RAM接口定义包（Java）](https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-ram)
 
 ## Java SDK示例
 
-下面为您提供CreateUser API的Java SDK示例代码。关于其他API，请访问[OpenAPI Explorer](https://api.aliyun.com/)调试并获取示例代码。
+下面为您提供[CreateUser](/cn.zh-CN/API参考/API参考（RAM）/用户管理接口/CreateUser.md) API的Java SDK示例代码。关于其他API，请访问[OpenAPI开发者门户](https://next.api.aliyun.com)调试并获取示例代码。
 
 ```
 import com.aliyuncs.DefaultAcsClient;
@@ -66,12 +66,11 @@ public class CreateUser {
         
         //构建一个阿里云客户端, 用于发起请求。
         //构建阿里云客户端时需要设置AccessKey ID和AccessKey Secret。
-        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "<accessKeyId>", "<accessSecret>");
+        DefaultProfile profile = DefaultProfile.getProfile("<accessKeyId>", "<accessKeySecret>");
         IAcsClient client = new DefaultAcsClient(profile);
         
         //构建请求，设置参数。
         CreateUserRequest request = new CreateUserRequest();
-        request.setRegionId("cn-hangzhou");
         request.setUserName("<UserName>");
         
         //发起请求，并得到响应。
