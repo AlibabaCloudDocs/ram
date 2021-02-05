@@ -4,15 +4,15 @@ This topic lists the Alibaba Cloud services that support Resource Access Managem
 
 ## Alibaba Cloud services that support RAM
 
-The following Alibaba Cloud products support RAM: [Elastic computing](#section_01), [Database](#section_02), [Storage and CDN](#section_03), [Networking](#section_04), [Analytics](#section_05), [Cloud communications](#section_06), [Monitoring and management](#section_07), [Application](#section_08), [IoT](#section_lqo_m79_230), [Message queuing](#section_nur_e8z_9qt), [Middleware](#section_09), [Media services](#section_12), [Big data](#section_13), [Security](#section_14), [Marketplace](#section_15), [Domains and websites](#section_16), [Membership services](#section_17), [Billing management](#section_18), [Ticket services](#section_19), and [Messaging](#section_20).
+The following Alibaba Cloud products support RAM: [Elastic computing](#section_01), [Database](#section_02), [Storage and CDN](#section_03), [Networking](#section_04), [Analytics](#section_05), [Cloud communications](#section_06), [Monitoring and management](#section_07), [Application](#section_08), [IoT](#section_lqo_m79_230), [Message queueing](#section_nur_e8z_9qt), [Middleware](#section_09), [Media services](#section_12), [Big data](#section_13), [Security](#section_14), [Marketplace](#section_15), [Domains and websites](#section_16), [Membership services](#section_17), [Billing management](#section_18), [Ticket services](#section_19), and [Messaging](#section_20).
 
-For more information about the Alibaba Cloud services that support Security Token Service \(STS\), see [Alibaba Cloud services that support STS](/intl.en-US/Product Introduction/Alibaba Cloud services that support STS.md).
+For more information about the Alibaba Cloud services that support Security Token Service \(STS\), see [STS-supported Alibaba Cloud services](/intl.en-US/Product Introduction/Alibaba Cloud services that support STS.md).
 
 Each table in this topic contains the following columns:
 
 -   Service: the name of the service that supports RAM.
 -   Console: indicates whether RAM can be used to implement access control in the console of the service. A check sign \(√\) indicates that RAM is supported. A cross sign \(×\) indicates that RAM is not supported. A circle \(○\) indicates that no consoles are supported for the service.
--   API: indicates whether RAM can be used to implement access control based on the API of the service. A check sign \(√\) indicates that RAM is supported based on the API of the service. A cross sign \(×\) indicates that RAM is not supported based on the API of the service. A circle \(○\) indicates that no APIs are provided for the service.
+-   API: indicates whether RAM can be used to implement access control based on the API of the service. A check sign \(√\) indicates that RAM is supported. A cross sign \(×\) indicates that RAM is not supported. A circle \(○\) indicates that no API is provided for the service.
 -   Authorization granularity: the minimum authorization granularity of the service. A hyphen \(-\) indicates that no authorization granularities are defined.
 
     The following authorization granularities are defined:
@@ -102,7 +102,7 @@ Each table in this topic contains the following columns:
 -   AliyunHBaseReadOnlyAccess
 
 |[Use RAM users to manage ApsaraDB for HBase clusters](t1857011.md#)|
-|Time Series and Spatial-Temporal Database|√|√|Operation|-
+|Time Series Database \(TSDB\)|√|√|Operation|-
 
 |-|
 |AnalyticDB for PostgreSQL|√|√|Resource|-   AliyunGPDBFullAccess
@@ -121,7 +121,7 @@ Each table in this topic contains the following columns:
 -   AliyunDBSReadOnlyAccess
 
 |-|
-|Database Autonomy Service \(DAS\)|√|○|Service|-   AliyunHDMReadOnlyAccess
+|Database Autonomy Service \(DAS\)|√|√|Service|-   AliyunHDMReadOnlyAccess
 -   AliyunHDMFullAccess
 
 |[How do I use a RAM user to access DAS?](https://www.alibabacloud.com/help/zh/doc-detail/66674.htm)|
@@ -132,7 +132,7 @@ Each table in this topic contains the following columns:
 |Advanced Database & Application Migration \(ADAM\)|√|○|Service|-   AliyunADAMReadOnlyAccess
 -   AliyunADAMFullAccess
 
-|[t1882591.md\#]()|
+|[Authorize a RAM user to log on to the ADAM console]()|
 |Database Gateway|√|√|Resource|-   AliyunDGFullAccess
 -   AliyunDGReadOnlyAccess
 
@@ -149,8 +149,8 @@ Each table in this topic contains the following columns:
 |Object Storage Service \(OSS\)|√|√|Resource|-   AliyunOSSFullAccess
 -   AliyunOSSReadOnlyAccess
 
-|[Implement access control based on RAM policies](/intl.en-US/Developer Guide/Data security/Access and control/RAM Policy/Implement access control based on RAM policies.md)|
-|Apsara File Storage NAS \(NAS\)|√|○|Operation|-   AliyunNASFullAccess
+|[Overview](/intl.en-US/Developer Guide/Data security/Access and control/RAM Policy/Overview.md)|
+|Apsara File Storage NAS \(NAS\)|√|√|Operation|-   AliyunNASFullAccess
 -   AliyunNASReadOnlyAccess
 
 |[Manage permission groups]()|
@@ -159,7 +159,7 @@ Each table in this topic contains the following columns:
 -   AliyunOTSWriteOnlyAccess
 
 |[Custom permissions](/intl.en-US/Function Introduction/Authorization management/Custom permissions.md)|
-|Cloud Storage Gateway \(CSG\)|√|○|Service|AliyunHCSSGWFullAccess|-|
+|Cloud Storage Gateway \(CSG\)|√|√|Service|AliyunHCSSGWFullAccess|-|
 |Hybrid Backup Recovery \(HBR\)|√|○|Resource|-   AliyunHBRFullAccess
 -   AliyunHBRReadOnlyAccess
 
@@ -185,7 +185,7 @@ Each table in this topic contains the following columns:
 |Server Load Balancer \(SLB\)|√|√|Resource|-   AliyunSLBReadOnlyAccess
 -   AliyunSLBFullAccess
 
-|[RAM authorization](/intl.en-US/User Guide/Developer Guide/Authorize a RAM user.md)|
+|[RAM authorization](/intl.en-US/Classic Load Balancer/User Guide/Developer Guide/Authorize a RAM user.md)|
 |Elastic IP Address \(EIP\)|√|√|Resource|-   AliyunEIPFullAccess
 -   AliyunEIPReadOnlyAccess
 
@@ -259,13 +259,13 @@ Each table in this topic contains the following columns:
 -   AliyunKMSReadOnlyAccess
 -   AliyunKMSCryptoAccess
 
-|[Use RAM to control access to resources](/intl.en-US/Access control and audit/Use RAM to control access to resources.md)|
+|[Use RAM to control access to resources](/intl.en-US/Access Control and Audit/Use RAM to control access to resources.md)|
 |Intelligent Advisor|×|×|Operation|-|-|
-|Resource Management|√|○|Resource|-   AliyunResourceDirectoryFullAccess
+|Resource Management|√|√|Resource|-   AliyunResourceDirectoryFullAccess
 -   AliyunResourceDirectoryReadOnlyAccess
 
 |[RAM authorization]()|
-|Cloud Config|√|○|Service|-   AliyunConfigFullAccess
+|Cloud Config|√|√|Service|-   AliyunConfigFullAccess
 -   AliyunConfigReadOnlyAccess
 
 |[Permission verification](/intl.en-US/API Reference/Permission verification.md)|
@@ -305,7 +305,7 @@ Each table in this topic contains the following columns:
 
 |[Access resources of other Alibaba Cloud services](/intl.en-US/User Guide/Access resources of other Alibaba Cloud services.md)|
 
-## Message queuing
+## Message queueing
 
 |Service|Console|API|Authorization granularity|System policy|Reference|
 |:------|:------|:--|:------------------------|:------------|:--------|
@@ -326,7 +326,7 @@ Each table in this topic contains the following columns:
 |Enterprise Distributed Application Service \(EDAS\)|√|√|Service|AliyunEDASFullAccess|[RAM users](https://www.alibabacloud.com/help/zh/doc-detail/44023.htm)|
 |Application Real-Time Monitoring Service \(ARMS\)|√|√|Service|AliyunARMSFullAccess|[Grant different permissions to RAM users](/intl.en-US/Access control/Grant different permissions to RAM users.md)|
 |Application Configuration Management|√|√|Resource|AliyunACMFullAccess|[Access control](/intl.en-US/Access Control/Access control.md)|
-|Global Transaction Service \(GTS\)|√|○|Service|-   AliyunGTSFullAccess
+|Global Transaction Service \(GTS\)|√|√|Service|-   AliyunGTSFullAccess
 -   AliyunGTSReadOnlyAccess
 
 |-|
@@ -378,19 +378,19 @@ Each table in this topic contains the following columns:
 
 |Service|Console|API|Authorization granularity|System policy|Reference|
 |:------|:------|:--|:------------------------|:------------|:--------|
-|Security Center \(SAS\)|√|○|Service|-   AliyunYundunSASFullAccess
+|Security Center \(SAS\)|√|√|Service|-   AliyunYundunSASFullAccess
 -   AliyunYundunSASReadOnlyAccess
 
 |-|
-|Server Guard|√|○|Service|-   AliyunYundunAegisFullAccess
+|Server Guard|√|√|Service|-   AliyunYundunAegisFullAccess
 -   AliyunYundunAegisReadOnlyAccess
 
 |-|
-|Anti-DDoS Basic|√|○|Service|-   AliyunYundunDDosFullAccess
+|Anti-DDoS Basic|√|√|Service|-   AliyunYundunDDosFullAccess
 -   AliyunYundunDDosReadOnlyAccess
 
 |-|
-|Anti-DDoS Premium and Anti-DDoS Pro|√|○|Service|-   AliyunYundunHighFullAccess
+|Anti-DDoS Pro|√|√|Service|-   AliyunYundunHighFullAccess
 -   AliyunYundunHighReadOnlyAccess
 
 |-|
@@ -401,21 +401,21 @@ Each table in this topic contains the following columns:
 |GameShield|√|○|Service|AliyunYundunGameShieldReadOnlyAccess
 
 |-|
-|Web Application Firewall \(WAF\)|√|○|Service|-   AliyunYundunWAFFullAccess
+|Web Application Firewall \(WAF\)|√|√|Service|-   AliyunYundunWAFFullAccess
 -   AliyunYundunWAFReadOnlyAccess
 
 |-|
-|SSL Certificates Service|√|○|Service|-   AliyunYundunCertFullAccess
+|SSL Certificates Service|√|√|Service|-   AliyunYundunCertFullAccess
 -   AliyunYundunCertReadOnlyAccess
 
 |-|
-|Cloud Security Scanner|√|○|Service|AliyunYundunAvdsFullAccess|-|
-|Content Moderation|√|○|Service|AliyunYundunGreenWebFullAccess|-|
+|Cloud Security Scanner|√|√|Service|AliyunYundunAvdsFullAccess|-|
+|Content Moderation|√|√|Service|AliyunYundunGreenWebFullAccess|-|
 |Anti-Bot Service|√|○|Service|-   AliyunYundunAntibotFullAccess
 -   AliyunYundunAntibotReadOnlyAccess
 
 |-|
-|ID Verification for Financial Services|√|○|Service|-   AliyunAntCloudAuthFullAccess
+|ID Verification for Financial Services|√|√|Service|-   AliyunAntCloudAuthFullAccess
 -   AliyunAntCloudAuthReadOnlyAccess
 
 |-|
@@ -430,7 +430,7 @@ Each table in this topic contains the following columns:
 
 |Service|Console|API|Authorization granularity|System policy|Reference|
 |:------|:------|:--|:------------------------|:------------|:--------|
-|Alibaba Cloud DNS \(DNS\)|√|○|Resource|-   AliyunDNSFullAccess
+|Alibaba Cloud DNS \(DNS\)|√|√|Resource|-   AliyunDNSFullAccess
 -   AliyunDNSReadOnlyAccess
 
 |-|
@@ -448,7 +448,7 @@ Each table in this topic contains the following columns:
 
 |Service|Console|API|Authorization granularity|System policy|Reference|
 |:------|:------|:--|:------------------------|:------------|:--------|
-|Billing Management|√|×|Service|-   AliyunBSSFullAccess
+|Billing Management|√|√|Service|-   AliyunBSSFullAccess
 -   AliyunBSSReadOnlyAccess
 -   AliyunBSSOrderAccess
 -   AliyunBSSRefundAccess
@@ -459,7 +459,7 @@ Each table in this topic contains the following columns:
 
 |Service|Console|API|Authorization granularity|System policy|Reference|
 |:------|:------|:--|:------------------------|:------------|:--------|
-|Ticket Management|√|○|Service|AliyunSupportFullAccess|-|
+|Ticket Management|√|√|Service|AliyunSupportFullAccess|-|
 
 ## Messaging
 
