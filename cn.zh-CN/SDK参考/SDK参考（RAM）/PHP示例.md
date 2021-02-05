@@ -4,8 +4,8 @@
 
 ## 背景信息
 
--   [OpenAPI Explorer](https://api.aliyun.com/)提供在线调试API和动态生成SDK示例代码的功能，能显著降低API的使用难度，推荐您使用。
--   关于RAM API的详情，请参见[API概览](/cn.zh-CN/API参考（RAM）/API概览.md)。
+-   [OpenAPI开发者门户](https://next.api.aliyun.com)提供在线调试API和动态生成SDK示例代码的功能，能显著降低API的使用难度，推荐您使用。
+-   关于RAM API的详情，请参见[API概览](/cn.zh-CN/API参考/API参考（RAM）/API概览.md)。
 
 ## PHP SDK的安装方法
 
@@ -18,7 +18,7 @@ PHP SDK安装包下载地址如下：
 
 ## PHP SDK示例
 
-下面为您提供CreateUser API的PHP SDK示例代码。关于其他API，请访问[OpenAPI Explorer](https://api.aliyun.com/)调试并获取示例代码。
+下面为您提供[CreateUser](/cn.zh-CN/API参考/API参考（RAM）/用户管理接口/CreateUser.md) API的PHP SDK示例代码。关于其他API，请访问[OpenAPI开发者门户](https://next.api.aliyun.com)调试并获取示例代码。
 
 ```
 <?php
@@ -28,10 +28,9 @@ use AlibabaCloud\Client\Exception\ServerException;
 
 //构建一个阿里云客户端，用于发起请求。
 //构建阿里云客户端时需要设置AccessKey ID和AccessKey Secret。
-AlibabaCloud::accessKeyClient('<accessKeyId>', '<accessSecret>')
-                        ->regionId('cn-hangzhou')
+AlibabaCloud::accessKeyClient('<accessKeyId>', '<accessKeySecret>')
                         ->asDefaultClient();
-//设置参数，发起请求。
+//设置参数，发起请求。关于参数含义和设置方法，请参见API参考。
 try {
     $result = AlibabaCloud::rpc()
                           ->product('Ram')
@@ -42,7 +41,6 @@ try {
                           ->host('ram.aliyuncs.com')
                           ->options([
                                         'query' => [
-                                          'RegionId' => "cn-hangzhou",
                                           'UserName' => "<UserName>",
                                         ],
                                     ])
