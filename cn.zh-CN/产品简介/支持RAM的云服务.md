@@ -181,6 +181,10 @@
 -   AliyunLedgerDBReadOnlyAccess
 
 |[子账号授权]()|
+|云原生多模数据库Lindorm|√|√|资源级别|-   AliyunLindormFullAccess
+-   AliyunLindormReadOnlyAccess
+
+|-|
 
 ## 存储与CDN
 
@@ -239,6 +243,14 @@
 -   AliyunCDNReadOnlyAccess
 
 |[RAM鉴权](/cn.zh-CN/新版API参考/RAM鉴权.md)|
+|相册与网盘服务|√|√|资源级别|-   AliyunPDSFullAccess
+-   AliyunPDSReadOnlyAccess
+
+|-|
+|数据库文件存储|√|√|资源级别|-   AliyunDBFSFullAccess
+-   AliyunDBFSReadOnlyAccess
+
+|-|
 
 ## 网络
 
@@ -506,6 +518,14 @@
 
 |[访问控制概述]()|
 |智能数据助理|√|○|服务级别|AliyunChatbotFullAccess|-|
+|分布式数字身份|√|√|资源级别|-   AliyunBaasDisFullAccess
+-   AliyunBaasDisReadOnlyAccess
+
+|[RAM鉴权]()|
+|可信计算服务|√|√|资源级别|-   AliyunBaasCccsFullAccess
+-   AliyunBaasCccsReadOnlyAccess
+
+|-|
 
 ## 物联网IOT
 
