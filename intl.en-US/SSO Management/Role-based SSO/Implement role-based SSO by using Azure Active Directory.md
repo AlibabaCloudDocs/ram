@@ -142,7 +142,7 @@ To complete the configuration in Azure AD, you must log on to the Azure portal a
                     ],
         ```
 
-    7.  Go to **Graph Explorer**, select **PATCH** from the first drop-down list and select **beta** from the second drop-down list. Enter `https://graph.microsoft.com/beta/servicePrincipals/<objectID>` in the text box next to the drop-down lists. Set the `objectID` parameter to the **object ID**that you saved on the Properties page in Step 1. Copy and paste the following sample script into the **Request Body** section, edit the script based on your business requirements, and then click **Run Query**.
+    7.  Go to **Graph Explorer**, select **PATCH** from the first drop-down list and select **beta** from the second drop-down list. Enter `https://graph.microsoft.com/beta/servicePrincipals/<objectID>` in the text box next to the drop-down lists. Set the `objectID` parameter to the **object ID** that you saved on the Properties page in Step 1. Copy and paste the following sample script into the **Request Body** section, edit the script based on your business requirements, and then click **Run Query**.
 
         ```
         { 
@@ -209,7 +209,7 @@ To complete the configuration in Azure AD, you must log on to the Azure portal a
 
     3.  In the **NAME** column, click **Alibaba Cloud Service \(Role-based SSO\)**.
 
-    4.  In the left-side navigation pane, click **Properties**and obtain the specified **user access URL**.
+    4.  In the left-side navigation pane, click **Properties** and obtain the specified **user access URL**.
 
         ![User access URL](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/0644139061/p187951.png)
 
