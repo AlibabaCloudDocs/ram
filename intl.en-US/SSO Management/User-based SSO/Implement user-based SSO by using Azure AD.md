@@ -56,7 +56,7 @@ You must log on to the Azure portal as an Azure AD Global administrator and perf
 
             **Note:** To ensure high security, you must enter a URL that points to a website of Alibaba Group in the **Relay State** field. For example, you can enter one of the following domain names in the Relay State field: \*.aliyun.com, \*.hichina.com, \*.yunos.com, \*.taobao.com, \*.tmall.com, \*.alibabacloud.com, or \*.alipay.com. If this field is left empty, you are redirected to the homepage of the Alibaba Cloud Management Console after you log on to Azure AD.
 
-    3.  In the **SAML Signing Certificate**section, click **Download** in the **Federation Metadata XML** field to download the related XML file.
+    3.  In the **SAML Signing Certificate** section, click **Download** in the **Federation Metadata XML** field to download the related XML file.
 
         ![Download the related federation metadata XML file](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/3660957061/p44054.png)
 
@@ -139,7 +139,7 @@ You must log on to the Azure portal as an Azure AD Global administrator and perf
         2.  In the upper-left corner of the page, click the ![SSO_AAD_icon](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6420549951/p112037.png) icon.
         3.  In the left-side navigation pane, choose **Azure Active Directory** \> **Enterprise applications** \> **All applications**.
         4.  Click **AliyunSSODemo**.
-        5.  In the left-side navigation pane, click **Properties**and obtain the **user access URL**.
+        5.  In the left-side navigation pane, click **Properties** and obtain the **user access URL**.
 
             You can enter the **user access URL** in the address bar of your browser to access the application AliyunSSODemo.
 
