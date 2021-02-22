@@ -263,7 +263,7 @@
 |负载均衡|√|√|资源级别|-   AliyunSLBReadOnlyAccess
 -   AliyunSLBFullAccess
 
-|[RAM鉴权](/cn.zh-CN/传统型负载均衡CLB/开发指南/API参考/RAM鉴权.md)|
+|[RAM鉴权](/cn.zh-CN/CLB开发指南/API参考/RAM鉴权.md)|
 |共享流量包|√|○|服务级别|-|-|
 |弹性公网IP|√|√|资源级别|-   AliyunEIPFullAccess
 -   AliyunEIPReadOnlyAccess
@@ -447,7 +447,7 @@
 -   AliyunLogReadOnlyAccess
 
 |[鉴权规则](/cn.zh-CN/开发指南/API 参考/鉴权规则/鉴权规则.md)|
-|开放搜索|√|√|资源级别|AliyunOpenSearchFullAccess|[访问鉴权规则](https://help.aliyun.com/document_detail/53744.html)|
+|开放搜索|√|√|资源级别|AliyunOpenSearchFullAccess|[访问鉴权规则](https://help.aliyun.com/document_detail/181629.html)|
 |性能测试PTS|√|√|服务级别|AliyunPTSFullAccess|-|
 |邮件推送|√|√|服务级别|-   AliyunDirectMailFullAccess
 -   AliyunDirectMailReadOnlyAccess
