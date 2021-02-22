@@ -185,7 +185,7 @@
 |负载均衡|√|√|资源级别|-   AliyunSLBReadOnlyAccess
 -   AliyunSLBFullAccess
 
-|[RAM鉴权](/intl.zh-CN/传统型负载均衡CLB/开发指南/API参考/RAM鉴权.md)|
+|[RAM鉴权](/intl.zh-CN/CLB开发指南/API参考/RAM鉴权.md)|
 |弹性公网IP|√|√|资源级别|-   AliyunEIPFullAccess
 -   AliyunEIPReadOnlyAccess
 
@@ -271,10 +271,6 @@
 -   AliyunConfigReadOnlyAccess
 
 |[RAM鉴权](/intl.zh-CN/API参考/RAM鉴权.md)|
-|配额中心|√|√|资源级别|-   AliyunQuotasFullAccess
--   AliyunQuotasReadOnlyAccess
-
-|[为RAM用户授权]()|
 |标签|√|√|操作级别|-   AliyunTAGFullAccess
 -   AliyunTAGReadOnlyAccess
 
