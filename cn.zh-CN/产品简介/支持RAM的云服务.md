@@ -263,7 +263,7 @@
 |负载均衡|√|√|资源级别|-   AliyunSLBReadOnlyAccess
 -   AliyunSLBFullAccess
 
-|[RAM鉴权](/cn.zh-CN/CLB开发指南/API参考/RAM鉴权.md)|
+|[RAM鉴权](/cn.zh-CN/传统型负载均衡CLB/CLB开发指南/API参考/RAM鉴权.md)|
 |共享流量包|√|○|服务级别|-|-|
 |弹性公网IP|√|√|资源级别|-   AliyunEIPFullAccess
 -   AliyunEIPReadOnlyAccess
@@ -551,7 +551,7 @@
 |物联网边缘计算|√|√|资源级别|-   AliyunIOTFullAccess
 -   AliyunIOTReadOnlyAccess
 
-|[云资源访问](/cn.zh-CN/用户指南/云资源访问.md)|
+|[云资源访问](/cn.zh-CN/物联网边缘计算（旧版本）/用户指南/云资源访问.md)|
 |IoT安全运营中心|√|√|操作级别|-   AliyunISOCFullAccess
 -   AliyunISOCReadOnlyAccess
 
@@ -692,7 +692,6 @@
 |[授权资源类型](/cn.zh-CN/访问控制/授权资源类型.md)|
 |自然语言处理|×|√|服务级别|-|-|
 |机器翻译|√|√|服务级别|-|-|
-|智能数据构建与管理Dataphin|√|√|服务级别|-|-|
 |I+关系网络分析|√|√|服务级别|-|-|
 |图片与设计|√|√|服务级别|-   AliyunPremiumpicsFullAccess
 -   AliyunPremiumpicsReadOnlyAccess
