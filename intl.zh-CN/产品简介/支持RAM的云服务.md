@@ -185,7 +185,7 @@
 |负载均衡|√|√|资源级别|-   AliyunSLBReadOnlyAccess
 -   AliyunSLBFullAccess
 
-|[RAM鉴权](/intl.zh-CN/CLB开发指南/API参考/RAM鉴权.md)|
+|[RAM鉴权](/intl.zh-CN/传统型负载均衡CLB/CLB开发指南/API参考/RAM鉴权.md)|
 |弹性公网IP|√|√|资源级别|-   AliyunEIPFullAccess
 -   AliyunEIPReadOnlyAccess
 
@@ -309,7 +309,7 @@
 |物联网边缘计算|√|√|资源级别|-   AliyunIOTFullAccess
 -   AliyunIOTReadOnlyAccess
 
-|[云资源访问](/intl.zh-CN/用户指南/云资源访问.md)|
+|[云资源访问](/intl.zh-CN/物联网边缘计算/用户指南/云资源访问.md)|
 
 ## 消息队列MQ
 
