@@ -4,7 +4,7 @@
 
 ## 背景信息
 
--   Python SDK包含阿里云Python SDK基础包（`aliyun-net-sdk-core`）和RAM接口定义包（`aliyun-net-sdk-ram`），两者都需要安装。
+-   Python SDK包含阿里云Python SDK基础包（`aliyun-python-sdk-core`）和RAM接口定义包（`aliyun-python-sdk-ram`），两者都需要安装。
 -   [OpenAPI开发者门户](https://next.api.aliyun.com)提供在线调试API和动态生成SDK示例代码的功能，能显著降低API的使用难度，推荐您使用。
 -   关于RAM API的详情，请参见[API概览](/intl.zh-CN/API参考/API参考（RAM）/API概览.md)。
 
