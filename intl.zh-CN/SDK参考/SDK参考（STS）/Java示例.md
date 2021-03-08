@@ -5,7 +5,7 @@
 ## 背景信息
 
 -   Java SDK包含阿里云Java SDK核心库（`aliyun-java-sdk-core`）和STS SDK（`aliyun-java-sdk-sts`），两者都需要安装。
--   [OpenAPI Explorer](https://api.aliyun.com/)提供在线调试API和动态生成SDK示例代码的功能，能显著降低API的使用难度，推荐您使用。
+-   [OpenAPI开发者门户](https://next.api.aliyun.com/api/Sts)提供在线调试API和动态生成SDK示例代码的功能，能显著降低API的使用难度，推荐您使用。
 -   关于STS API的详情，请参见[什么是STS](/intl.zh-CN/API参考/API 参考（STS）/什么是STS.md)。
 -   关于STS的接入地址，请参见[接入地址](/intl.zh-CN/API参考/API 参考（STS）/接入地址.md)。
 
@@ -49,7 +49,7 @@
 
 ## Java SDK示例
 
-下面为您提供[AssumeRole](/intl.zh-CN/API参考/API 参考（STS）/操作接口/AssumeRole.md) API的Java SDK示例代码。关于其他API，请访问[OpenAPI Explorer](https://api.aliyun.com/)调试并获取示例代码。
+下面为您提供[AssumeRole](/intl.zh-CN/API参考/API 参考（STS）/操作接口/AssumeRole.md) API的Java SDK示例代码。关于其他API，请访问[OpenAPI开发者门户](https://next.api.aliyun.com/api/Sts)调试并获取示例代码。
 
 ```
 import com.aliyuncs.DefaultAcsClient;
