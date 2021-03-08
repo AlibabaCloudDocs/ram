@@ -5,9 +5,9 @@ This topic describes how to install STS SDK for Python and provides an example a
 ## Background information
 
 -   To use an SDK for Python, you must install the core library of Alibaba Cloud SDK for Python \(`aliyun-python-sdk-core`\) and the STS SDK \(`aliyun-python-sdk-sts`\).
--   Alibaba Cloud provides [OpenAPI Explorer](https://api.aliyun.com/) to simplify API usage. You can use OpenAPI Explorer to debug API operations and dynamically generate SDK sample code.
--   For information about STS API operations, see [What is STS?](/intl.en-US/API Reference (STS)/What is STS?.md).
--   For information about endpoints to access STS, see [Endpoints](/intl.en-US/API Reference (STS)/Endpoints.md).
+-   Alibaba Cloud provides [OpenAPI Developer Portal](https://next.api.aliyun.com/api/Sts) to simplify API usage. You can use OpenAPI Explorer to debug API operations and dynamically generate SDK sample code.
+-   For information about STS API operations, see [What is STS?](/intl.en-US/API Reference/API Reference (STS)/What is STS?.md).
+-   For information about endpoints to access STS, see [Endpoints](/intl.en-US/API Reference/API Reference (STS)/Endpoints.md).
 
 ## Install the SDK for Python
 
@@ -20,7 +20,7 @@ You can download the installation packages of the SDK for Python from the follow
 
 ## Example
 
-The following code provides an example on how to call the AssumeRole API operation by using the SDK for Python. For information about other API operations, visit [OpenAPI Explorer](https://api.aliyun.com/), debug API operations, and obtain sample code.
+The following code provides an example on how to call the AssumeRole API operation by using the SDK for Python. For information about other API operations, visit [OpenAPI Developer Portal](https://next.api.aliyun.com/api/Sts), debug API operations, and obtain sample code.
 
 ```
 #! /usr/bin/env python
