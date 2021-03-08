@@ -5,7 +5,7 @@ This topic describes how to install the SDK for Java and provides sample code.
 ## Background information
 
 -   To use the SDK for Java, you must install the core library of the Alibaba Cloud SDK for Java \(`aliyun-java-sdk-core`\) and the Security Token Service \(STS\) SDK \(`aliyun-java-sdk-sts`\).
--   Alibaba Cloud provides [OpenAPI Explorer](https://api.aliyun.com/) to simplify API usage. You can use OpenAPI Explorer to debug API operations and dynamically generate SDK sample code.
+-   Alibaba Cloud provides [OpenAPI Developer Portal](https://next.api.aliyun.com/api/Sts) to simplify API usage. You can use OpenAPI Explorer to debug API operations and dynamically generate SDK sample code.
 -   For more information about STS API operations, see [What is STS?](/intl.en-US/API Reference/API Reference (STS)/What is STS?.md).
 -   For more information about STS endpoints, see [Endpoints](/intl.en-US/API Reference/API Reference (STS)/Endpoints.md).
 
@@ -49,7 +49,7 @@ You can use one of the following methods to install the SDK for Java. For more i
 
 ## Example
 
-The following sample code shows how to call the [AssumeRole](/intl.en-US/API Reference/API Reference (STS)/Operation interfaces/AssumeRole.md) operation of the SDK for Java. You can visit [OpenAPI Explorer](https://api.aliyun.com/) to debug other API operations and obtain the related sample code.
+The following sample code shows how to call the [AssumeRole](/intl.en-US/API Reference/API Reference (STS)/Operation interfaces/AssumeRole.md) operation of the SDK for Java. You can visit [OpenAPI Developer Portal](https://next.api.aliyun.com/api/Sts) to debug other API operations and obtain the related sample code.
 
 ```
 import com.aliyuncs.DefaultAcsClient;
