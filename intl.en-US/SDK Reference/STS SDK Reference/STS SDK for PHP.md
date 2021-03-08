@@ -4,9 +4,9 @@ This topic describes how to install STS SDK for PHP and provides an example abou
 
 ## Background information
 
--   Alibaba Cloud provides [OpenAPI Explorer](https://api.aliyun.com/) to simplify API usage. You can use OpenAPI Explorer to debug API operations and dynamically generate SDK sample code.
--   For information about STS API operations, see [What is STS?](/intl.en-US/API Reference (STS)/What is STS?.md).
--   For information about endpoints to access STS, see [Endpoints](/intl.en-US/API Reference (STS)/Endpoints.md).
+-   Alibaba Cloud provides [OpenAPI Developer Portal](https://next.api.aliyun.com/api/Sts) to simplify API usage. You can use OpenAPI Explorer to debug API operations and dynamically generate SDK sample code.
+-   For information about STS API operations, see [What is STS?](/intl.en-US/API Reference/API Reference (STS)/What is STS?.md).
+-   For information about endpoints to access STS, see [Endpoints](/intl.en-US/API Reference/API Reference (STS)/Endpoints.md).
 
 ## Install the SDK for PHP
 
@@ -19,7 +19,7 @@ You can download the installation packages of the SDK for PHP from the following
 
 ## Example
 
-The following code provides an example on how to call the AssumeRole API operation by using the SDK for PHP. For information about other API operations, visit [OpenAPI Explorer](https://api.aliyun.com/), debug API operations, and obtain sample code.
+The following code provides an example on how to call the AssumeRole API operation by using the SDK for PHP. For information about other API operations, visit [OpenAPI Developer Portal](https://next.api.aliyun.com/api/Sts), debug API operations, and obtain sample code.
 
 ```
 <? php
