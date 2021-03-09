@@ -6,13 +6,13 @@ For more information about STS and the scenarios where STS is used, see [What is
 
 ## Alibaba Cloud services that support STS
 
-The following Alibaba Cloud products support STS: [Elastic computing](#section_01), [Database](#section_02), [Storage and CDN](#section_03), [Networking](#section_04), [Analytics](#section_05), [Cloud communications](#section_06), [Management and monitoring](#section_07), [Application](#section_08), [IoT](#section_3wj_33b_9ak), [Middleware](#section_09), [Message queueing](#section_10), [Media services](#section_12), [Big data](#section_13), [Security](#section_14), [Marketplace](#section_15), [Domains and websites](#section_16), [Membership services](#section_17), [Billing management](#section_18), [Ticket services](#section_19), and [Messaging](#section_20).
+The following Alibaba Cloud products support STS: [Elastic computing](#section_01), [Database](#section_02), [Storage and CDN](#section_03), [Networking](#section_04), [Analytics](#section_05), [Cloud communications](#section_06), [Management and monitoring](#section_07), [Application](#section_08), [IoT](#section_3wj_33b_9ak), [Middleware](#section_09), [Message queuing](#section_10), [Media services](#section_12), [Big data](#section_13), [Security](#section_14), [Marketplace](#section_15), [Domains and websites](#section_16), [Membership services](#section_17), [Billing management](#section_18), [Ticket services](#section_19), and [Messaging](#section_20).
 
 Each table in this topic contains the following columns:
 
 -   Service: the name of the service that supports STS.
 -   Console: indicates whether STS can be used to implement access control in the console of the service. A check sign \(√\) indicates that STS is supported. A cross sign \(×\) indicates that STS is not supported.
--   API: indicates whether STS can be used to implement access control when you call the API of the service. A check sign \(√\) indicates that STS is supported when you call the API of the service. A cross sign \(×\) indicates that STS is not supported when you call the API of the service. A circle \(○\) indicates that no API is provided for the service.
+-   API: indicates whether STS can be used to implement access control when you call the API of the service. A check sign \(√\) indicates that STS is supported. A cross sign \(×\) indicates that STS is not supported. A circle \(○\) indicates that no API is provided for the service.
 
 ## Elastic computing
 
@@ -27,7 +27,7 @@ Each table in this topic contains the following columns:
 |Function Compute|√|√|
 |Elastic High Performance Computing \(E-HPC\)|√|√|
 |Simple Application Server|×|○|
-|Elastic Container Instance \(ECI\)|√|√|
+|Elastic Container Instance|√|√|
 |Web App Service|√|√|
 |Operation Orchestration Service \(OOS\)|√|√|
 
@@ -52,11 +52,11 @@ Each table in this topic contains the following columns:
 |Service|Console|API|
 |:------|:------|:--|
 |Object Storage Service \(OSS\)|√|√|
-|Apsara File Storage NAS \(NAS\)|√|○|
+|Apsara File Storage NAS \(NAS\)|√|√|
 |Tablestore|√|√|
-|CDN|√|√|
+|Alibaba Cloud CDN|√|√|
 |Dynamic Route for CDN \(DCDN\)|√|√|
-|Cloud Storage Gateway \(CSG\)|√|○|
+|Cloud Storage Gateway \(CSG\)|√|√|
 |Hybrid Backup Recovery \(HBR\)|√|○|
 |Lightning Cube|×|○|
 
@@ -96,9 +96,10 @@ Each table in this topic contains the following columns:
 |Resource Access Management \(RAM\)|√|√|
 |Key Management Service \(KMS\)|√|√|
 |Intelligent Advisor|×|×|
-|Cloud Config|√|○|
+|Cloud Config|√|√|
 |Resource Management|√|√|
 |Prometheus Service|√|√|
+|Tag|√|√|
 
 ## Application
 
@@ -124,7 +125,7 @@ Each table in this topic contains the following columns:
 |Application Real-Time Monitoring Service \(ARMS\)|×|×|
 |Application Configuration Management|√|√|
 
-## Message queueing
+## Message queuing
 
 |Service|Console|API|
 |:------|:------|:--|
@@ -147,41 +148,43 @@ Each table in this topic contains the following columns:
 |:------|:------|:--|
 |DataWorks|√|√|
 |Quick BI|×|×|
-|Machine Learning Platform for AI \(PAI\)|×|×|
+|Machine Learning Platform for AI|×|×|
 |Public Recognition|×|×|
 |DataV|×|×|
 |MaxCompute|√|√|
 |Elasticsearch|√|√|
 |Machine Translation|×|×|
 |Image Search|√|√|
+|Hologres|√|○|
+|智能短信解析|√|○|
 
 ## Security
 
 |Service|Console|API|
 |:------|:------|:--|
-|Security Center \(SAS\)|√|○|
-|Server Guard|√|○|
-|Anti-DDoS Basic|√|○|
+|Security Center \(SAS\)|√|√|
+|Server Guard|√|√|
+|Anti-DDoS Origin|√|√|
 |Anti-DDoS Pro|√|○|
 |Anti-DDoS Premium|√|○|
 |GameShield|√|○|
-|Web Application Firewall \(WAF\)|√|○|
-|SSL Certificates Service|√|○|
-|Cloud Security Scanner|√|○|
-|Content Moderation|√|○|
+|Web Application Firewall \(WAF\)|√|√|
+|SSL Certificates Service|√|√|
+|Cloud Security Scanner|√|√|
+|Content Moderation|√|√|
 |Anti-Bot Service|√|○|
 
 ## Marketplace
 
 |Service|Console|API|
 |:------|:------|:--|
-|Alibaba Cloud Marketplace|√|○|
+|Alibaba Cloud Marketplace|√|×|
 
 ## Domains and websites
 
 |Service|Console|API|
 |:------|:------|:--|
-|Alibaba Cloud DNS \(DNS\)|√|○|
+|Alibaba Cloud DNS \(DNS\)|√|√|
 |Domains|√|√|
 |Cloud Web Hosting|×|×|
 |Alibaba Mail|×|×|
