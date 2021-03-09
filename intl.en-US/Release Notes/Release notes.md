@@ -2,6 +2,13 @@
 
 This topic describes the release notes of Resource Access Management \(RAM\) features and provides links to relevant documentation.
 
+## September 2020
+
+|Feature|Description|Release date|Region|Documentation|
+|-------|-----------|------------|------|-------------|
+|Alibaba Cloud services that support RAM|RAM is available for the Tag service.|2020-09|N/A|[Alibaba Cloud services that support RAM](/intl.en-US/Product Introduction/Alibaba Cloud services that support RAM.md)|
+|Alibaba Cloud services that support Security Token Service \(STS\)|STS is available for the Tag service.|2020-09|N/A|[Alibaba Cloud services that support STS](/intl.en-US/Product Introduction/Alibaba Cloud services that support STS.md)|
+
 ## July 2020
 
 |Feature|Description|Release date|Region|Documentation|
@@ -19,14 +26,14 @@ This topic describes the release notes of Resource Access Management \(RAM\) fea
 
 |Feature|Description|Release date|Region|Documentation|
 |-------|-----------|------------|------|-------------|
-|Configuration of the maximum role session duration|The maximum role session duration can be configured in the RAM console. The configuration applieswhen you log on to the console by using role-based single sign-on \(SSO\) and when you use the console or call an operation to assume a RAM role.|2020-05|All|[Set the maximum session duration for a RAM role](/intl.en-US/RAM Role Management/Set the maximum session duration for a RAM role.md)|
+|Configuration of the maximum role session duration|The maximum role session duration can be configured in the RAM console. The configuration applieswhen you log on to the console by using role-based single sign-on \(SSO\) and when you use the console or call an API operation to assume a RAM role.|2020-05|All|[Set the maximum session duration for a RAM role](/intl.en-US/RAM Role Management/Set the maximum session duration for a RAM role.md)|
 
 ## March 2020
 
 |Feature|Description|Release date|Region|Documentation|
 |-------|-----------|------------|------|-------------|
 |Alibaba Cloud services that support RAM|RAM is available for AnalyticDB for MySQL.|2020-03|N/A|[Alibaba Cloud services that support RAM](/intl.en-US/Product Introduction/Alibaba Cloud services that support RAM.md)|
-|Alibaba Cloud services that support Security Token Service \(STS\)|STS is available for Elastic High Performance Computing \(E-HPC\).|2020-03|N/A|[Alibaba Cloud services that support STS](/intl.en-US/Product Introduction/Alibaba Cloud services that support STS.md)|
+|Alibaba Cloud services that support STS|STS is available for Elastic High Performance Computing \(E-HPC\).|2020-03|N/A|[Alibaba Cloud services that support STS](/intl.en-US/Product Introduction/Alibaba Cloud services that support STS.md)|
 |Service-linked roles|Service-linked roles are provided by Alibaba Cloud. Service-linked roles can be used to simplify how an Alibaba Cloud service is authorized to access other services to use a specific feature. Alibaba Cloud provides service-linked roles to simplify the authorization in such scenarios.|2020-03|All|[Service-linked roles](/intl.en-US/RAM Role Management/Service-linked roles.md)|
 |Configuration of the maximum role session duration|A new parameter named `MaxSessionDuration` is provided in API operations that are used to manage RAM roles. This parameter specifies the maximum session duration of a RAM role.|2020-03|All|-   [CreateRole](/intl.en-US/API Reference/API Reference (RAM)/Role management APIs/CreateRole.md)
 -   [UpdateRole](/intl.en-US/API Reference/API Reference (RAM)/Role management APIs/UpdateRole.md)
