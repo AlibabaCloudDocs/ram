@@ -4,15 +4,15 @@ This topic lists the Alibaba Cloud services that support Resource Access Managem
 
 ## Alibaba Cloud services that support RAM
 
-The following Alibaba Cloud products support RAM: [Elastic computing](#section_01), [Database](#section_02), [Storage and CDN](#section_03), [Networking](#section_04), [Analytics](#section_05), [Cloud communications](#section_06), [Monitoring and management](#section_07), [Application](#section_08), [IoT](#section_lqo_m79_230), [Message queueing](#section_nur_e8z_9qt), [Middleware](#section_09), [Media services](#section_12), [Big data](#section_13), [Security](#section_14), [Marketplace](#section_15), [Domains and websites](#section_16), [Membership services](#section_17), [Billing management](#section_18), [Ticket services](#section_19), and [Messaging](#section_20).
+The following Alibaba Cloud products support RAM: [Elastic computing](#section_01), [Database](#section_02), [Storage and CDN](#section_03), [Networking](#section_04), [Analytics](#section_05), [Cloud communications](#section_06), [Management and monitoring](#section_07), [Application](#section_08), [IoT](#section_lqo_m79_230), [Message queuing](#section_nur_e8z_9qt), [Middleware](#section_09), [Media services](#section_12), [Big data](#section_13), [Security](#section_14), [Marketplace](#section_15), [Domains and websites](#section_16), [Membership services](#section_17), [Billing management](#section_18), [Ticket services](#section_19), and [Messaging](#section_20).
 
-For more information about the Alibaba Cloud services that support Security Token Service \(STS\), see [STS-supported Alibaba Cloud services](/intl.en-US/Product Introduction/Alibaba Cloud services that support STS.md).
+For more information about the Alibaba Cloud services that support Security Token Service \(STS\), see [Alibaba Cloud services that support STS](/intl.en-US/Product Introduction/Alibaba Cloud services that support STS.md).
 
 Each table in this topic contains the following columns:
 
 -   Service: the name of the service that supports RAM.
 -   Console: indicates whether RAM can be used to implement access control in the console of the service. A check sign \(√\) indicates that RAM is supported. A cross sign \(×\) indicates that RAM is not supported. A circle \(○\) indicates that no consoles are supported for the service.
--   API: indicates whether RAM can be used to implement access control based on the API of the service. A check sign \(√\) indicates that RAM is supported. A cross sign \(×\) indicates that RAM is not supported. A circle \(○\) indicates that no API is provided for the service.
+-   API: indicates whether RAM can be used to implement access control when you call the API of the service. A check sign \(√\) indicates that RAM is supported. A cross sign \(×\) indicates that RAM is not supported. A circle \(○\) indicates that no API is provided for the service.
 -   Authorization granularity: the minimum authorization granularity of the service. A hyphen \(-\) indicates that no authorization granularities are defined.
 
     The following authorization granularities are defined:
@@ -20,7 +20,7 @@ Each table in this topic contains the following columns:
     -   Service: You can control whether RAM users can access the service. You can grant RAM users the permissions to access all or none of the resources in the service.
     -   Operation: You can control whether RAM users can perform specific operations on a type of resource in the service.
     -   Resource: You can control whether RAM users can perform a specific operation on a specific resource in the service. For example, you can authorize a RAM user to restart a specific Elastic Compute Service \(ECS\) instance.
--   System policy: the system policies that RAM provides for the service. A hyphen \(-\) indicates that no system policies are provided for the service./\*
+-   System policy: the system policies that RAM provides for the service. A hyphen \(-\) indicates that no system policies are provided for the service.
 -   Reference: the topics that are related to both RAM and the service. A hyphen \(-\) indicates that no topics are related to RAM or the service.
 
 ## Elastic computing
@@ -61,7 +61,7 @@ Each table in this topic contains the following columns:
 
 |-|
 |Simple Application Server|√|○|Service|AliyunSWASFullAccess|-|
-|Elastic Container Instance \(ECI\)|√|√|Resource|-   AliyunECIFullAccess
+|Elastic Container Instance|√|√|Resource|-   AliyunECIFullAccess
 -   AliyunECIReadOnlyAccess
 
 |[Grant permissions to a RAM user](https://www.alibabacloud.com/help/zh/doc-detail/92790.htm)|
@@ -85,7 +85,7 @@ Each table in this topic contains the following columns:
 |ApsaraDB RDS|√|√|Resource|-   AliyunRDSFullAccess
 -   AliyunRDSReadOnlyAccess
 
-|[RAM authorization](/intl.en-US/API Reference/RAM authorization.md)|
+|[RAM authorization](/intl.en-US/API Reference/Use RAM for resource authorization.md)|
 |ApsaraDB for MongoDB|√|√|Resource|-   AliyunMongoDBFullAccess
 -   AliyunMongoDBReadOnlyAccess
 
@@ -101,7 +101,7 @@ Each table in this topic contains the following columns:
 |ApsaraDB for HBase|√|√|Resource|-   AliyunHBaseFullAccess
 -   AliyunHBaseReadOnlyAccess
 
-|[Use RAM users to manage ApsaraDB for HBase clusters](t1857011.md#)|
+|-|
 |Time Series Database \(TSDB\)|√|√|Operation|-
 
 |-|
@@ -169,7 +169,7 @@ Each table in this topic contains the following columns:
 -   AliyunDCDNReadOnlyAccess
 
 |-|
-|CDN|√|√|Resource|-   AliyunCDNFullAccess
+|Alibaba Cloud CDN|√|√|Resource|-   AliyunCDNFullAccess
 -   AliyunCDNReadOnlyAccess
 
 |[RAM authentication](/intl.en-US/New API Reference/RAM authentication.md)|
@@ -185,7 +185,7 @@ Each table in this topic contains the following columns:
 |Server Load Balancer \(SLB\)|√|√|Resource|-   AliyunSLBReadOnlyAccess
 -   AliyunSLBFullAccess
 
-|[RAM authorization](/intl.en-US/Classic Load Balancer/User Guide/Developer Guide/Authorize a RAM user.md)|
+|[RAM authorization](/intl.en-US/Classic Load Balancer/CLB Developer Guide/Developer Guide/Authorize a RAM user.md)|
 |Elastic IP Address \(EIP\)|√|√|Resource|-   AliyunEIPFullAccess
 -   AliyunEIPReadOnlyAccess
 
@@ -217,6 +217,8 @@ Each table in this topic contains the following columns:
 -   AliyunCENFullAccess
 
 |[RAM authorization]()|
+|PrivateLink|√|√|Resource|-|-   [Manage permissions on PrivateLink by using RAM]()
+-   [RAM user authorization]() |
 
 ## Analytics
 
@@ -240,7 +242,7 @@ Each table in this topic contains the following columns:
 
 |- |
 
-## Monitoring and management
+## Management and monitoring
 
 |Service|Console|API|Authorization granularity|System policy|Reference|
 |:------|:------|:--|:------------------------|:------------|:--------|
@@ -251,7 +253,7 @@ Each table in this topic contains the following columns:
 |ActionTrail|√|√|Resource|-
 
 |[RAM authorization](/intl.en-US/API Reference/API Reference (2017-12-04)/RAM account authentication.md)|
-|Resource Access Management \(RAM\)|√|√|Resource|-   AliyunRAMFullAccess
+|RAM|√|√|Resource|-   AliyunRAMFullAccess
 -   AliyunRAMReadOnlyAccess
 
 |[RAM authorization](/intl.en-US/API Reference/API Reference (RAM)/RAM authentication.md)|
@@ -269,6 +271,10 @@ Each table in this topic contains the following columns:
 -   AliyunConfigReadOnlyAccess
 
 |[Permission verification](/intl.en-US/API Reference/Permission verification.md)|
+|Tag|√|√|Operation|-   AliyunTAGFullAccess
+-   AliyunTAGReadOnlyAccess
+
+|[Tag](section_zqv_es3_ege)|
 
 ## Application
 
@@ -303,9 +309,9 @@ Each table in this topic contains the following columns:
 |IoT Edge|√|√|Resource|-   AliyunIOTFullAccess
 -   AliyunIOTReadOnlyAccess
 
-|[Access resources of other Alibaba Cloud services](/intl.en-US/User Guide/Access resources of other Alibaba Cloud services.md)|
+|[Access resources of other Alibaba Cloud services](/intl.en-US/Link IoT Edge/User Guide/Access resources of other Alibaba Cloud services.md)|
 
-## Message queueing
+## Message queuing
 
 |Service|Console|API|Authorization granularity|System policy|Reference|
 |:------|:------|:--|:------------------------|:------------|:--------|
@@ -345,7 +351,7 @@ Each table in this topic contains the following columns:
 -   AliyunVODUploadAuth
 
 |-|
-|ApsaraVideo Live|√|√|Resource|AliyunLiveFullAccess|[API authentication rules](/intl.en-US/API Reference/API authentication rules.md)|
+|ApsaraVideo Live|√|√|Resource|AliyunLiveFullAccess|[API authentication rules](/intl.en-US/API Reference/Authentication rules on API requests.md)|
 |Real-Time Communication|√|√|Resource|-
 
 |- |
@@ -360,7 +366,7 @@ Each table in this topic contains the following columns:
 |:------|:------|:--|:------------------------|:------------|:--------|
 |DataWorks|√|√|Service|AliyunDataWorksFullAccess|[Use a RAM user]()|
 |Quick BI|√|√|Service|-|-|
-|Machine Learning Platform for AI \(PAI\)|√|√|Service|-|-|
+|Machine Learning Platform for AI|√|√|Service|-|-|
 |Public Recognition|√|√|Service|-|-|
 |DataV|√|√|Service|-|-|
 |MaxCompute|√|√|Service|-|-|
@@ -424,7 +430,7 @@ Each table in this topic contains the following columns:
 
 |Service|Console|API|Authorization granularity|System policy|Reference|
 |:------|:------|:--|:------------------------|:------------|:--------|
-|Alibaba Cloud Marketplace|√|○|Service|AliyunMarketplaceFullAccess|-|
+|Alibaba Cloud Marketplace|√|×|Service|AliyunMarketplaceFullAccess|-|
 
 ## Domains and websites
 
