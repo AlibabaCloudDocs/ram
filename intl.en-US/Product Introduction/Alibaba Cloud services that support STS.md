@@ -156,7 +156,6 @@ Each table in this topic contains the following columns:
 |Machine Translation|×|×|
 |Image Search|√|√|
 |Hologres|√|○|
-|智能短信解析|√|○|
 
 ## Security
 
