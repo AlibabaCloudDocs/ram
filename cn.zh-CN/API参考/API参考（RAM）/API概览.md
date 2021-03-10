@@ -2,6 +2,8 @@
 
 访问控制提供以下相关API接口。
 
+**说明：** [OpenAPI开发者门户](https://next.api.aliyun.com/product/Ram)提供在线调试API的功能，能显著降低API的使用难度，推荐您使用。
+
 ## 用户管理接口
 
 |API|描述|
