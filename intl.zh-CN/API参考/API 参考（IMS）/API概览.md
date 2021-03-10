@@ -2,6 +2,8 @@
 
 IMS（Identity Management Service）提供以下相关API。
 
+**说明：** [OpenAPI开发者门户](https://next.api.aliyun.com/product/Ims)提供在线调试API的功能，能显著降低API的使用难度，推荐您使用。
+
 ## 用户管理API
 
 |API|描述|
