@@ -20,7 +20,7 @@ AccessKey包括AccessKey ID和AccessKey Secret。
     -   使用阿里云账号AccessKey
         1.  单击**继续使用AccessKey**。
         2.  在AccessKey管理页面，单击**创建AccessKey**。
-        3.  在手机验证对话框，获取验证码，完成手机验证，单击**确定**。
+        3.  获取验证码，单击**确定**。
         4.  在创建AccessKey对话框，查看AccessKey ID和AccessKey Secret。可以单击**下载CSV文件**，下载AccessKey信息。或者单击**复制**，复制AccessKey信息。
 
             ![新建用户AccessKey](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8947359951/p48003.png)
@@ -33,7 +33,7 @@ AccessKey包括AccessKey ID和AccessKey Secret。
 
         3.  单击用户登录名称。
         4.  在认证管理页签下的用户AccessKey区域，单击**创建AccessKey**。
-        5.  在手机验证对话框，获取验证码，完成手机验证，单击**确定**。
+        5.  获取验证码，单击**确定**。
         6.  在创建AccessKey页面，查看AccessKey ID和AccessKey Secret。可以单击**下载CSV文件**，下载AccessKey信息。或者单击**复制**，复制AccessKey信息。
 
             ![创建AccessKey](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7037906061/p48004.png)
