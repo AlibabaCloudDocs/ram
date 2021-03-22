@@ -138,7 +138,7 @@ The SAML assertion that is issued by AD FS must contain the attributes, such as 
         -   Set the **Custom rule** parameter. The following code shows an example.
 
             ```
-            c:[Type == "http://temp/variable", Value =~ "(? i)^Aliyun-([\d]+)"] => issue(Type = "https://www.aliyun.com/SAML-Role/Attributes/Role",Value = RegExReplace(c.Value, "Aliyun-([\d]+)-(.+)", "acs:ram::$1:role/$2,acs:ram::$1:saml-provider/ADFS"));
+            c:[Type == "http://temp/variable", Value =~ "(?i)^Aliyun-([\d]+)"] => issue(Type = "https://www.aliyun.com/SAML-Role/Attributes/Role",Value = RegExReplace(c.Value, "Aliyun-([\d]+)-(.+)", "acs:ram::$1:role/$2,acs:ram::$1:saml-provider/ADFS"));
             ```
 
         ![Choose Rule Type](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/2420549951/p41109.png)
