@@ -2,6 +2,8 @@
 
 调用GetUser查询RAM用户的详细信息。
 
+本文将提供一个示例，查询RAM用户`test@example.onaliyun.com`的详细信息。
+
 ## 调试
 
 [您可以在OpenAPI Explorer中直接运行该接口，免去您计算签名的困扰。运行成功后，OpenAPI Explorer可以自动生成SDK代码示例。](https://api.aliyun.com/#product=Ims&api=GetUser&type=RPC&version=2019-08-15)
@@ -15,7 +17,7 @@
 
  格式为`<username>@<AccountAlias>.onaliyun.com`，其中`<username>`为RAM用户名称，`<AccountAlias>.onaliyun.com`为默认域名。
 
- `UserPrincipalName`长度为1~128个字符，其中`<username>`的长度为1~64个字符。可包含英文字母、数字、英文句点（.）、at（@）、短划线（-）和下划线（\_）。
+ `UserPrincipalName`长度为1~128个字符，可包含英文字母、数字、半角句号（.）、短划线（-）和下划线（\_）。其中`<username>`的长度为1~64个字符。
 
  **说明：** 必须指定 `UserPrincipalName`、`UserId`和`UserAccessKeyId`三个参数中的一个参数，但不能同时指定。 |
 |UserId|String|否|20732900249392\*\*\*\*|RAM用户ID。
@@ -24,6 +26,8 @@
 |UserAccessKeyId|String|否|LTAI4GFTgcR8m8cZQDTH\*\*\*\*|RAM用户的访问密钥ID。
 
  **说明：** 必须指定 `UserPrincipalName`、`UserId`和`UserAccessKeyId`三个参数中的一个参数，但不能同时指定。 |
+
+关于公共请求参数的详情，请参见[公共参数](~~187377~~)。
 
 ## 返回数据
 
@@ -57,7 +61,7 @@ https://[Endpoint]/?Action=GetUser
 
 正常返回示例
 
-`XML` 格式
+`XML`格式
 
 ```
 <GetUserResponse>
@@ -76,7 +80,7 @@ https://[Endpoint]/?Action=GetUser
 </GetUserResponse>
 ```
 
-`JSON` 格式
+`JSON`格式
 
 ```
 {
