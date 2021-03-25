@@ -139,7 +139,7 @@ For example, if you want to authorize a RAM user to manage ECS instance renewals
 
 ## I have granted permissions in RAM but the permissions do not immediately take effect on cloud services. Why?
 
-RAM is deployed in multiple regions and zones to achieve high availability. RAM copies data between different regions and uses the eventual consistency model. After you grant permissions in RAM, RAM delivers the permission data to all Alibaba Cloud regions and zones. Then, all cloud services can use the information for authentication. If a failure occurs in a region or a zone, RAM switches over to an available region or zone based on its high-availability disaster recovery mechanism.
+RAM adopts a multi-region/zone deployment model to achieve high availability. RAM copies data between different regions and uses the eventual consistency model. After you grant permissions in RAM, RAM delivers the permission data to all Alibaba Cloud regions and zones. Then, all cloud services can use the information for authentication. If a failure occurs in a region or a zone, RAM switches over to an available region or zone based on its high-availability disaster recovery mechanism.
 
 After RAM delivers the permission data, it takes a period for the permissions to take effect. Therefore, if you grant or change permissions, you must wait for a period before the permissions take effect on cloud services.
 
