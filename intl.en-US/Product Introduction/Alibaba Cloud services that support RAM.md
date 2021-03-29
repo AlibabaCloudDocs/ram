@@ -72,7 +72,7 @@ Each table in this topic contains the following columns:
 |Operation Orchestration Service \(OOS\)|√|√|Resource|-   AliyunOOSFullAccess
 -   AliyunOOSReadOnlyAccess
 
-|[RAM authorization rules](https://www.alibabacloud.com/help/zh/doc-detail/123024.htm)|
+|[RAM authorization policies]()|
 
 ## Database
 
@@ -305,7 +305,7 @@ Each table in this topic contains the following columns:
 |IoT Platform \(IOT\)|√|√|Resource|-   AliyunIOTFullAccess
 -   AliyunIOTReadOnlyAccess
 
-|[Use RAM users](/intl.en-US/User Accounts/RAM authorization/Resource Access Management (RAM)/Use RAM users.md)|
+|[RAM user access](/intl.en-US/User Accounts/RAM authorization/Resource Access Management (RAM)/RAM user access.md)|
 |IoT Edge|√|√|Resource|-   AliyunIOTFullAccess
 -   AliyunIOTReadOnlyAccess
 
@@ -330,7 +330,7 @@ Each table in this topic contains the following columns:
 |Service|Console|API|Authorization granularity|System policy|Reference|
 |:------|:------|:--|:------------------------|:------------|:--------|
 |Enterprise Distributed Application Service \(EDAS\)|√|√|Service|AliyunEDASFullAccess|[RAM users](https://www.alibabacloud.com/help/zh/doc-detail/44023.htm)|
-|Application Real-Time Monitoring Service \(ARMS\)|√|√|Service|AliyunARMSFullAccess|[Grant different permissions to RAM users](/intl.en-US/Access control/Grant different permissions to RAM users.md)|
+|Application Real-Time Monitoring Service \(ARMS\)|√|√|Service|AliyunARMSFullAccess|[Grant different permissions to RAM users](/intl.en-US/Access Control/Grant different permissions to RAM users.md)|
 |Application Configuration Management|√|√|Resource|AliyunACMFullAccess|[Access control](/intl.en-US/Access Control/Access control.md)|
 |Global Transaction Service \(GTS\)|√|√|Service|-   AliyunGTSFullAccess
 -   AliyunGTSReadOnlyAccess
@@ -344,7 +344,7 @@ Each table in this topic contains the following columns:
 |ApsaraVideo for Media Processing \(MTS\)|√|√|Service|-   AliyunMTSFullAccess
 -   AliyunMTSPlayerAuth
 
-|[Quick start for using the console as RAM users](/intl.en-US/User Guide/Sub-account console operating instructions.md)|
+|[Quick start for using the console as RAM users]()|
 |ApsaraVideo VOD \(VOD\)|√|√|Service|-   AliyunVODFullAccess
 -   AliyunVODReadOnlyAccess
 -   AliyunVODPlayAuth
