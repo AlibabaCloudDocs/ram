@@ -72,7 +72,7 @@
 |运维编排服务|√|√|资源级别|-   AliyunOOSFullAccess
 -   AliyunOOSReadOnlyAccess
 
-|[鉴权规则](https://www.alibabacloud.com/help/zh/doc-detail/123024.htm)|
+|[鉴权规则]()|
 
 ## 数据库
 
@@ -344,7 +344,7 @@
 |媒体处理|√|√|服务级别|-   AliyunMTSFullAccess
 -   AliyunMTSPlayerAuth
 
-|[子帐号使用控制台说明](/intl.zh-CN/用户指南/子帐号使用控制台说明.md)|
+|[子帐号使用控制台说明]()|
 |视频点播|√|√|服务级别|-   AliyunVODFullAccess
 -   AliyunVODReadOnlyAccess
 -   AliyunVODPlayAuth
