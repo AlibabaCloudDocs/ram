@@ -79,7 +79,7 @@
 |运维编排服务|√|√|资源级别|-   AliyunOOSFullAccess
 -   AliyunOOSReadOnlyAccess
 
-|[鉴权规则](https://help.aliyun.com/document_detail/156144.html)|
+|[鉴权规则]()|
 |服务网格ASM|√|√|资源级别|-|[授权概述](https://help.aliyun.com/document_detail/169466.html)|
 |弹性云桌面|√|√|资源级别|-   AliyunECDFullAccess
 -   AliyunECDReadOnlyAccess
@@ -176,7 +176,7 @@
 |云数据库ClickHouse|√|√|资源级别|-   AliyunClickHouseFullAccess
 -   AliyunClickHouseReadOnlyAccess
 
-|[RAM资源授权]()|
+|[RAM授权资源]()|
 |可信账本数据库|√|√|资源级别|-   AliyunLedgerDBFullAccess
 -   AliyunLedgerDBReadOnlyAccess
 
@@ -642,7 +642,7 @@
 |媒体处理|√|√|服务级别|-   AliyunMTSFullAccess
 -   AliyunMTSPlayerAuth
 
-|[子帐号使用控制台说明](/cn.zh-CN/用户指南/子帐号使用控制台说明.md)|
+|[子帐号使用控制台说明](/cn.zh-CN/用户指南/权限管理/RAM用户使用控制台说明.md)|
 |视频点播|√|√|服务级别|-   AliyunVODFullAccess
 -   AliyunVODReadOnlyAccess
 -   AliyunVODPlayAuth
