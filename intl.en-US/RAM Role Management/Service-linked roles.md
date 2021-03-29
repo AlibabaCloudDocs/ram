@@ -69,7 +69,7 @@ You can view the service that can assume a service-linked role in the `Service` 
 |Alibaba Cloud service|Code|Service-linked role|Documentation|
 |---------------------|----|-------------------|-------------|
 |Resource Management|resourcemanager.aliyuncs.com|AliyunServiceRoleForResourceDirectory|[Service linked role for Resource Directory]()|
-|Cloud Config|config.aliyuncs.com|AliyunServiceRoleForConfig|[Manage the service linked role associated with Cloud Config](/intl.en-US/Quick Start/Manage the service linked role associated with Cloud Config.md)|
+|Cloud Config|config.aliyuncs.com|AliyunServiceRoleForConfig|[Manage the service linked role associated with Cloud Config](/intl.en-US/Permission Management/Manage the service linked role associated with Cloud Config.md)|
 |remediation.config.aliyuncs.com|AliyunServiceRoleForConfigRemediation|
 |PolarDB|polardb.aliyuncs.com|AliyunServiceRoleForPolarDB|[RAM role linked to Apsara PolarDB](/intl.en-US/API Reference/RAM role linked to Apsara PolarDB.md)|
 |Hybrid Backup Recovery \(HBR\)|dr.hbr.aliyuncs.com|AliyunServiceRoleForHbrDr|[Service linked role for ECS disaster recovery](/intl.en-US/Disaster Recovery/ECS Disaster Recovery/Service linked role for ECS disaster recovery.md)|
@@ -86,10 +86,10 @@ You can view the service that can assume a service-linked role in the `Service` 
 |Blockchain as a Service \(BaaS\)|baas.aliyuncs.com|AliyunServiceRoleForBaaS|None |
 |Global Traffic Manager|gtm.aliyuncs.com|AliyunServiceRoleForGTM|[Service-linked roles for Global Traffic Manager]()|
 |Alibaba Cloud DNS \(DNS\)|alidns.aliyuncs.com|AliyunServiceRoleForDNS|None |
-|Sensitive Data Discovery and Protection|sddp.aliyuncs.com|AliyunServiceRoleForSDDP|[Authorize SDDP to access Alibaba Cloud resources](/intl.en-US/User Guide/Authorize SDDP to access Alibaba Cloud resources.md)|
+|Sensitive Data Discovery and Protection|sddp.aliyuncs.com|AliyunServiceRoleForSDDP|[Authorize DSC to access Alibaba Cloud resources](/intl.en-US/User Guide/Authorize DSC to access Alibaba Cloud resources.md)|
 |CDN|cdn-ddos.cdn.aliyuncs.com|AliyunServiceRoleForCDNAccessingDDoS|[Configure Anti-DDoS](/intl.en-US/Domain Management/Security configuration/Integrate Alibaba Cloud CDN with Anti-DDoS.md)|
-|cdn-waf.cdn.aliyuncs.com|AliyunServiceRoleForCDNAccessingWAF|[Configure WAF](/intl.en-US/Domain Management/Security configuration/Configure WAF.md)|
-|Application Real-Time Monitoring Service \(ARMS\)|arms.aliyuncs.com|AliyunServiceRoleForARMS|[Service linked role for ARMS](/intl.en-US/Access control/Service linked role for ARMS.md)|
+|cdn-waf.cdn.aliyuncs.com|AliyunServiceRoleForCDNAccessingWAF|None |
+|Application Real-Time Monitoring Service \(ARMS\)|arms.aliyuncs.com|AliyunServiceRoleForARMS|[Service linked role for ARMS](/intl.en-US/Access Control/Service linked role for ARMS.md)|
 |EventBridge|sendevent-fc.eventbridge.aliyuncs.com|AliyunServiceRoleForEventBridgeSendToFC|[Service-linked roles for EventBridge]()|
 |sendevent-mns.eventbridge.aliyuncs.com|AliyunServiceRoleForEventBridgeSendToMNS|
 |sendevent-sms.eventbridge.aliyuncs.com|AliyunServiceRoleForEventBridgeSendToSMS|
@@ -99,7 +99,7 @@ You can view the service that can assume a service-linked role in the `Service` 
 |Elastic High Performance Computing \(E-HPC\)|ehpc.aliyuncs.com|AliyunServiceRoleForEHPC|[Service-linked roles for E-HPC](https://www.alibabacloud.com/help/zh/doc-detail/186678.htm)|
 |Server Migration Center \(SMC\)|smc.aliyuncs.com|AliyunServiceRoleForSMC|[Service linked roles for SMC](/intl.en-US/API Reference/Service linked roles for SMC.md)|
 |Message Queue for Apache Kafka|connector.alikafka.aliyuncs.com|AliyunServiceRoleForAlikafkaConnector|[Service-linked roles for Message Queue for Apache Kafka](/intl.en-US/Access control/Service-linked roles.md)|
-|Tracing Analysis|xtrace.aliyuncs.com|AliyunServiceRoleForXtrace|[Service linked role for Tracing Analysis](/intl.en-US/Access control/Service linked role for Tracing Analysis.md)|
+|Tracing Analysis|xtrace.aliyuncs.com|AliyunServiceRoleForXtrace|[Service linked role for Tracing Analysis](/intl.en-US/RAM/Service linked role for Tracing Analysis.md)|
 |NAT Gateway \(NAT\)|nat.aliyuncs.com|AliyunServiceRoleForNatgw|[Service-linked roles for NAT Gateway](/intl.en-US/Common Configurations/Service-linked roles for NAT Gateway.md)|
 |Alibaba Cloud DNS PrivateZone|pvtz.aliyuncs.com|AliyunServiceRoleForPvtz|[Service-linked roles for Alibaba Cloud DNS PrivateZone](https://www.alibabacloud.com/help/zh/doc-detail/175951.htm)|
 |ActionTrail|actiontrail.aliyuncs.com|AliyunServiceRoleForActionTrail|[Manage the service linked role](/intl.en-US/Permission Management/Manage the service linked role.md)|
