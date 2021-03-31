@@ -13,19 +13,23 @@ Queries the information of the multi-factor authentication \(MFA\) device that i
 |Action|String|Yes|GetUserMFAInfo|The operation that you want to perform. Set the value to GetUserMFAInfo. |
 |UserPrincipalName|String|No|test@example.onaliyun.com|The logon name of the RAM user. This parameter is differently set in the following scenarios:
 
- -   If you use a RAM user to call this operation, this parameter can be left empty. If you do not set this parameter, the information of the MFA device that is bound to the current RAM user is queried.
+ -   If you use a RAM user to call this operation, this parameter can be left empty. If you do not specify this parameter, the information of the MFA device that is bound to the RAM user is queried.
 -   If you use an Alibaba Cloud account to call this operation, you must set this parameter to the logon name of the RAM user that you want to query. |
 
 ## Response parameters
 
 |Parameter|Type|Example|Description|
 |---------|----|-------|-----------|
-|IsMFAEnable|Boolean|true|Indicates whether MFA is enabled. Valid values:
+|IsMFAEnable|Boolean|true|Indicates whether the MFA device is enabled. Valid values:
 
  -   true
 -   false |
-|MFADevice|Struct| |The information of the MFA device. |
+|MFADevice|Struct| |The information about the MFA device. |
 |SerialNumber|String|acs:ram::177242285274\*\*\*\*:mfa/device001|The serial number of the MFA device. |
+|Type|String|VMFA|The type of the MFA device. Valid values:
+
+ -   VMFA: virtual MFA device
+-   U2F: Universal 2nd Factor \(U2F\) security key |
 |RequestId|String|FCF7322A-20A9-4F68-8B7F-F86958839BC0|The ID of the request. |
 
 ## Examples
@@ -34,7 +38,7 @@ Sample requests
 
 ```
 https://[Endpoint]/?Action=GetUserMFAInfo
-&<Common request parameters>
+&<Common Request Parameters>
 ```
 
 Sample success responses
@@ -45,6 +49,7 @@ Sample success responses
 <GetUserMFAInfoResponse>
 	  <MFADevice>
 		    <SerialNumber>acs:ram::177242285274****:mfa/device001</SerialNumber>
+            <Type>VMFA</Type>
 	  </MFADevice>
 	  <RequestId>FCF7322A-20A9-4F68-8B7F-F86958839BC0</RequestId>
 	  <IsMFAEnable>true</IsMFAEnable>
@@ -55,11 +60,12 @@ Sample success responses
 
 ```
 {
-  "MFADevice": {
-    "SerialNumber": "acs:ram::177242285274****:mfa/device001"
-  },
-  "RequestId": "FCF7322A-20A9-4F68-8B7F-F86958839BC0",
-  "IsMFAEnable": true
+	"MFADevice": {
+		"SerialNumber": "acs:ram::177242285274****:mfa/device001",
+		"Type": "VMFA"
+	},
+	"RequestId": "FCF7322A-20A9-4F68-8B7F-F86958839BC0",
+	"IsMFAEnable": true
 }
 ```
 
