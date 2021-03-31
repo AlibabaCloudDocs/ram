@@ -26,6 +26,10 @@
 -   false：未启用。 |
 |MFADevice|Struct| |多因素认证设备信息。 |
 |SerialNumber|String|acs:ram::177242285274\*\*\*\*:mfa/device001|设备序列号。 |
+|Type|String|VMFA|多因素认证设备类型。取值：
+
+ -   VMFA：虚拟MFA设备。
+-   U2F：U2F安全密钥。 |
 |RequestId|String|FCF7322A-20A9-4F68-8B7F-F86958839BC0|请求ID。 |
 
 ## 示例
@@ -39,27 +43,29 @@ https://[Endpoint]/?Action=GetUserMFAInfo
 
 正常返回示例
 
-`XML` 格式
+`XML`格式
 
 ```
 <GetUserMFAInfoResponse>
 	  <MFADevice>
 		    <SerialNumber>acs:ram::177242285274****:mfa/device001</SerialNumber>
+            <Type>VMFA</Type>
 	  </MFADevice>
 	  <RequestId>FCF7322A-20A9-4F68-8B7F-F86958839BC0</RequestId>
 	  <IsMFAEnable>true</IsMFAEnable>
 </GetUserMFAInfoResponse>
 ```
 
-`JSON` 格式
+`JSON`格式
 
 ```
 {
-  "MFADevice": {
-    "SerialNumber": "acs:ram::177242285274****:mfa/device001"
-  },
-  "RequestId": "FCF7322A-20A9-4F68-8B7F-F86958839BC0",
-  "IsMFAEnable": true
+	"MFADevice": {
+		"SerialNumber": "acs:ram::177242285274****:mfa/device001",
+		"Type": "VMFA"
+	},
+	"RequestId": "FCF7322A-20A9-4F68-8B7F-F86958839BC0",
+	"IsMFAEnable": true
 }
 ```
 
