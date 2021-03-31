@@ -1,154 +1,118 @@
-# Terms {#concept_ant_mt2_xdb .concept}
+# Terms
 
-This topic explains terms that are commonly used in Alibaba Cloud RAM.
+This topic describes the terms that are used in Resource Access Management \(RAM\).
 
-## Alibaba Cloud account {#section_ken_41b_lrk .section}
+## Terms for identity management
 
-An Alibaba Cloud account, also known as the root account or primary account, is the account type used to own Alibaba Cloud resources and manage the billing of these resources. You must register an Alibaba Cloud account before using Alibaba Cloud services. An Alibaba Cloud account owner has full operational control over all associated resources. Furthermore, the account owner can manage the payment for all resources under the Alibaba Cloud account \(including fees incurred by RAM users under this account\).
+|Term|Description|
+|----|-----------|
+|Alibaba Cloud account|Before you use Alibaba Cloud services, you must create an Alibaba Cloud account. The Alibaba Cloud account is the owner of Alibaba Cloud resources. The Alibaba Cloud account is charged for all of the resources that it owns. The Alibaba Cloud account has full control over the resources.
 
-By default, a resource can be accessed only by the owner of an Alibaba Cloud account. Other users must be granted the corresponding authorization from the owner to access and operate on the resource. As a result, the Alibaba Cloud account functions similar to that of the root user or administrator of an operating system.
+By default, only the Alibaba Cloud account can access Alibaba Cloud resources. Other users can access resources only after being explicitly authorized by the Alibaba Cloud account. The Alibaba Cloud account is the administrator or root user of an operating system. |
+|identity|RAM provides three types of identities: RAM user, RAM user group, and RAM role. RAM users and RAM user groups are physical identities. RAM roles are virtual identities.|
+|default domain name|A unique identifier of an Alibaba Cloud account. Alibaba Cloud assigns a **default domain name** to each Alibaba Cloud account. The format of the default domain name is `<AccountAlias>.onaliyun.com`. This unique identifier can be used for RAM user logonand single sign-on \(SSO\).
 
-## Terms related to identity management {#section_d7u_3t7_vtx .section}
+For more information, see [Manage the default domain name](/intl.en-US/Security Settings/Advanced settings/Manage the default domain name.md). |
+|account alias or enterprise alias|A unique identifier of an Alibaba Cloud account. When a RAM user logs on to the Alibaba Cloud Management Console, the suffix of the logon name can be the account alias, default domain name, or domain alias.
 
-## Identity {#section_d13_ajj_5qs .section}
+Each Alibaba Cloud account can have an account alias. The account alias is used for RAM user logon and can be displayed after successful logon.
 
-Identities can be created in RAM to allow or deny access to resources in your Alibaba Cloud account. RAM users, RAM user groups, and RAM roles are identities that you can create in RAM. RAM users and RAM user groups are entity identities, whereas RAM roles are virtual identities.
+For example, an enterprise can set the account alias of its Alibaba Cloud account to company1. The RAM user named alice that belongs to this Alibaba Cloud account can log on to the Alibaba Cloud Management Console by using alice@company1. After successful logon, the display name of the RAM user is alice@company1. |
+|domain alias|A custom domain name that can be used to replace the default domain name. The custom domain name must be publicly resolvable.**** A domain alias is the alias of the default domain name.
 
-## Default domain name {#section_okb_3dj_e1w .section}
+**Note:** A domain alias can be used only after domain ownership verification. After verification, you can use the domain alias to replace the default domain name in all scenarios where the default domain name is required.
 
-A unique identifier of an Alibaba Cloud account that is used in scenarios such as RAM user logon. Alibaba Cloud assigns a default domain name for each Alibaba Cloud account in the `<AccountAlias>.onaliyun.com` format.
+For more information, see [Create and verify a domain alias](/intl.en-US/Security Settings/Advanced settings/Create and verify a domain alias.md). |
+|RAM user|A physical identity that has a fixed ID and credential information. A RAM user represents a person or an application.
 
-For information about how to set a default domain name, see [Manage the default domain name of an Alibaba Cloud account](../../../../reseller.en-US/User Guide/Security settings/Advanced settings/Manage the default domain name of an Alibaba Cloud account.md#).
+-   An Alibaba Cloud account can create multiple RAM users. RAM users can be used to represent employees, systems, and applications within an enterprise.
+-   RAM users do not own resources. Fees that are incurred by RAM users are billed to their parent Alibaba Cloud accounts. RAM users do not receive individual bills and cannot make payments.
+-   RAM users are visible only to their parent Alibaba Cloud account.
+-   Before RAM users can log on to the Alibaba Cloud Management Console or call API operations, they must be authorized by Alibaba Cloud accounts. After authorization, RAM users can use resources that are owned by the Alibaba Cloud accounts.
 
-## Enterprise alias {#section_g2p_rh1_95e .section}
+For more information, see [Create a RAM user](/intl.en-US/RAM User Management/Create a RAM user.md). |
+|password|An identity credential that is used to log on to the Alibaba Cloud Management Console.
 
-To log on to the RAM console, a RAM user must have a username that contains the enterprise alias, default domain name, or domain alias as a suffix.
+**Note:** You cannot query the logon password. We recommend that you change your password on a regular basis and keep your password confidential.
 
-The enterprise alias is a unique account identifier that appears at the end of the RAM user's username and forms part of the RAM user's display name after logon.
+For more information, see [Change the password for an Alibaba Cloud account](/intl.en-US/Security Settings/Passwords/Change the password for an Alibaba Cloud account.md) and [Change the password of a RAM user](/intl.en-US/Security Settings/Passwords/Change the password of a RAM user.md). |
+|AccessKey pair|An identity credential that is used to verify access identities. Each AccessKey pair consists of an AccessKey ID and an AccessKey secret. You can use your AccessKey pair or Alibaba Cloud SDK to sign API requests that you send to Alibaba Cloud. The AccessKey ID and AccessKey secret are used for symmetric encryption and identity verification. After the identity is verified, you can manage Alibaba Cloud resources by calling API operations.
 
-For example, a company named company1 sets company1 as its enterprise alias. The RAM user Alice can then use alice@company1 to log on to the RAM console. The display name of RAM user Alice is then alice@company1.
+An AccessKey ID is used in combination with an AccessKey secret. The AccessKey ID is used to identify a user, and the AccessKey secret is used to authenticate the key of the user.
 
-## Domain alias {#section_c87_ajg_wsm .section}
+**Note:** An AccessKey secret is displayed only when you create the AccessKey pair, and cannot be queried. We recommend that you save the AccessKey secret for subsequent use.
 
-A custom domain name that can be used to replace the default domain name provided by the system.
+For more information, see [Create an AccessKey pair for a RAM user](/intl.en-US/Security Settings/AccessKey pairs/Create an AccessKey pair for a RAM user.md). |
+|multi-factor authentication \(MFA\)|A simple best practice that adds an extra layer of protection in addition to your username and password. MFA enhances security for your account. If MFA is enabled for a user, the user must perform the following operations when the user logs on to the Alibaba Cloud Management Console:
 
-**Note:** A domain alias can be used only after domain ownership verification.
+1.  Enter the username and password of the RAM user.
+2.  Enter the verification code that is generated by the virtual MFA device or pass the Universal 2nd Factor \(U2F\) authentication.
 
-For information about how to set a domain alias, see [Create a domain alias for an Alibaba Cloud account](../../../../reseller.en-US/User Guide/Security settings/Advanced settings/Create a domain alias for an Alibaba Cloud account.md#).
+For more information, see [Enable an MFA device for an Alibaba Cloud account](/intl.en-US/Security Settings/Multi-factor authentication/Enable an MFA device for an Alibaba Cloud account.md) and [Enable an MFA device for a RAM user](/intl.en-US/Security Settings/Multi-factor authentication/Enable an MFA device for a RAM user.md). |
+|RAM user group|A physical identity that contains a group of RAM users. You can create RAM user groups to classify and authorize RAM users. This simplifies the management of personnel and permissions.
 
-## RAM user {#section_ty7_tyy_31d .section}
+-   If the responsibilities of a RAM user change, you only need to move the RAM user to a RAM user group with the required permissions. This does not affect other RAM users.
 
-An identity with a fixed ID and credential information. Specifically, a RAM user directly corresponds to a specific identity, which can be either a person or an application.
+For more information, see [Create a RAM user group](/intl.en-US/RAM User Group Management/Create a RAM user group.md).
 
--   An Alibaba Cloud account owner can create multiple RAM users \(which correspond to employees, systems, or applications of their enterprise\) under their account.
--   RAM users do not own resources. Rather, the fees incurred by RAM users are billed to the Alibaba Cloud accounts to which they belong. RAM users do not receive individual bills and cannot make payments.
--   RAM users are visible only to the corresponding Alibaba Cloud account to which they belong.
--   RAM users have permissions for only the Alibaba Cloud resources under the Alibaba Cloud account to which they belong after they are authorized to operate on these resources.
+-   If the responsibilities of a RAM user group change, you only need to modify the policy that is attached to the group. The changes to the policy apply to all RAM users in the RAM user group.
 
-For information about how to create a RAM user, see [Create a RAM user](../../../../reseller.en-US/User Guide/RAM users/Create a RAM user.md#).
+For more information, see [Grant permissions to a RAM user group](/intl.en-US/RAM User Group Management/Grant permissions to a RAM user group.md). |
+|RAM role|A RAM role is a virtual identity that you can create within your Alibaba Cloud account. RAM roles, entity users \(Alibaba Cloud accounts, RAM users, or Alibaba Cloud services\), and textbook roles have the following differences:
 
-## Password {#section_5sl_484_xbj .section}
+-   Entity users have logon passwords or AccessKey pairs.
+-   Textbook roles \(or traditionally defined roles\) indicate a set of permissions, which are similar to policies in RAM. If a user assumes a textbook role, the user can obtain a set of permissions and access the required resources.
+-   RAM roles are identities to which permission policies are attached. However, RAM roles do not have logon passwords or AccessKey pairs. If an entity user assumes a RAM role, the entity user can obtain and use the Security Token Service \(STS\) token of the role to access the required resources.
 
-An identity credential that is used by a user to log on to Alibaba Cloud.
+RAM roles are divided into the following types based on trusted entities:
 
-**Note:** We recommend that you change your password periodically and keep your password private.
+-   **Alibaba Cloud account**: RAM users of a trusted Alibaba Cloud account can assume this type of RAM role. RAM users who assume this type of RAM role can belong to their parent Alibaba Cloud accounts or other Alibaba Cloud accounts. This type of RAM role is used for cross-account access and temporary authorization.
+-   **Alibaba Cloud service**: Alibaba Cloud services can assume this type of RAM role. This type of RAM role is used to authorize Alibaba Cloud services to manage your resources.
+-   **IdP**: Users of a trusted identity provider \(IdP\) can assume this type of RAM role. The RAM roles of this type are used to implement SSO between Alibaba Cloud and a trusted IdP.
 
-For information about how to set a password, see [Change the password for an Alibaba Cloud account](../../../../reseller.en-US/User Guide/Security settings/Passwords/Change the password for an Alibaba Cloud account.md#) and [Change the password for a RAM user](../../../../reseller.en-US/User Guide/Security settings/Passwords/Change the password for a RAM user.md#).
+For more information, see [Create a RAM role for a trusted Alibaba Cloud account](/intl.en-US/RAM Role Management/Create a RAM role/Create a RAM role for a trusted Alibaba Cloud account.md), [Create a RAM role for a trusted IdP](/intl.en-US/RAM Role Management/Create a RAM role/Create a RAM role for a trusted IdP.md), and [Create a RAM role for a trusted Alibaba Cloud service](/intl.en-US/RAM Role Management/Create a RAM role/Create a RAM role for a trusted Alibaba Cloud service.md). |
+|service provider \(SP\)|An application that uses the identity management feature of an IdP to provide users with specific services. An SP uses the user information that is provided by an IdP. In some identity systems \(such as OpenID Connect\) that do not comply with the SAML protocol, SP is known as the relying party of an IdP.|
+|identity provider \(IdP\)|A RAM entity that provides identity management services. IdPs are classified into the following types:
 
-## Access key {#section_41b_bdb_14h .section}
+-   IdPs that use the on-premises architecture, such as Microsoft Active Directory Federation Service \(AD FS\) and Shibboleth
+-   IdPs that use the cloud-based architecture, such as Azure AD, Google G Suite, Okta, and OneLogin |
+|Security Assertion Markup Language 2.0 \(SAML 2.0\)|A protocol that is designed for enterprise-level user identity authentication. SAML 2.0 is used for communication between an SP and an IdP. SAML 2.0 is a standard that enterprises use to implement enterprise-level SSO.|
+|single sign-on \(SSO\)|Alibaba Cloud supports SAML 2.0-based SSO. This feature is also known as identity federation.
 
-The combination of an access key ID and an access key secret. You can use your access key or Alibaba Cloud SDK to sign API requests that you make to Alibaba Cloud.
+You can implement SSO between Alibaba Cloud and your IdP, such as Microsoft Active Directory Federation Service \(AD FS\), based on SAML 2.0. Alibaba Cloud provides the following two SAML 2.0-based SSO methods:
 
-The access key ID and access key secret are used together to sign programmatic Alibaba Cloud requests cryptographically. The access key ID is used to identify a user, whereas the access key secret is used to encrypt and verify a signature.
+-   User-based SSO: The RAM user identity that you can use to log on to the Alibaba Cloud Management Console is determined based on an SAML assertion. After you log on to the Alibaba Cloud Management Console, you can access Alibaba Cloud resources as a RAM user. For more information, see [Overview of user-based SSO](/intl.en-US/SSO Management/User-based SSO/Overview of user-based SSO.md).
+-   Role-based SSO: The RAM role that you can use to log on to the Alibaba Cloud Management Console is determined based on an SAML assertion. After you log on to the Alibaba Cloud Management Console, you can use the RAM role that is specified in the SAML assertion to access Alibaba Cloud resources. For more information, see [Overview of role-based SSO](/intl.en-US/SSO Management/Role-based SSO/Overview of role-based SSO.md). |
+|metadata file|The metadata file that is provided by your IdP. The metadata file is in the XML format in most cases. The metadata file contains the logon URLs, the public key that is used to verify SAML assertions, and the assertion format.|
+|SAML assertion|A core element that is defined in the SAML protocol. This element describes the authentication request and response. For example, the SAML assertion for an authentication response can contain user attributes.|
+|trust|A mutual trust relationship between an SP and an IdP. In most cases, the trust relationship is established by using public and private keys. An SP can obtain the SAML metadata of a trusted IdP. The metadata includes a public key. The SP uses the public key to verify the integrity of the SAML assertion that is issued by the IdP.|
 
-**Note:** The access key secret is displayed only once when you first create it. We recommend that you save the access key secret for subsequent use.
+## Terms for access control
 
-For information about how to create an access key, see [Create an access key for a RAM user](../../../../reseller.en-US/User Guide/Security settings/Access keys/Create an access key for a RAM user.md#).
+|Term|Description|
+|----|-----------|
+|permission|Indicates whether a user is allowed to perform specific operations on a specific Alibaba Cloud resource. Permissions include Allow and Deny.
 
-## Multi-factor authentication \(MFA\) {#section_rto_w6u_64w .section}
+Operations include the following two types:
 
-A simple best practice that adds an extra layer of protection on top of your username and password. When you log on to Alibaba Cloud with MFA enabled, the system requires the following two security factors:
+-   Resource management operations: the lifecycle management and O&M of Alibaba Cloud resources. These operations are performed by the Alibaba Cloud account that purchases the resources or by O&M staff in an organization. For example, an authorized user can create, stop, or restart Elastic Compute Service \(ECS\) instances, or create, modify, or delete Object Storage Service \(OSS\) buckets.
+-   Resource using operations: using the core features of Alibaba Cloud resources. These operations are performed by R&D staff or applications in an organization. For example, an authorized user can perform operations in the operating system of an ECS instance, or upload or download data in an OSS bucket.
 
-1.  Your username and password
-2.  Verification code provided by the MFA device
-
-For information about how to set MFA, see [Enable an MFA device for an Alibaba Cloud account](../../../../reseller.en-US/User Guide/Security settings/Multi-factor authentication/Enable an MFA device for an Alibaba Cloud account.md#) and [Enable an MFA device for a RAM user](../../../../reseller.en-US/User Guide/Security settings/Multi-factor authentication/Enable an MFA device for a RAM user.md#).
-
-## RAM user group {#section_rwm_6ht_krb .section}
-
-A type of entity identity in RAM. You can create RAM user groups to classify and organize RAM users under your Alibaba Cloud account. By classifying and organizing your RAM users, you can effectively manage permissions in the RAM console.
-
--   If the responsibilities of a RAM user change, you only need to move the user to a RAM user group with the appropriate permissions. This action does not affect other RAM users.
-
-    For information about how to create a RAM user group, see [Create a RAM user group](../../../../reseller.en-US/User Guide/RAM user groups/Create a RAM user group.md#).
-
--   If the responsibilities of a RAM user group change, you only need to modify the policy attached to the user group. Changes to the policy apply to all RAM users in the group.
-
-    For information about how to grant permission to a RAM user group, see [Grant permission to a RAM user group](../../../../reseller.en-US/User Guide/RAM user groups/Grant permission to a RAM user group.md#).
-
-
-## RAM role {#section_j4a_qpf_28a .section}
-
-A virtual identity that you can create in your Alibaba Cloud account. The differences among RAM roles, entity users \(Alibaba Cloud account, RAM users, or Alibaba Cloud services\), and textbook roles are as follows:
-
--   Entity users have specific logon passwords or access keys.
--   A textbook role \(or a traditionally defined role\) indicates a permission set, similar to a policy in RAM. If such a role is granted to a user, the user has a set of permissions and can access the authorized resources.
--   As virtual users, RAM roles have specific identities and can be granted a set of policies. However, RAM roles do not have standard long-term credentials \(passwords or access keys\). When an entity user wants to use a role, the user must assume the role to obtain the role token. Then, the user can use the role token to call Alibaba Cloud API actions.
-
-RAM roles are divided into the following types according to different trusted entities:
-
--   Alibaba Cloud account: roles that RAM users can assume. The RAM users may belong to their own Alibaba Cloud accounts or other Alibaba Cloud accounts. Such roles provide solutions to cross-account access and temporary authorization.
--   Alibaba Cloud service: roles that Alibaba Cloud services can assume. Such roles are used to authorize Alibaba Cloud services to operate resources as stand-alone applications.
-
-For information about how to create a RAM role, see
-
--   [Create a RAM role for a trusted Alibaba Cloud account](../../../../reseller.en-US/User Guide/RAM roles/Create a RAM role/Create a RAM role for a trusted Alibaba Cloud account.md#)
--   [Create a RAM role for a trusted Alibaba Cloud service](../../../../reseller.en-US/User Guide/RAM roles/Create a RAM role/Create a RAM role for a trusted Alibaba Cloud service.md#)
-
-## Terms related to access control {#section_op3_gvn_tdt .section}
-
-## Permission {#section_1xu_e22_yts .section}
-
-A statement within a policy that allows or denies access to a particular Alibaba Cloud resource.
-
-Permission can be used to authorize the following operations:
-
--   Resource management and control operations: Used to allow managing the cloud resources, such as creating, stopping, and restarting ECS instances, or creating, modifying, and deleting OSS buckets. Such operations are intended for resource purchasers or O&M engineers in your organization.
--   Resource-use operations: Used to allow core operations related to resources, such as operating an ECS instance operating system, and uploading or downloading OSS bucket data. Such operations are intended for R&D engineers or application systems in your organization.
-
-    **Note:** 
-
-    -   For ECS and database services, resource management and control operations can be managed through RAM, whereas resource-use operations can be managed through the instances of each product \(for example, by using the permission control function provided by the ECS instance operating system or by the MySQL database running on the instance\).
-    -   For storage services, such as OSS and Table Store, both types of operations can be managed by using RAM.
-
-## Policy {#section_bcp_6w6_8j6 .section}
-
-A set of permissions that are described by using policy structure and grammar. It can accurately describe the authorized resource sets, operation sets, and authorization conditions a user can be granted with. For information about structures and grammars supported by RAM, see [Policy structure and grammar](../../../../reseller.en-US/User Guide/Policies/Policy language/Policy structure and grammar.md#).
-
-In RAM, a policy is a resource entity that can be created, updated, deleted, and viewed by RAM users. RAM supports the following two types of policies:
-
--   System policy: System policies are created by Alibaba Cloud and cannot be modified by users. The policies are automatically upgraded by Alibaba Cloud.
--   Custom policy: If no system policy meets your requirements, you can create a custom policy as needed. You can also modify and delete a custom policy as needed.
-
-You can attach one or more policies to RAM users, RAM user groups, or RAM roles. For more information, see [Grant permission to a RAM user](../../../../reseller.en-US/User Guide/RAM users/Grant permission to a RAM user.md#), [Grant permission to a RAM user group](../../../../reseller.en-US/User Guide/RAM user groups/Grant permission to a RAM user group.md#), and [Grant permission to a RAM role](../../../../reseller.en-US/User Guide/RAM roles/Grant permission to a RAM role.md#).
-
-## Principal {#section_30z_nfh_hnz .section}
-
-The RAM user, group, or role that receives permissions that are defined in a policy.
-
-## Effect {#section_9bt_0ph_wf4 .section}
-
-A policy element that specifies whether the statement results in an allow or an explicit deny. The valid values are `Allow` and `Deny`.
-
-## Action {#section_ln8_om7_37u .section}
-
-A policy element that describes the specific API action or actions that will be allowed or denied.
-
-## Condition {#section_o17_y91_kwv .section}
-
-A policy element that specifies when a policy takes effect.
-
-## Resource {#section_53h_ei7_653 .section}
-
-An entity that users can work with in Alibaba Cloud, such as an OSS bucket and an ECS instance.
+**Note:**
+
+    -   For elastic computing and database products, the permissions on resource management operations can be managed by using RAM. However, the permissions on resource using operations are managed in product instances. For example, the permissions on the operating systems are managed in ECS instances and the permissions on MySQL databases are managed in ApsaraDB RDS instances.
+    -   For storage products, such as OSS and Tablestore, both resource management operations and resource using operations can be managed by using RAM. |
+|policy|A set of permissions that are described based on the policy structure and syntax. You can use policies to describe the authorized resource sets, authorized operation sets, and authorization conditions. For more information, see [Policy structure and syntax](/intl.en-US/Policy Management/Policy language/Policy structure and syntax.md).
+
+In RAM, a policy is a resource entity that can be created, updated, deleted, and viewed. RAM supports the following two types of policy:
+
+-   **System policy**: System policies are created and updated by Alibaba Cloud and cannot be modified by users.
+-   **Custom policy**: Custom policies are created, modified, and deleted by users to meet their business requirements.
+
+You can attach one or more policies to RAM users, RAM user groups, and RAM roles. For more information, see [Grant permissions to a RAM user](/intl.en-US/RAM User Management/Grant permissions to a RAM user.md), [Grant permissions to a RAM user group](/intl.en-US/RAM User Group Management/Grant permissions to a RAM user group.md), and [Grant permissions to a RAM role](/intl.en-US/RAM Role Management/Grant permissions to a RAM role.md). |
+|principal|The subject to which a specific permission is granted. The authorized principal can be a RAM user, RAM user group, or RAM role.|
+|effect|The authorization effect. It is a basic element of a policy. Valid values are Allow and Deny.|
+|action|The operations to be performed on a specific Alibaba Cloud resource. The action is a basic element of a policy. Valid values are the names of API operations from Alibaba Cloud services.|
+|condition|The condition for the authorization to take effect. The condition is a basic element of a policy.|
+|Resource|A manageable object that is provided by an Alibaba Cloud service. For example, resources can be OSS buckets and ECS instances.|
 
