@@ -41,15 +41,16 @@
 ## 如何查看RAM角色的ARN？
 
 1.  登录[RAM控制台](https://ram.console.aliyun.com/)。
-2.  在**RAM角色管理**页签下，单击目标RAM角色名称。
-3.  在**基本信息**区域下查看角色ARN。
+2.  在左侧导航栏，单击**RAM角色管理**。
+3.  单击目标RAM角色名称。
+4.  在**基本信息**区域，查看RAM角色ARN。
 
-    ![ RAM角色ARN](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/7108258951/p60601.png)
+    ![ RAM角色ARN](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/6585537161/p60601.png)
 
 
 ## 为什么使用STS时会报错？
 
-如果一个RAM用户使用API、CLI或SDK调用[AssumeRole](/intl.zh-CN/API 参考（STS）/操作接口/AssumeRole.md)获取STS Token时，出现如下报错信息：
+如果一个RAM用户使用API、CLI或SDK调用[AssumeRole](/intl.zh-CN/API参考/API 参考（STS）/操作接口/AssumeRole.md)获取STS Token时，出现如下报错信息：
 
 ```
 Error message: You are not authorized to do this action. You should be authorized by RAM.
@@ -58,7 +59,7 @@ Error message: You are not authorized to do this action. You should be authorize
 问题原因和解决方法如下：
 
 -   该RAM用户缺少允许STS扮演角色的权限策略：请为该RAM用户添加系统策略（AliyunSTSAssumeRoleAccess）或自定义策略，详情请参见[能否指定RAM用户具体可以扮演哪个RAM角色](#section_c5c_e3t_at9)。
--   RAM角色的信任策略不包含您正在使用的RAM用户，即RAM角色不允许该RAM用户扮演：请为RAM角色添加允许该RAM用户扮演的信任策略，详情请参见[修改RAM角色的信任策略](/intl.zh-CN/角色管理/修改RAM角色的可信实体.md)。
+-   RAM角色的信任策略不包含您正在使用的RAM用户，即RAM角色不允许该RAM用户扮演：请为RAM角色添加允许该RAM用户扮演的信任策略，详情请参见[修改RAM角色的信任策略](/intl.zh-CN/角色管理/修改RAM角色的信任策略.md)。
 
 ## STS服务调用次数是否有上限？
 
@@ -70,7 +71,7 @@ Request was denied due to user flow control
 
 ## STS Token的权限限制是什么？
 
-STS Token的权限：指定角色的权限与调用[AssumeRole](/intl.zh-CN/API 参考（STS）/操作接口/AssumeRole.md)接口时所设置的`Policy`的交集。
+STS Token的权限：指定角色的权限与调用[AssumeRole](/intl.zh-CN/API参考/API 参考（STS）/操作接口/AssumeRole.md)接口时所设置的`Policy`的交集。
 
 **说明：** 若在调用AssumeRole接口时不设置Policy参数，则返回的STS Token将拥有指定角色的所有权限。
 
@@ -80,7 +81,7 @@ STS Token的有效期最小值为900秒，最大值为角色最大会话时间�
 
 **说明：**
 
--   您可以通过[AssumeRole](/intl.zh-CN/API 参考（STS）/操作接口/AssumeRole.md)接口的DurationSeconds参数来限制STS Token的有效期。
+-   您可以通过[AssumeRole](/intl.zh-CN/API参考/API 参考（STS）/操作接口/AssumeRole.md)接口的DurationSeconds参数来限制STS Token的有效期。
 -   您可以通过控制台或API设置角色最大会话时间，详情请参见[设置角色最大会话时间](/intl.zh-CN/角色管理/设置角色最大会话时间.md)。
 
 ## STS获取的多个Token是否同时有效？
@@ -89,11 +90,16 @@ STS Token在过期之前都是有效的，无论是否创建了新的STS Token�
 
 ## STS Token发生泄漏时如何处理？
 
-如果您通过扮演角色获取的安全令牌（STS Token）发生泄漏，您可以按如下步骤回收所有已经颁发的STS Token。
+如果您通过扮演角色获取的安全令牌（STS Token）发生泄漏，您可以按以下步骤回收所有已经颁发的STS Token。
 
 1.  使用阿里云账号登录[RAM控制台](https://ram.console.aliyun.com/)。
-2.  移除角色的所有权限策略。详情请参见[为RAM角色移除权限](/intl.zh-CN/角色管理/为RAM角色移除权限.md)。
-3.  删除角色。详情请参见[删除RAM角色](/intl.zh-CN/角色管理/删除RAM角色.md)。
+2.  移除角色的所有权限策略。
+
+    具体操作，请参见[为RAM角色移除权限](/intl.zh-CN/角色管理/为RAM角色移除权限.md)。
+
+3.  删除角色。
+
+    具体操作，请参见[删除RAM角色](/intl.zh-CN/角色管理/删除RAM角色.md)。
 
     删除角色后，所有通过扮演该角色获取的且未过期的STS Token都将立即失效。
 
