@@ -216,7 +216,7 @@
 |智能媒体管理|√|√|服务级别|-   AliyunIMMReadOnlyAccess
 -   AliyunIMMFullAccess
 
-|[子账户使用指南](https://help.aliyun.com/document_detail/73265.html)|
+|[t1873668.dita\#task378]()|
 |闪电立方|√|○|服务级别|AliyunMGWFullAccess|-|
 |文件存储HDFS|√|√|资源级别|-|[使用RAM授权访问](/cn.zh-CN/用户指南/使用RAM授权访问.md)|
 |内容协作平台|√|√|服务级别|-   AliyunCCPReadOnlyAccess
@@ -583,11 +583,11 @@
 -   AliyunEventBridgeResourceUpdatePolicy
 -   AliyunEventBridgePutEventsPolicy
 
-|[权限策略]()|
+|[权限策略和示例]()|
 |消息服务MNS|√|√|资源级别|-   AliyunMNSFullAccess
 -   AliyunMNSReadOnlyAccess
 
-|[授权子账号访问MNS](https://help.aliyun.com/document_detail/27446.html)|
+|[t1835681.dita\#task810]()|
 
 ## 互联网中间件
 
@@ -642,7 +642,7 @@
 |媒体处理|√|√|服务级别|-   AliyunMTSFullAccess
 -   AliyunMTSPlayerAuth
 
-|[子帐号使用控制台说明](/cn.zh-CN/用户指南/权限管理/RAM用户使用控制台说明.md)|
+|[RAM用户使用控制台说明](/cn.zh-CN/用户指南/权限管理/RAM用户使用控制台说明.md)|
 |视频点播|√|√|服务级别|-   AliyunVODFullAccess
 -   AliyunVODReadOnlyAccess
 -   AliyunVODPlayAuth
