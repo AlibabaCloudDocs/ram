@@ -323,7 +323,7 @@
 |消息服务MNS|√|√|资源级别|-   AliyunMNSFullAccess
 -   AliyunMNSReadOnlyAccess
 
-|- |
+|[t1835681.dita\#task810]()|
 
 ## 互联网中间件
 
@@ -344,7 +344,7 @@
 |媒体处理|√|√|服务级别|-   AliyunMTSFullAccess
 -   AliyunMTSPlayerAuth
 
-|[子帐号使用控制台说明]()|
+|[RAM用户使用控制台说明]()|
 |视频点播|√|√|服务级别|-   AliyunVODFullAccess
 -   AliyunVODReadOnlyAccess
 -   AliyunVODPlayAuth
