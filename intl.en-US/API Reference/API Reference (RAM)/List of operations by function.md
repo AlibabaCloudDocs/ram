@@ -2,7 +2,7 @@
 
 The following tables list the API operations that are available for use in Resource Access Management \(RAM\).
 
-**Note:** Alibaba Cloud provides OpenAPI Explorer to simplify API usage. You can use OpenAPI Explorer to debug API operations.
+**Note:** Alibaba Cloud provides [OpenAPI Developer Portal](https://next.api.aliyun.com/product/Ram) to simplify API usage. You can use OpenAPI Explorer to debug API operations.
 
 ## RAM user management
 
