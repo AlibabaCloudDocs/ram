@@ -2,6 +2,8 @@
 
 Creates a RAM user.
 
+This topic provides an example to show how to create a RAM user named `test`.
+
 ## Debugging
 
 [OpenAPI Explorer automatically calculates the signature value. For your convenience, we recommend that you call this operation in OpenAPI Explorer. OpenAPI Explorer dynamically generates the sample code of the operation for different SDKs.](https://api.aliyun.com/#product=Ims&api=CreateUser&type=RPC&version=2019-08-15)
@@ -13,9 +15,9 @@ Creates a RAM user.
 |Action|String|Yes|CreateUser|The operation that you want to perform. Set the value to CreateUser. |
 |UserPrincipalName|String|Yes|test@example.onaliyun.com|The logon name of the RAM user.
 
- The name is in the format of `<username>@<AccountAlias>.onaliyun.com`. `<username>` indicates the name of the RAM user. `<AccountAlias>.onaliyun.com` indicates the default domain name.
+ The name is in the format of `<username>@<AccountAlias>.onaliyun.com`. `<username>` is the name of the RAM user. `<AccountAlias>.onaliyun.com` is the default domain name.
 
- The value of `UserPrincipalName` must be 1 to 128 characters in length. The value of `<username>` must be 1 to 64 characters in length. The name can contain letters, digits, periods \(.\), at signs \(@\), hyphens \(-\), and underscores \(\_\). |
+ The value of `UserPrincipalName` must be 1 to 128 characters in length and can contain letters, digits, periods \(.\), hyphens \(-\), and underscores \(\_\). The value of `<username>` must be 1 to 64 characters in length. |
 |DisplayName|String|Yes|test|The display name of the RAM user.
 
  The name must be 1 to 24 characters in length. |
@@ -27,9 +29,11 @@ Creates a RAM user.
 |Email|String|No|alice@example.com|The email address of the RAM user.
 
  **Note:** This parameter applies only to the China site \(aliyun.com\). |
-|Comments|String|No|This is a cloud computing engineer.|The description.
+|Comments|String|No|This is a cloud computing engineer.|The description of the RAM user.
 
- The value must be 1 to 128 characters in length. |
+ The description must be 1 to 128 characters in length. |
+
+For more information about common parameters, see [Common parameters](~~187377~~).
 
 ## Response parameters
 
@@ -37,7 +41,7 @@ Creates a RAM user.
 |---------|----|-------|-----------|
 |RequestId|String|2BB8C44A-2862-4922-AD43-03924749173B|The ID of the request. |
 |User|Struct| |The information of the RAM user. |
-|Comments|String|This is a cloud computing engineer.|The description. |
+|Comments|String|This is a cloud computing engineer.|The description of the RAM user. |
 |CreateDate|String|2020-10-12T09:12:00Z|The time when the RAM user was created. |
 |DisplayName|String|test|The display name of the RAM user. |
 |Email|String|alice@example.com|The email address of the RAM user.
@@ -71,7 +75,7 @@ Sample success responses
 	  <User>
 		    <UpdateDate>2020-10-12T09:12:00Z</UpdateDate>
 		    <Email>alice@example.com</Email>
-		    <Comments>This is a cloud computing engineer. </Comments>
+		    <Comments>This is a cloud computing engineer.</Comments>
 		    <UserId>20732900249392****</UserId>
 		    <LastLoginDate>2020-10-12T09:12:00Z</LastLoginDate>
 		    <DisplayName>test</DisplayName>
