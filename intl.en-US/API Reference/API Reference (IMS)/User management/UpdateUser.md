@@ -2,6 +2,8 @@
 
 Modifies the information of a RAM user.
 
+This topic provides an example to show how to modify the name of a RAM user from `test@example.onaliyun.com` to `new@example.onaliyun.com`.
+
 ## Debugging
 
 [OpenAPI Explorer automatically calculates the signature value. For your convenience, we recommend that you call this operation in OpenAPI Explorer. OpenAPI Explorer dynamically generates the sample code of the operation for different SDKs.](https://api.aliyun.com/#product=Ims&api=UpdateUser&type=RPC&version=2019-08-15)
@@ -19,9 +21,9 @@ Modifies the information of a RAM user.
  **Note:** You must specify only one of the following parameters: `UserPrincipalName` and `UserId`. |
 |NewUserPrincipalName|String|No|new@example.onaliyun.com|The new logon name of the RAM user.
 
- The name is in the format of `<username>@<AccountAlias>.onaliyun.com`. `<username>` indicates the name of the RAM user. `<AccountAlias>.onaliyun.com` indicates the default domain name.
+ The name is in the format of `<username>@<AccountAlias>.onaliyun.com`. `<username>` is the name of the RAM user. `<AccountAlias>.onaliyun.com` is the default domain name.
 
- The value of `UserPrincipalName` must be 1 to 128 characters in length. The value of `<username>` must be 1 to 64 characters in length. The name can contain letters, digits, periods \(.\), at signs \(@\), hyphens \(-\), and underscores \(\_\). |
+ The value of `UserPrincipalName` must be 1 to 128 characters in length and can contain letters, digits, periods \(.\), hyphens \(-\), and underscores \(\_\). The value of `<username>` must be 1 to 64 characters in length. |
 |NewDisplayName|String|No|new|The new display name of the RAM user.
 
  The name must be 1 to 24 characters in length. |
@@ -33,9 +35,11 @@ Modifies the information of a RAM user.
 |NewEmail|String|No|alice@example.com|The new email address of the RAM user.
 
  **Note:** This parameter applies only to the China site \(aliyun.com\). |
-|NewComments|String|No|This is a cloud computing engineer.|The new description.
+|NewComments|String|No|This is a cloud computing engineer.|The new description of the RAM user.
 
- The value must be 1 to 128 characters in length. |
+ The description must be 1 to 128 characters in length. |
+
+For more information about common parameters, see [Common parameters](~~187377~~).
 
 ## Response parameters
 
@@ -43,7 +47,7 @@ Modifies the information of a RAM user.
 |---------|----|-------|-----------|
 |RequestId|String|1B56DD42-6962-4F89-A19C-079EED1F0FE3|The ID of the request. |
 |User|Struct| |The information of the RAM user. |
-|Comments|String|This is a cloud computing engineer.|The description. |
+|Comments|String|This is a cloud computing engineer.|The description of the RAM user. |
 |CreateDate|String|2020-10-12T09:12:00Z|The time when the RAM user was created. |
 |DisplayName|String|new|The display name of the RAM user. |
 |Email|String|alice@example.com|The email address of the RAM user.
@@ -77,7 +81,7 @@ Sample success responses
 	  <User>
 		    <UpdateDate>2020-10-13T09:19:49Z</UpdateDate>
 		    <Email>alice@example.com</Email>
-		    <Comments>This is a cloud computing engineer. </Comments>
+		    <Comments>This is a cloud computing engineer.</Comments>
 		    <UserId>20732900249392****</UserId>
 		    <LastLoginDate>2020-10-12T09:12:00Z</LastLoginDate>
 		    <DisplayName>new</DisplayName>
