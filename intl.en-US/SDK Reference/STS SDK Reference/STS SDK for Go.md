@@ -34,7 +34,7 @@ package main
      // Construct a request.
  request := sts.CreateAssumeRoleRequest()
     request.Scheme = "https"
-     // Specify request parameters.For more information about the parameters, see API Reference.
+     // Specify request parameters. For more information about the parameters, see API Reference.
  request.RoleArn = "<RoleArn>"
     request.RoleSessionName = "<RoleSessionName>"
      // Initiate the request and obtain a response.
