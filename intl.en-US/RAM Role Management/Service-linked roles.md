@@ -88,7 +88,7 @@ You can view the service that can assume a service-linked role in the `Service` 
 |Alibaba Cloud DNS \(DNS\)|alidns.aliyuncs.com|AliyunServiceRoleForDNS|None |
 |Data Security Center \(DSC\)|sddp.aliyuncs.com|AliyunServiceRoleForSDDP|[Authorize DSC to access Alibaba Cloud resources](/intl.en-US/User Guide/Authorize DSC to access Alibaba Cloud resources.md)|
 |CDN|cdn-ddos.cdn.aliyuncs.com|AliyunServiceRoleForCDNAccessingDDoS|[Configure Anti-DDoS](/intl.en-US/Domain Management/Security configuration/Integrate Alibaba Cloud CDN with Anti-DDoS.md)|
-|cdn-waf.cdn.aliyuncs.com|AliyunServiceRoleForCDNAccessingWAF|[Configure WAF]()|
+|cdn-waf.cdn.aliyuncs.com|AliyunServiceRoleForCDNAccessingWAF|None|
 |Application Real-Time Monitoring Service \(ARMS\)|arms.aliyuncs.com|AliyunServiceRoleForARMS|[Service linked role for ARMS](/intl.en-US/Access Control/Service linked role for ARMS.md)|
 |EventBridge|sendevent-fc.eventbridge.aliyuncs.com|AliyunServiceRoleForEventBridgeSendToFC|[Service-linked roles for EventBridge]()|
 |sendevent-mns.eventbridge.aliyuncs.com|AliyunServiceRoleForEventBridgeSendToMNS|
@@ -114,7 +114,7 @@ You can view the service that can assume a service-linked role in the `Service` 
 |collector.elasticsearch.aliyuncs.com|AliyunServiceRoleForElasticsearchCollector|
 |Bastionhost|bastionhost.aliyuncs.com|AliyunServiceRoleForBastionhost|[Service linked role for Bastionhost](/intl.en-US/User Guide (V3.2)/Administrator manual/Authorize Bastionhost to access cloud resources.md)|
 |Global Accelerator \(GA\)|vpcendpoint.ga.aliyuncs.com|AliyunServiceRoleForGaVpcEndpoint|[AliyunServiceRoleForGaVpcEndpoint](/intl.en-US/User Guide/Service-linked role/AliyunServiceRoleForGaVpcEndpoint.md)|
-|ddos.ga.aliyuncs.com|AliyunServiceRoleForGaAntiDdos|[AliyunServiceRoleForGaAntiDdos]()|
+|ddos.ga.aliyuncs.com|AliyunServiceRoleForGaAntiDdos|None|
 |Message Queue for Apache RocketMQ|ons.aliyuncs.com|AliyunServiceRoleForOns|[Service-linked roles for Message Queue for Apache RocketMQ]()|
 |AnalyticDB for PostgreSQL|adbpg.aliyuncs.com|AliyunServiceRoleForADBPG|[Service-linked roles for AnalyticDB for PostgreSQL](/intl.en-US/API Reference/Service linked role.md)|
 |Key Management Service \(KMS\)|secretsmanager-rds.kms.aliyuncs.com|AliyunServiceRoleForKMSSecretsManagerForRDS|[Manage the service-linked role for dynamic ApsaraDB RDS secrets](/intl.en-US/Secrets Manager/Dynamic ApsaraDB RDS secrets/Manage the service-linked role for dynamic ApsaraDB RDS secrets.md)|
