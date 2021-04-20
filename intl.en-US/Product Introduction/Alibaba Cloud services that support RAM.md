@@ -72,7 +72,7 @@ Each table in this topic contains the following columns:
 |Operation Orchestration Service \(OOS\)|✓|✓|Resource|-   AliyunOOSFullAccess
 -   AliyunOOSReadOnlyAccess
 
-|[RAM authorization rules](https://www.alibabacloud.com/help/zh/doc-detail/123024.htm)|
+|[Access control](https://www.alibabacloud.com/help/doc-detail/122529.htm)|
 
 ## Database
 
