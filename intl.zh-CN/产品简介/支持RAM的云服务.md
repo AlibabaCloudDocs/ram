@@ -116,7 +116,7 @@
 |数据传输服务DTS|√|√|操作级别|-   AliyunDTSFullAccess
 -   AliyunDTSReadOnlyAccess
 
-| |
+|[通过系统策略授权子账号管理DTS](/intl.zh-CN/RAM授权管理/通过系统策略授权子账号管理DTS.md)|
 |数据库备份DBS|√|√|服务级别|-   AliyunDBSFullAccess
 -   AliyunDBSReadOnlyAccess
 
