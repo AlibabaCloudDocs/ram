@@ -116,7 +116,7 @@ Each table in this topic contains the following columns:
 |Data Transmission Service \(DTS\)|✓|✓|Operation|-   AliyunDTSFullAccess
 -   AliyunDTSReadOnlyAccess
 
-| |
+|[Use a system policy to authorize a RAM user to manage DTS instances](/intl.en-US/RAM-based Access Control/Use a system policy to authorize a RAM user to manage DTS instances.md)|
 |Database Backup|✓|✓|Service|-   AliyunDBSFullAccess
 -   AliyunDBSReadOnlyAccess
 
