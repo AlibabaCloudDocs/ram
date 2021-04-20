@@ -12,19 +12,19 @@ OpenAPI Explorer automatically calculates the signature value. For your convenie
 
 |Parameter|Type|Required|Example|Description|
 |---------|----|--------|-------|-----------|
-|Action|String|Yes|UpdateRole|The operation that you want to perform.Set the value to UpdateRole. |
+|Action|String|Yes|UpdateRole|The operation that you want to perform. Set the value to UpdateRole. |
 |RoleName|String|Yes|ECSAdmin|The name of the RAM role.
 
- The name must be 1 to 64 characters in length and can contain letters, digits, periods \(.\),and hyphens \(-\). |
+The name must be 1 to 64 characters in length and can contain letters, digits, periods \(.\),and hyphens \(-\). |
 |NewAssumeRolePolicyDocument|String|No|\{ "Statement": \[ \{ "Action": "sts:AssumeRole", "Effect": "Allow", "Principal": \{ "RAM": "acs:ram::12345678901234\*\*\*\*:root" \} \} \], "Version": "1" \}|The policy that specifies the trusted entity to assume the RAM role. |
 |NewMaxSessionDuration|Long|No|3600|The maximum session duration of the RAM role.
 
- Valid values: 3600 to 43200. Unit: seconds.Default value: 3600.
+Valid values: 3600 to 43200. Unit: seconds.Default value: 3600.
 
- If you do not specify this parameter, the default value is used. |
+If you do not specify this parameter, the default value is used. |
 |NewDescription|String|No|ECS administrator|The new description of the RAM role.
 
- The value must be 1 to 1,024 characters in length. |
+The value must be 1 to 1,024 characters in length. |
 
 For more information about common parameters, see Common parameters.
 
@@ -60,17 +60,17 @@ XML format
 
 ```
 <UpdateRoleResponse>
-	  <RequestId>04F0F334-1335-436C-A1D7-6C044FE73368</RequestId>
-	  <Role>
-		    <RoleId>901234567890****</RoleId>
-		    <RoleName>ECSAdmin</RoleName>
-		    <Arn>acs:ram::123456789012****:role/ECSAdmin</Arn>
-		    <Description>ECS administrator</Description>
-		    <MaxSessionDuration>3600</MaxSessionDuration>
-		    <AssumeRolePolicyDocument>{ "Statement": [ { "Action": "sts:AssumeRole", "Effect": "Allow", "Principal": { "RAM": "acs:ram::123456789012****:root" } } ], "Version": "1" }</AssumeRolePolicyDocument>
-		    <CreateDate>2015-01-23T12:33:18Z</CreateDate>
-		    <UpdateDate>2015-01-23T12:33:18Z</UpdateDate>
-	  </Role>
+      <RequestId>04F0F334-1335-436C-A1D7-6C044FE73368</RequestId>
+      <Role>
+            <RoleId>901234567890****</RoleId>
+            <RoleName>ECSAdmin</RoleName>
+            <Arn>acs:ram::123456789012****:role/ECSAdmin</Arn>
+            <Description>ECS administrator</Description>
+            <MaxSessionDuration>3600</MaxSessionDuration>
+            <AssumeRolePolicyDocument>{ "Statement": [ { "Action": "sts:AssumeRole", "Effect": "Allow", "Principal": { "RAM": "acs:ram::123456789012****:root" } } ], "Version": "1" }</AssumeRolePolicyDocument>
+            <CreateDate>2015-01-23T12:33:18Z</CreateDate>
+            <UpdateDate>2015-01-23T12:33:18Z</UpdateDate>
+      </Role>
 </UpdateRoleResponse>
 ```
 
