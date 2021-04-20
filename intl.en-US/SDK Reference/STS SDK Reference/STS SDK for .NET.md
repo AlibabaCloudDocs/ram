@@ -39,7 +39,7 @@ using Aliyun.Acs.Sts.Model.V20150401;
  // When you construct the client, specify your AccessKey ID and AccessKey secret.
  IClientProfile profile = DefaultProfile.GetProfile("cn-hangzhou", "<accessKeyId>", "<accessSecret>");
             DefaultAcsClient client = new DefaultAcsClient(profile);
-             // Construct a request and specify request parameters.For more information about the parameters, see API Reference.
+             // Construct a request and specify request parameters. For more information about the parameters, see API Reference.
  var request = new AssumeRoleRequest();
             request.RoleArn = "<RoleArn>";
             request.RoleSessionName = "<RoleSessionName>";
