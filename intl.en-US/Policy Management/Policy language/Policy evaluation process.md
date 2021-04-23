@@ -17,20 +17,20 @@ All policies are evaluated based on the basic evaluation process, as shown in th
 
 The basic evaluation process includes the following steps:
 
-1.  Alibaba Cloud checks whether the request is denied. Deny statements take precedence in policy evaluation.
-    -   If the request is denied, the evaluation ends. Explicit Deny is returned as the final decision.
-    -   If the request is not denied, the evaluation continues.
-2.  Alibaba Cloud checks whether the request is allowed.
-    -   If the request is allowed, the evaluation ends. Allow is returned as the final decision.
-    -   If the request is not allowed, the evaluation ends. Implicit Deny is returned as the final decision.
+1.  Alibaba Cloud first checks whether an applicable policy that apply to a request includes a Deny statement. This is because Deny statements take precedence in policy evaluation.
+    -   If an applicable policy includes a Deny statement, the evaluation ends. Explicit Deny is returned.
+    -   If an applicable policy does not include a Deny statement, the evaluation continues.
+2.  Alibaba Cloud checks whether an applicable policy that apply to a request includes an Allow statement.
+    -   If an applicable policy includes an Allow statement, the evaluation ends. Allow is returned.
+    -   If an applicable policy does not include an Allow statement, the evaluation ends. Implicit Deny is returned.
 
 The following table describes the possible decisions.
 
 |Decision|Description|
 |--------|-----------|
-|Allow|If a request is allowed and not denied, the final decision is Allow.|
-|Explicit Deny|If a request is denied, the final decision is Explicit Deny. If a request is allowed and denied at the same time, the deny overrides the allow. In this case, the final decision is Explicit Deny.|
-|Implicit Deny|If a request is neither allowed nor denied, the final decision is Implicit Deny. By default, all the requests initiated by a Resource Access Management \(RAM\) identity are implicitly denied.|
+|Allow|If an applicable policy includes an Allow statement rather than a Deny statement, Allow is returned.|
+|Explicit Deny|If an applicable policy includes a Deny statement, Explicit Deny is returned. If the applicable policy includes both a Deny statement and an Allow statement, the deny overrides the allow. In this case, Explicit Deny is returned.|
+|Implicit Deny|If an applicable policy neither includes an Allow statement nor a Deny statement, Implicit Deny is returned. By default, all the requests initiated by a Resource Access Management \(RAM\) identity are implicitly denied.|
 
 ## Standard evaluation process
 
@@ -93,7 +93,7 @@ A standard evaluation process consists of the following steps:
     -   If neither an explicit deny nor an allow exists, the final decision is Implicit Deny.
     **Note:**
 
-    -   The combination logic also depends on the cloud service to which the resources to be accessed belong. For information about exceptions, see [Policy evaluation process of assuming a RAM role]().
+    -   The combination logic also depends on the cloud service to which the resources to be accessed belong. For information about exceptions, see [Policy evaluation process of assuming a RAM role](/intl.en-US/Policy Management/Policy language/Policy evaluation process of assuming a RAM role.md).
     -   If the resources to be accessed belong to OSS, the bucket access control list \(ACL\) and object ACL are evaluated after policies are evaluated. For more information, see [Authentication](/intl.en-US/Developer Guide/Data security/Access and control/Authentication.md).
 
 If the final decision is Allow, the request is allowed. Whether the final decision is Explicit Deny or Implicit Deny, the request is denied.
