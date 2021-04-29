@@ -174,7 +174,7 @@
 |数据传输|-|√|√|操作级别|-   AliyunDTSFullAccess
 -   AliyunDTSReadOnlyAccess
 
-|[通过系统策略授权子账号管理DTS](/intl.zh-CN/RAM授权管理/通过系统策略授权子账号管理DTS.md)|
+|[数据传输的RAM鉴权](/intl.zh-CN/RAM授权管理/通过系统策略授权子账号管理DTS.md)|
 |数据管理|-|√|√|服务级别|-|- |
 |云原生数据仓库ADB MySQL版|-|√|√|操作级别|-   AliyunADBFullAccess
 -   AliyunADBReadOnlyAccess
@@ -377,7 +377,7 @@
 |消息服务|-|√|√|资源级别|-   AliyunMNSFullAccess
 -   AliyunMNSReadOnlyAccess
 
-|- |
+|[消息服务的RAM鉴权](消息服务的RAM鉴权t1835681.dita#task810)|
 |应用配置管理|-|√|√|资源级别|AliyunACMFullAccess|[应用配置管理的RAM鉴权](/intl.zh-CN/访问控制/访问权限控制.md)|
 |消息队列Kafka版|-|√|√|服务级别|-   AliyunKafkaFullAccess
 -   AliyunKafkaReadOnlyAccess
