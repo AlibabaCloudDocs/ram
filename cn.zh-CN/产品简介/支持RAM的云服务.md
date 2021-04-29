@@ -185,7 +185,7 @@
 |数据传输|-|√|√|操作级别|-   AliyunDTSFullAccess
 -   AliyunDTSReadOnlyAccess
 
-|[通过系统策略授权子账号管理DTS](/cn.zh-CN/访问控制/通过系统策略授权子账号管理DTS.md)|
+|[数据传输的RAM鉴权](/cn.zh-CN/访问控制/通过系统策略授权子账号管理DTS.md)|
 |数据管理|-|√|√|服务级别|-|[数据管理资源授权](https://help.aliyun.com/document_detail/47571.html)|
 |云原生数据仓库ADB MySQL版|-|√|√|操作级别|-   AliyunADBFullAccess
 -   AliyunADBReadOnlyAccess
@@ -475,7 +475,7 @@
 |消息服务|-|√|√|资源级别|-   AliyunMNSFullAccess
 -   AliyunMNSReadOnlyAccess
 
-|[授权RAM用户访问MNS](https://help.aliyun.com/document_detail/27446.html)|
+|[消息服务的RAM鉴权](消息服务的RAM鉴权t1835681.dita#task810)|
 |应用配置管理|-|√|√|资源级别|AliyunACMFullAccess|[应用配置管理的RAM鉴权](/cn.zh-CN/访问控制/访问权限控制.md)|
 |消息队列Kafka版|-|√|√|服务级别|-   AliyunKafkaFullAccess
 -   AliyunKafkaReadOnlyAccess
@@ -864,12 +864,12 @@
 |云服务|子服务/子模块|控制台|API|授权粒度|系统策略|相关文档|
 |:--|-------|:--|:--|:---|:---|:---|
 |Dragonwell|-|×|○|服务级别|-|-|
-|CodePipeline|-|√|√|资源级别|AliyunCodePipelineFullAccess|[CodePipeline的RAM鉴权授权策略示例](https://help.aliyun.com/document_detail/63799.html)|
+|CodePipeline|-|√|√|资源级别|AliyunCodePipelineFullAccess|[CodePipeline的RAM鉴权](https://help.aliyun.com/document_detail/63799.html)|
 |云效|-|√|√|资源级别|-   AliyunRDCFullAccess
 -   AliyunRDCReadOnlyAccess
 
 |-|
-|Node.js性能平台|-|√|○|服务级别|AliyunNPPFullAccess|[子账号授权](https://help.aliyun.com/document_detail/65672.html)|
+|Node.js性能平台|-|√|○|服务级别|AliyunNPPFullAccess|[Node.js性能平台的RAM鉴权](https://help.aliyun.com/document_detail/65672.html)|
 |链路追踪|-|√|√|服务级别|-   AliyunTracingAnalysisFullAccess
 -   AliyunTracingAnalysisReadOnlyAccess
 
