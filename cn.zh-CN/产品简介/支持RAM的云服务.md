@@ -112,7 +112,7 @@
 -   AliyunECDReadOnlyAccess
 -   AliyunECDRamUserAccess
 
-|[弹性云桌面的RAM授权管理]()|
+|-|
 |弹性容器实例|-|√|√|资源级别|-   AliyunECIFullAccess
 -   AliyunECIReadOnlyAccess
 
