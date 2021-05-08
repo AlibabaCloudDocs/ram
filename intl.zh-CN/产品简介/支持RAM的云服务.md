@@ -464,6 +464,10 @@
 -   AliyunDNSReadOnlyAccess
 
 |- |
+|云解析DNS|公共DNS|√|√|资源级别|-   AliyunPubDNSReadOnlyAccess
+-   AliyunPubDNSFullAccess
+
+|-|
 |域名|-|√|√|资源级别|AliyunDomainFullAccess|[域名的RAM鉴权](/intl.zh-CN/域名管理/RAM资源授权-域名/Domain API鉴权规则.md)|
 
 ## 人工智能
