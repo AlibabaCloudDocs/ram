@@ -623,10 +623,14 @@
 -   AliyunAPDSReadOnlyAccess
 
 |-|
-|微服务引擎|-|√|√|资源级别|-   AliyunMSEFullAccess
+|微服务引擎|微服务引擎|√|√|资源级别|-   AliyunMSEFullAccess
 -   AliyunMSEReadOnlyAccess
 
 |[RAM用户使用MSE](/cn.zh-CN/微服务注册配置中心/权限管理/RAM授权访问注册配置中心.md)|
+|微服务引擎|微服务网关|√|√|资源级别|-   AliyunMicrogatewayFullAccess
+-   AliyunMicrogatewayReadOnlyAccess
+
+|[微服务网关的RAM鉴权]()|
 |Teambition|-|√|○|服务级别|-|-|
 |金融分布式架构|-|√|○|服务级别|-   AliyunSOFAFullAccess
 -   AliyunSOFAReadOnlyAccess
@@ -680,6 +684,10 @@
 -   AliyunGeoipReadOnlyAccess
 
 |[IP地理位置的RAM鉴权]()|
+|云解析DNS|公共DNS|√|√|资源级别|-   AliyunPubDNSReadOnlyAccess
+-   AliyunPubDNSFullAccess
+
+|-|
 |域名|-|√|√|资源级别|AliyunDomainFullAccess|[域名的RAM鉴权](/cn.zh-CN/域名管理/RAM资源授权-域名/Domain API鉴权规则.md)|
 |云虚拟主机|-|×|×|-|-|-|
 |弹性Web托管|-|×|×|-|-|-|
