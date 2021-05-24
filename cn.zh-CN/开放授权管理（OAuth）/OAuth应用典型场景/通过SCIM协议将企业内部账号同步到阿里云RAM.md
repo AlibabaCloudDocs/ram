@@ -10,36 +10,34 @@
 -   阿里云SCIM Endpoint：`https://scim.aliyun.com`。
 -   阿里云OAuth获取access\_token的Endpoint：`https://oauth.aliyun.com/v1/token`。
 
-## 步骤1：创建OAuth应用并授权
+## 步骤一：创建OAuth应用并授权
 
 1.  使用阿里云账号登录[RAM控制台](https://ram.console.aliyun.com/)。
 
-2.  选择**OAuth应用管理** \> **创建应用**，创建OAuth应用。
+2.  在左侧导航栏，单击**OAuth应用管理**。
 
-    其中，**应用类型**选择**ServerApp**。
+3.  在企业应用页签，单击**创建应用**，创建OAuth应用。
 
-    ![创建OAuth应用](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/5804778851/p98016.png)
+    其中，**应用类型**选择**ServerApp**。具体操作，请参见[创建应用](/cn.zh-CN/开放授权管理（OAuth）/管理OAuth应用/创建应用.md)。
 
-3.  单击应用名称，然后在**应用OAuth范围**页签下单击**添加OAuth范围**。
+4.  单击步骤[3](#step_o4s_unx_9o9)创建的应用名称，在应用OAuth范围页签，单击**添加OAuth范围**，添加OAuth应用范围。
 
-    其中，**OAuth范围**选择**/acs/scim**。
+    其中，**OAuth范围**选择**/acs/scim**。具体操作，请参见[添加应用范围](/cn.zh-CN/开放授权管理（OAuth）/管理OAuth应用/添加应用范围.md)。
 
-    ![添加OAuth范围](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/5804778851/p98017.png)
+5.  为OAuth应用授权。
 
-4.  在**应用OAuth范围**页签，先单击**去授权**，然后单击**管理员授权**。
+    1.  在**应用OAuth范围**页签，单击**去授权**。
 
-    ![123](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/5804778851/p98025.png)
+    2.  在应用授权页面，选中**阿里云跨域身份管理服务**，然后单击**授权**。
 
-5.  在**应用密钥**页签，单击**创建密钥**。
-
-    ![创建密钥](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/5804778851/p98034.png)
+6.  在**应用密钥**页签，单击**创建密钥**，创建应用密钥。
 
     **说明：**
 
-    -   密钥仅在创建时可见，请您注意保存。
-    -   **AppSecretId**是密钥的ID，不是密钥（client\_secret）内容。
+    -   应用密钥内容（client\_secret）仅在创建时可见，请您及时保存。
+    -   **AppSecretId**是应用密钥的ID，不是应用密钥内容（client\_secret）。
 
-## 步骤2：同步账号数据
+## 步骤二：同步账号数据
 
 支持通过客户端（例如：One Identity）或SCIM API两种方式同步账号数据。
 
@@ -55,13 +53,10 @@
 
 通过阿里云SCIM API同步账号数据的操作如下所示。
 
-1.  获取已授权的ServerApp的ID（client\_id）和密钥（client\_secret）。
+1.  获取已授权的ServerApp的ID（client\_id）和密钥内容（client\_secret）。
 
-    -   client\_id：在RAM控制台的**企业应用**页签，查看ServerApp的ID（client\_id）。
-
-        ![client_id](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/5804778851/p98032.png)
-
-    -   client\_secret：在RAM控制台，创建密钥时保存的密钥。
+    -   client\_id：应用ID。从[步骤一：创建OAuth应用并授权](#section_0z3_pen_lns)的步骤[3](#step_o4s_unx_9o9)获取。
+    -   client\_secret：应用密钥内容。从[步骤一：创建OAuth应用并授权](#section_0z3_pen_lns)的步骤[6](#step_yvi_i0q_b1x)获取。
 2.  通过`client_id`和`client_secret`访问`https://oauth.aliyun.com/v1/token`，获取`access_token`。
 
     其中，请求头中的Authorization内容为`"Authorization: Basic Base64Encode(client_id:client_secret)"`，例如：cliet\_id=cid，client\_secret=123456，那么请求头中需要输入的Authorization内容为`"Authorization: Basic Y2lkOjEyMzQ1Ng=="`。
