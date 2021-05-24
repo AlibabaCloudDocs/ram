@@ -64,9 +64,10 @@
 
 ## 配置示例
 
-以下为您提供了常见的企业IdP（例如：AD FS、Okta和Azure AD）与阿里云进行角色SSO的配置示例：
+以下为您提供了常见的企业IdP（例如：AD FS、Okta、Azure AD和OneLogin）与阿里云进行角色SSO的配置示例：
 
 -   [使用AD FS进行角色SSO的示例](/intl.zh-CN/单点登录管理（SSO）/角色SSO/使用AD FS进行角色SSO的示例.md)
 -   [使用Okta进行角色SSO的示例](/intl.zh-CN/单点登录管理（SSO）/角色SSO/使用Okta进行角色SSO的示例.md)
 -   [使用Azure AD进行角色SSO的示例](/intl.zh-CN/单点登录管理（SSO）/角色SSO/使用Azure AD进行角色SSO的示例.md)
+-   [使用OneLogin进行角色SSO的示例](/intl.zh-CN/单点登录管理（SSO）/角色SSO/使用OneLogin进行角色SSO的示例.md)
 
