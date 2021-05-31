@@ -1,16 +1,14 @@
 # Overview of user-based SSO
 
-This topic describes the scenario, process, configuration, and configuration examples of user-based single sign-on \(SSO\).
-
-If Alibaba Cloud and the identity management system of an enterprise work together to implement user-based SSO, Alibaba Cloud is the service provider \(SP\) and the enterprise is the identity provider \(IdP\). User-based SSO allows an employee of the enterprise to access Alibaba Cloud resources as a RAM user.
+If Alibaba Cloud and the identity management system of an enterprise work together to implement user-based single sign-on \(SSO\), Alibaba Cloud is the service provider \(SP\) and the enterprise is the identity provider \(IdP\). User-based SSO allows an employee of the enterprise to access Alibaba Cloud resources as a Resource Access Management \(RAM\) user.
 
 ## Process
 
-![Process](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/5220549951/p40784.png)
+After an administrator configures user-based SSO, the employee Alice can log on to the Alibaba Cloud Management Console. The following list describes the process.
 
-After an administrator configures user-based SSO, the employee \(Alice\) can log on to the Alibaba Cloud Management Console. The following list describes the process:
+![Process](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6292542261/p40784.png)
 
-1.  Alice uses a browser to log on to the Alibaba Cloud Management Console. Then, Alibaba Cloud returns a SAML authentication request to the browser.
+1.  Alice uses a browser to log on to the Alibaba Cloud Management Console. Then, the Alibaba Cloud Management Console returns a Security Assertion Markup Language \(SAML\) authentication request to the browser.
 
 2.  The browser forwards the SAML authentication request to the IdP.
 
@@ -18,16 +16,16 @@ After an administrator configures user-based SSO, the employee \(Alice\) can log
 
 4.  The browser forwards the SAML response to the SSO service.
 
-5.  Based on the SAML mutual trust configuration, the SSO service verifies the digital signature in the SAML response to check the authenticity of the SAML assertion. Then, the SSO service maps the value of the `NameID` element in the SAML assertion to the RAM user identity in Alibaba Cloud.
+5.  The SSO service verifies the digital signature in the SAML response based on the SAML mutual trust configuration to check the authenticity of the SAML assertion. Then, the SSO service maps the value of the `NameID` element in the SAML assertion to the RAM user.
 
 6.  The SSO service returns the URL of the Alibaba Cloud Management Console to the browser.
 
 7.  The browser redirects Alice to the Alibaba Cloud Management Console.
 
-    **Note:** In Step 1, Alice does not need to initiate the logon from Alibaba Cloud. Instead, Alice can click the Alibaba Cloud logon URL in the IdP portal to send a SAML authentication request to the IdP.
+    **Note:** In Step [1](#step_134_0vt_cn7), Alice initiates the logon from the Alibaba Cloud Management Console. This is optional. Instead, Alice can click the Alibaba Cloud logon URL in the IdP portal to send a SAML authentication request to the IdP.
 
 
-## Configuration
+## Configure user-based SSO
 
 Before you implement user-based SSO, you must establish trust between Alibaba Cloud and your IdP.
 
@@ -39,16 +37,16 @@ Before you implement user-based SSO, you must establish trust between Alibaba Cl
 
     For more information, see [Configure Alibaba Cloud as a trusted SP for user-based SSO](/intl.en-US/SSO Management/User-based SSO/Configure Alibaba Cloud as a trusted SP for user-based SSO.md).
 
-3.  After the IdP and Alibaba Cloud SAML settings are configured, you must create RAM users that correspond to the users in the IdP by using the software development kit \(SDK\), command line interface \(CLI\), or RAM console.
+3.  After the IdP and Alibaba Cloud SAML settings are configured, you must create RAM users that correspond to the users in the IdP by using SDKs, CLIs, or the RAM console.
 
-    For more information, see [Create a RAM user](/intl.en-US/RAM User Management/Create a RAM user.md).
+    For more information, see [Create a RAM user](/intl.en-US/RAM User Management/Basic operations/Create a RAM user.md).
 
 
-## Configuration example
+## Examples
 
-Examples of how to implement user-based SSO to Alibaba Cloud from common enterprise IdPs, such as AD FS, Okta, and Azure AD:
+The following list provides examples of how to implement user-based SSO to Alibaba Cloud from common enterprise IdPs, such as Active Directory Federation Services \(AD FS\), Okta, and Azure AD:
 
 -   [Implement user-based SSO from AD FS](/intl.en-US/SSO Management/User-based SSO/Implement user-based SSO from AD FS.md)
 -   [Implement user-based SSO from Okta](/intl.en-US/SSO Management/User-based SSO/Implement user-based SSO from Okta.md)
--   [Implement user-based SSO from Azure AD](/intl.en-US/SSO Management/User-based SSO/Implement user-based SSO from Azure AD.md)
+-   [Implement user-based SSO by using Azure AD](/intl.en-US/SSO Management/User-based SSO/Implement user-based SSO by using Azure AD.md)
 
