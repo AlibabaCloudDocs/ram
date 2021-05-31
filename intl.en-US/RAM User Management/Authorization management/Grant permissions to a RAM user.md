@@ -1,51 +1,65 @@
 # Grant permissions to a RAM user
 
-This topic describes how to grant permissions to a RAM user. A RAM user can access Alibaba Cloud resources after obtaining the relevant permissions.
+A RAM user can access Alibaba Cloud resources after it is granted the relevant permissions. This topic describes how to grant permissions to a RAM user.
 
-## Method 1
+## Method 1: Grant permissions to a RAM user on the User page
 
-Grant permissions to a RAM user on the **Users** page.
+1.  Log on to the [RAM console](https://ram.console.aliyun.com/) by using your Alibaba Cloud account.
 
-1.  Log on to the [RAM console](https://ram.console.aliyun.com/) by using an Alibaba Cloud account.
+2.  In the left-side navigation pane, choose **Identities** \> **Users**.
 
-2.  Log on to the [RAM console](https://partners-intl.console.aliyun.com/#/ram) by using an Alibaba Cloud account.
+3.  On the Users page, find the RAM user to which you want to grant permissions. Click **Add Permissions** in the **Actions** column.
 
-3.  In the left-side navigation pane, click **Users** under **Identities**.
+4.  In the Add Permissions panel, grant permissions to the RAM user.
 
-4.  In the **User Logon Name/Display Name** column, find the RAM user.
+    1.  Select the authorization scope.
 
-5.  Click **Add Permissions**. On the page that appears, the **Principal** field is automatically filled in.
+        -   **Alibaba Cloud Account**: Permissions take effect on the current Alibaba Cloud account.
+        -   **Specific Resource Group**: Permissions take effect on a specific resource group.
 
-6.  In the **Policy Name** column, select the policies that you want to attach to the RAM user.
+            **Note:** If you select Specific Resource Group as the authorization scope, you must make sure that the cloud service supports resource groups. For more information, see [Alibaba Cloud services that support resource groups]().
 
-    **Note:** You can click the cross sign \(**×**\) next to a policy in the **Selected** section to delete the policy.
+    2.  Specify the principal.
 
-7.  Click **OK**.
+        The principal is the RAM user to which permissions are granted. By default, the current RAM user is specified. You can also specify another RAM user.
 
-8.  Click **Finished**.
+    3.  Select policies.
+
+        **Note:** You can bind a maximum of five policies to a RAM user at a time. If you need to bind more than five policies to a RAM user, perform the bind operation multiple times.
+
+5.  Click **OK**.
+
+6.  Click **Complete**.
 
 
-## Method 2
+## Method 2: Grant permissions to a RAM user on the Grants page
 
-Grant permissions to a RAM user on the **Grants** page.
+1.  Log on to the [RAM console](https://ram.console.aliyun.com/) by using your Alibaba Cloud account.
 
-1.  Log on to the [RAM console](https://ram.console.aliyun.com/) by using an Alibaba Cloud account.
+2.  In the left-side navigation pane, choose **Permissions** \> **Grants**.
 
-2.  Log on to the [RAM console](https://partners-intl.console.aliyun.com/#/ram) by using an Alibaba Cloud account.
+3.  On the Grants page, click **Grant Permission**.
 
-3.  In the left-side navigation pane, click **Grants** under **Permissions**.
+4.  In the Add Permissions panel, grant permissions to a RAM user.
 
-4.  Click **Grant Permission**.
+    1.  Select the authorization scope.
 
-5.  In the **Principal** section, enter the name or ID of the RAM user, and then select the RAM user from the auto-complete results.
+        -   **Alibaba Cloud Account**: Permissions take effect on the current Alibaba Cloud account.
+        -   **Specific Resource Group**: Permissions take effect on a specific resource group.
 
-6.  In the **Policy Name** column, select the policies that you want to attach to the RAM user.
+            **Note:** If you select Specific Resource Group as the authorization scope, you must make sure that the cloud service supports resource groups. For more information, see [Alibaba Cloud services that support resource groups]().
 
-    **Note:** You can click the cross sign \(**×**\) next to a policy in the **Selected** section to delete the policy.
+    2.  Specify the principal.
 
-7.  Click **OK**.
+        The principal is the RAM user to which permissions are granted.
 
-8.  Click **Finished**.
+    3.  Select policies.
+
+        **Note:** You can bind a maximum of five policies to a RAM user at a time. If you need to bind more than five policies to a RAM user, perform the bind operation multiple times.
+
+5.  Click **OK**.
+
+6.  Click **Complete**.
 
 
 **Related topics**  
