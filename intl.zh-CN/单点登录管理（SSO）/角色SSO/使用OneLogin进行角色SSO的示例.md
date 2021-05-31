@@ -89,7 +89,7 @@
 
         -   **RelayState**：用来配置用户登录成功后跳转到的阿里云页面。
 
-            **说明：** 出于安全原因，您只能填写阿里巴巴旗下的域名URL作为**Default RelayState**的值，例如：\*.aliyun.com、\*.hichina.com、\*.yunos.com、\*.taobao.com、\*.tmall.com、\*.alibabacloud.com、\*.alipay.com，否则配置无效。若不配置，默认跳转到阿里云控制台首页。
+            **说明：** 出于安全原因，您只能填写阿里巴巴旗下的域名URL作为**RelayState**的值，例如：\*.aliyun.com、\*.hichina.com、\*.yunos.com、\*.taobao.com、\*.tmall.com、\*.alibabacloud.com、\*.alipay.com，否则配置无效。若不配置，默认跳转到阿里云控制台首页。
 
         -   **Audience \(EntityID\)**：`urn:alibaba:cloudcomputing:international`。
         -   **Recipient**：`https://signin.alibabacloud.com/saml-role/sso`。
@@ -132,7 +132,7 @@
 
     **Aliyun Roles for SSO**取值由RAM角色ARN和身份供应商ARN组成，两者之间用半角逗号（,）分隔，具体格式为`acs:ram::<account_id>:role/RoleName,acs:ram::<account_id>:saml-provider/ProviderName`。其中，RAM角色ARN从[步骤三：在阿里云创建RAM角色](#section_efr_wq8_8lw)获取，身份供应商ARN从[步骤二：在阿里云创建身份提供商](#section_7fz_jfo_srq)获取，<account\_id\>为阿里云账号ID。
 
-    **说明：** 如果一个用户对应多个RAM角色，此处可配置多组值。每个RAM角色ARN和其对应的身份提供商ARN为一组值，多组值之间用半角分号（;）分隔。例如：`acs:ram::125022144354xxxx:role/reader-onelogin,acs:ram::125022144354xxxx:saml-provider/OneLogin;acs:ram::125022144354xxxx:role/administrator-onelogin,acs:ram::125022144354xxxx:saml-provider/OneLogin;acs:ram::158622887609xxxx:role/finance,acs:ram::158622887609xxxx:saml-provider/OneLogin2`。
+    **说明：** 如果一个用户对应多个RAM角色，此处可配置多组值。每个RAM角色ARN和其对应的身份提供商ARN为一组值，多组值之间用半角分号（;）分隔。例如：`acs:ram::125022144354****:role/reader-onelogin,acs:ram::125022144354****:saml-provider/OneLogin;acs:ram::125022144354****:role/administrator-onelogin,acs:ram::125022144354****:saml-provider/OneLogin;acs:ram::158622887609****:role/finance,acs:ram::158622887609****:saml-provider/OneLogin2`。
 
 5.  为用户分配应用。
 
