@@ -2,46 +2,79 @@
 
 本文介绍了如何利用标签对RDS实例进行分组并授权，以满足RAM用户只能查看和操作被授权资源的需求。
 
-## 前提条件
-
-进行操作前，请确保您已经注册了阿里云账号。如还未注册，请先完成[账号注册](https://account.alibabacloud.com/register/intl_register.htm)。
-
 ## 背景信息
 
 假设您的账号购买了10个RDS实例，其中5个想要授权给developer团队，另外5个授权给operator团队。企业希望每个团队只能查看被授权的实例，未被授权的不允许查看。
 
+规划2个RAM用户组，名称命名为：developer、operator。
+
+规划2个RAM自定义策略，名称命名为：policyForDevTeam、policyForOpsTeam。
+
+规划2个标签，如下：
+
+-   其中5个RDS实例绑定一对标签，标签键是team，标签值是dev。
+-   另外5个RDS实例绑定另一对标签，标签键是team，标签值是ops。
+
 ## 利用标签对RDS分组授权的操作步骤
 
-利用标签对RDS分组授权的操作步骤与对ECS实例分组授权的操作步骤部分相同，详情请参见[利用标签对ECS实例进行分组授权](/intl.zh-CN/教程/利用标签对ECS实例进行分组授权.md)。
+利用标签对RDS分组授权的操作步骤与对ECS实例分组授权的操作步骤部分相同，具体操作，请参见[利用标签对ECS实例进行分组授权](/intl.zh-CN/教程/利用标签对ECS实例进行分组授权.md)。
 
-RDS相关自定义策略：
+RDS相关自定义策略如下：
 
-```
-{
-  "Statement": [
+-   用户组developer的自定义策略policyForDevTeam
+
+    ```
     {
-      "Action": "rds:*",
-      "Effect": "Allow",
-      "Resource": "*",
-      "Condition": {
-        "StringEquals": {
-          "rds:ResourceTag/team": "dev"
+      "Statement": [
+        {
+          "Action": "rds:*",
+          "Effect": "Allow",
+          "Resource": "*",
+          "Condition": {
+            "StringEquals": {
+              "rds:ResourceTag/team": "dev"
+             }
+           }
+         },
+        {
+           "Action": "rds:DescribeTag*",
+           "Effect": "Allow",
+           "Resource": "*"
          }
-       }
-     },
+      ],
+      "Version": "1"
+    }
+    ```
+
+-   用户组operator的自定义策略policyForOpsTeam
+
+    ```
     {
-       "Action": "rds:DescribeTag*",
-       "Effect": "Allow",
-       "Resource": "*"
-     }
-  ],
-  "Version": "1"
-}
-```
+      "Statement": [
+        {
+          "Action": "rds:*",
+          "Effect": "Allow",
+          "Resource": "*",
+          "Condition": {
+            "StringEquals": {
+              "rds:ResourceTag/team": "ops"
+             }
+           }
+         },
+        {
+           "Action": "rds:DescribeTag*",
+           "Effect": "Allow",
+           "Resource": "*"
+         }
+      ],
+      "Version": "1"
+    }
+    ```
+
 
 权限策略内容分为两部分：
 
--   其中带有`Condition`的`"Action": "rds:*"`部分用于过滤标签为`team:dev`的资源。`Condition`部分的关键字为`rds:ResourceTag`。
+-   带有`Condition`的`"Action": "rds:*"`部分用于过滤标签为`team:dev`或`team:ops`的RDS实例。
 -   `"Action": "rds:DescribeTag*"`用于展示所有标签。当RAM用户在操作RDS控制台时，系统展示出所有标签供RAM用户选择，只有当RAM用户选择了标签值后，系统才能根据选中的标签值过滤相应资源。
 
 ## 常见问题
