@@ -1,32 +1,32 @@
 # Overview of security settings
 
-This topic describes some basic concepts of security settings in the Resource Access Management \(RAM\) console.
+This topic introduces some basic concepts of security settings in the Resource Access Management \(RAM\) console.
 
-## Password
+## password
 
 An identity credential that is used to log on to the Alibaba Cloud Management Console.
 
 **Note:** We recommend that you change your password on a regular basis and keep your password confidential.
 
-For more information about how to set a password, see [Change the password for an Alibaba Cloud account](/intl.en-US/Security Settings/Passwords/Change the password for an Alibaba Cloud account.md) and [Change the password of a RAM user](/intl.en-US/Security Settings/Passwords/Change the password of a RAM user.md).
+For more information, see [Change the password for an Alibaba Cloud account](/intl.en-US/Security Settings/Passwords/Change the password for an Alibaba Cloud account.md) and [Change the password of a RAM user](/intl.en-US/Security Settings/Passwords/Change the password of a RAM user.md).
 
-## Default domain name
+## default domain name
 
 A unique identifier of an Alibaba Cloud account. Alibaba Cloud assigns a **default domain name** for each Alibaba Cloud account. The format of the default domain name is `<AccountAlias>.onaliyun.com`. This unique identifier can be used for RAM user logon and single sign-on \(SSO\) management.
 
-For information about how to set a default domain name, see [Manage the default domain name](/intl.en-US/Security Settings/Advanced settings/Manage the default domain name.md).
+For more information, see [Manage the default domain name](/intl.en-US/Security Settings/Advanced settings/Manage the default domain name.md).
 
-## Domain alias
+## domain alias
 
-A custom domain name that can be used to replace the default domain name. The custom domain name must be publicly resolvable.**** A domain alias is the alias of the default domain name.
+A custom domain name that can be used to replace the default domain name. The custom domain name must be publicly resolvable. A domain alias is the alias of the default domain name.
 
-**Note:** A domain alias can be used only after domain ownership verification. After verification, you can use the domain alias to replace the default domain name in all scenarios where the default domain name is required.
+**Note:** A domain alias can be used only after the ownership of a domain is verified. After the ownership of a domain is verified, you can use the domain alias to replace the default domain name in all scenarios in which the default domain name is required.
 
-For information about how to set a domain alias, see [Create and verify a domain alias](/intl.en-US/Security Settings/Advanced settings/Create and verify a domain alias.md).
+For more information, see [Create and verify a domain alias](/intl.en-US/Security Settings/Advanced settings/Create and verify a domain alias.md).
 
 ## AccessKey pair
 
-An identity credential that is used to verify access identities. Each AccessKey pair consists of an AccessKey ID and an AccessKey secret. You can use your AccessKey pair or Alibaba Cloud SDK to sign API requests that you send to Alibaba Cloud. The AccessKey ID and AccessKey secret are used for symmetric encryption and identity verification. After the identity is verified, you can manage Alibaba Cloud resources by calling API operations.
+An identity credential that is used to verify access identities. Each AccessKey pair consists of an AccessKey ID and an AccessKey secret. You can use your AccessKey pair or Alibaba Cloud SDK to sign API requests that you send to Alibaba Cloud. The AccessKey ID and AccessKey secret are used for symmetric encryption and identity verification. After your identity is verified, you can manage Alibaba Cloud resources by calling API operations.
 
 The AccessKey ID is used to identify a user, and the AccessKey secret is used to encrypt and verify a signature string.
 
@@ -34,7 +34,7 @@ The AccessKey ID is used to identify a user, and the AccessKey secret is used to
 
 For more information, see [Create an AccessKey pair for a RAM user](/intl.en-US/Security Settings/AccessKey pairs/Create an AccessKey pair for a RAM user.md).
 
-## Multi-factor authentication \(MFA\)
+## multi-factor authentication \(MFA\)
 
 MFA is an easy-to-use and effective authentication method. In addition to the username and password, MFA provides an extra layer of protection to each RAM user. MFA enhances security for your account.
 
@@ -44,19 +44,19 @@ MFA devices have various types. Alibaba Cloud supports the following two types:
 
 -   **Virtual MFA devices**
 
-    Time-based one-time cipher algorithm \(TOTP\) is a widely adopted multi-factor authentication protocol. Applications that support TOTP on devices such as mobile phones are called virtual MFA devices, for example, the Alibaba Cloud app and Google Authenticator. If a user enables MFA, the user must enter the 6-digit verification code that is generated on the application when the user logs on to the Alibaba Cloud Management Console. This prevents unauthorized logon due to password theft.
+    Time-based one-time cipher algorithm \(TOTP\) is a widely adopted multi-factor authentication protocol. Applications that support TOTP on devices such as mobile phones are called virtual MFA devices. For example, both the Alibaba Cloud app and Google Authenticator are virtual MFA devices. If a user enables MFA, the user must enter the 6-digit verification code that is generated on the application when the user logs on to the Alibaba Cloud Management Console. This prevents unauthorized logon due to password theft.
 
 -   **U2F security keys**
 
-    Universal 2nd Factor \(U2F\) is a widely accepted multi-factor authentication protocol that is created by the [FIDO \(Fast Identity Online\) Alliance](https://fidoalliance.org). The protocol is used to provide an efficient and universal multi-factor authentication method. U2F security keys are a type of MFA device that supports the U2F protocol, such as Yubikey produced by Yubico. To use a U2F security key for authentication, a user can plug the key to a USB port on a computer and then tap the key to complete the logon process.
+    Universal 2nd Factor \(U2F\) is a widely accepted multi-factor authentication protocol that is hosted by the [Fast Identity Online \(FIDO\) Alliance](https://fidoalliance.org). The protocol is used to provide an efficient and universal multi-factor authentication method. A user can plug a U2F security key, such as YubiKey produced by Yubico, into a USB port on your computer. Then, the user can complete multi-factor authentication by tapping the button on the key when the user logs on to the Alibaba Cloud Management Console.
 
 
 **Usage notes**
 
-If MFA is enabled for a user, the user must perform the following operations when the user logs on to the Alibaba Cloud Management Console:
+If MFA is enabled for a user, the user must perform the following steps when the user logs on to the Alibaba Cloud Management Console:
 
 1.  Enter the username and password of the RAM user.
-2.  Enter the verification code that is generated by the virtual MFA device or pass the U2F authentication.
+2.  Enter the verification code that is generated by the virtual MFA device. Alternatively, pass the U2F authentication.
 
 For more information, see [Enable an MFA device for an Alibaba Cloud account](/intl.en-US/Security Settings/Multi-factor authentication/Enable an MFA device for an Alibaba Cloud account.md) and [Enable an MFA device for a RAM user](/intl.en-US/Security Settings/Multi-factor authentication/Enable an MFA device for a RAM user.md).
 
@@ -64,13 +64,13 @@ For more information, see [Enable an MFA device for an Alibaba Cloud account](/i
 
 -   Virtual MFA devices can be used when you log on to the Alibaba Cloud Management Console from a browser or the Alibaba Cloud app.
 -   U2F security keys have the following limits:
-    -   U2F security keys can be used only on computers with USB ports. If you log on to Alibaba Cloud from a mobile browser or the Alibaba Cloud app, you cannot use U2F security keys. If you use a virtual machine or Remote Desktop Connection, U2F authentication is inapplicable.
-    -   You can use U2F security keys only when you log on to the console by using the `signin.alibabacloud.com` domain name. If you use the `signin-intl.aliyun.com` domain name that was previously supported by Alibaba Cloud, U2F authentication is inapplicable.
+    -   U2F security keys can be used only on computers with USB ports. If you log on to the Alibaba Cloud Management Console from a browser or the Alibaba Cloud app, you cannot use U2F security keys. If you use a virtual machine or Remote Desktop Connection, U2F authentication is inapplicable.
+    -   You can use U2F security keys only when you log on to the Alibaba Cloud Management Console by using the signin.alibabacloud.com domain name. If you use the signin-intl.aliyun.com domain name that was previously supported by Alibaba Cloud, U2F authentication is inapplicable.
     -   Only the following browser versions support the U2F protocol:
         -   Google Chrome 38 and later
         -   Opera 40 and later
         -   Mozilla Firefox 57 and later
 
-            **Note:** If you use a Mozilla Firefox browser, you must manually enable the U2F feature. Enter `about:config` in the address bar of your browser to go to the browser configuration page. On this page, search for `u2f`, and then set the **security.webauth.u2f** parameter to **true**. For more information, see the [Mozilla Firefox help documentation](https://support.mozilla.org/en-US/kb/about-config-editor-firefox).
+            **Note:** If you use Mozilla Firefox, you must manually enable the U2F feature. Enter `about:config` in the address bar of your browser to go to the browser configuration page. On this page, search for `u2f` and set the **security.webauth.u2f** parameter to **true**. For more information, see the [Mozilla Firefox help documentation](https://support.mozilla.org/zh-CN/kb/about-config-editor-firefox).
 
 
