@@ -2,18 +2,39 @@
 
 This topic describes the release notes of Resource Access Management \(RAM\) features and provides links to relevant documentation.
 
+## April 2021
+
+|Feature|Description|Release time|Region|Documentation|
+|-------|-----------|------------|------|-------------|
+|Alibaba Cloud services that support RAM|RAM is available for Alibaba Cloud Public DNS.|2021-04|N/A|[Alibaba Cloud services that support RAM](/intl.en-US/Product Introduction/Alibaba Cloud services that support RAM.md)|
+|Alibaba Cloud services that support Security Token Service \(STS\)|STS is available for Alibaba Cloud Public DNS.|2021-04|N/A|[Alibaba Cloud services that support STS](/intl.en-US/Product Introduction/Alibaba Cloud services that support STS.md)|
+
+## March 2021
+
+|Feature|Description|Release time|Region|Documentation|
+|-------|-----------|------------|------|-------------|
+|FIDO U2F ![NEW](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/4244359951/p73094.png)|FIDO Universal 2nd Factor \(FIDO U2F\) is a common multi-factor authentication \(MFA\) protocol that is created by the [FIDO Alliance](https://fidoalliance.org). U2F security keys are a type of MFA device that supports the U2F protocol.
+
+After a U2F security key is enabled, two authentication factors are required when a RAM user logs on to Alibaba Cloud.
+
+1.  First factor: Enter the username and password of the RAM user.
+2.  Second factor: Plug the U2F security key into a USB port on a computer and then tap the key to complete the logon process.
+
+|2021-03|All|-   [What is multi-factor authentication](/intl.en-US/Security Settings/Multi-factor authentication/What is multi-factor authentication.md)
+-   [Enable an MFA device for a RAM user](/intl.en-US/Security Settings/Multi-factor authentication/Enable an MFA device for a RAM user.md) |
+
 ## September 2020
 
 |Feature|Description|Release time|Region|Documentation|
 |-------|-----------|------------|------|-------------|
 |Alibaba Cloud services that support RAM|RAM is available for the Tag service.|2020-09|N/A|[Alibaba Cloud services that support RAM](/intl.en-US/Product Introduction/Alibaba Cloud services that support RAM.md)|
-|Alibaba Cloud services that support Security Token Service \(STS\)|STS is available for the Tag service.|2020-09|N/A|[Alibaba Cloud services that support STS](/intl.en-US/Product Introduction/Alibaba Cloud services that support STS.md)|
+|Alibaba Cloud services that support STS|STS is available for the Tag service.|2020-09|N/A|[Alibaba Cloud services that support STS](/intl.en-US/Product Introduction/Alibaba Cloud services that support STS.md)|
 
 ## July 2020
 
 |Feature|Description|Release time|Region|Documentation|
 |-------|-----------|------------|------|-------------|
-|Resource group-based authorization in the RAM console|A RAM user, RAM user group, or RAM role can be granted permissions in the RAM or Resource Management console. The permissions on the resources of an Alibaba Cloud account or on a specific resource group can be granted. The permissions can also be revoked from a RAM user, RAM user group, or RAM role.|2020-07|All|None|
+|Resource group-based authorization in the RAM console|A RAM user, RAM user group, or RAM role can be granted permissions in the RAM or Resource Management console. The permissions on the resources of an Alibaba Cloud account or on a specific resource group can be granted. The permissions of a RAM user, RAM user group, or RAM role can also be revoked.|2020-07|All|None|
 
 ## June 2020
 
@@ -26,7 +47,7 @@ This topic describes the release notes of Resource Access Management \(RAM\) fea
 
 |Feature|Description|Release time|Region|Documentation|
 |-------|-----------|------------|------|-------------|
-|Configuration of the maximum role session duration|The maximum role session duration can be configured in the RAM console.The configuration applies when you log on to the console by using role-based single sign-on \(SSO\) and when you use the console or call an API operation to assume a RAM role.|2020-05|All|[Set the maximum session duration for a RAM role](/intl.en-US/RAM Role Management/Set the maximum session duration for a RAM role.md)|
+|Configuration of the maximum role session duration|The maximum role session duration can be configured in the RAM console. The configuration applieswhen you log on to the console by using role-based single sign-on \(SSO\) and when you use the console or call an API operation to assume a RAM role.|2020-05|All|[Set the maximum session duration for a RAM role](/intl.en-US/RAM Role Management/Set the maximum session duration for a RAM role.md)|
 
 ## March 2020
 
@@ -34,8 +55,8 @@ This topic describes the release notes of Resource Access Management \(RAM\) fea
 |-------|-----------|------------|------|-------------|
 |Alibaba Cloud services that support RAM|RAM is available for AnalyticDB for MySQL.|2020-03|N/A|[Alibaba Cloud services that support RAM](/intl.en-US/Product Introduction/Alibaba Cloud services that support RAM.md)|
 |Alibaba Cloud services that support STS|STS is available for Elastic High Performance Computing \(E-HPC\).|2020-03|N/A|[Alibaba Cloud services that support STS](/intl.en-US/Product Introduction/Alibaba Cloud services that support STS.md)|
-|Service-linked roles|Service-linked roles are provided by Alibaba Cloud RAM. Service-linked roles can be used to simplify the process to authorize an Alibaba Cloud service to access other services and use a specific feature.Alibaba Cloud RAM provides service-linked roles for such scenarios.|2020-03|All|[Service-linked roles](/intl.en-US/RAM Role Management/Service-linked roles.md)|
-|Configuration of the maximum role session duration|A new parameter named MaxSessionDuration is provided in API operations to specify the maximum session duration of a RAM role.|2020-03|All|-   [CreateRole](/intl.en-US/API Reference/API Reference (RAM)/Role management APIs/CreateRole.md)
+|Service-linked roles|Service-linked roles are provided by Alibaba Cloud RAM. Service-linked roles can be used to simplify the process to authorize an Alibaba Cloud service to access other services and use a specific feature. Alibaba Cloud RAM provides service-linked roles for such scenarios.|2020-03|All|[Service-linked roles](/intl.en-US/RAM Role Management/Service-linked roles.md)|
+|Configuration of the maximum role session duration|A new parameter named `MaxSessionDuration` is provided in API operations to specify the maximum session duration of a RAM role.|2020-03|All|-   [CreateRole](/intl.en-US/API Reference/API Reference (RAM)/Role management APIs/CreateRole.md)
 -   [UpdateRole](/intl.en-US/API Reference/API Reference (RAM)/Role management APIs/UpdateRole.md)
 -   [AssumeRole](/intl.en-US/API Reference/API Reference (STS)/Operation interfaces/AssumeRole.md)
 -   [AssumeRoleWithSAML](/intl.en-US/API Reference/API Reference (STS)/Operation interfaces/AssumeRoleWithSAML.md) |
@@ -62,7 +83,7 @@ This topic describes the release notes of Resource Access Management \(RAM\) fea
 
 |Feature|Description|Release time|Region|Documentation|
 |:------|:----------|:-----------|:-----|:------------|
-|User credential report|A user credential report that contains the details of your Alibaba Cloud account and RAM users can be generated and downloaded in the RAM console. The details include logon passwords, AccessKey pairs, and multi-factor authentication \(MFA\) devices.|2019-11-15|All|[Generate and download user credential reports](/intl.en-US/Security Settings/Basic security settings/Generate and download user credential reports.md)|
+|User credential report|A user credential report that contains the details of your Alibaba Cloud account and RAM users can be generated and downloaded in the RAM console. The details include logon passwords, AccessKey pairs, and MFA devices.|2019-11-15|All|[Generate and download user credential reports](/intl.en-US/Security Settings/Basic security settings/Generate and download user credential reports.md)|
 |Alibaba Cloud services that support STS|STS is available for Hybrid Backup Recovery \(HBR\).|2019-11|N/A|[Alibaba Cloud services that support STS](/intl.en-US/Product Introduction/Alibaba Cloud services that support STS.md)|
 
 ## October 2019
@@ -71,7 +92,7 @@ This topic describes the release notes of Resource Access Management \(RAM\) fea
 |:------|:----------|:-----------|:-----|:------------|
 |Alibaba Cloud services that support RAM|RAM is available for ID Verification for Financial Services.|2019-10|N/A|[Alibaba Cloud services that support RAM](/intl.en-US/Product Introduction/Alibaba Cloud services that support RAM.md)|
 |RAM is available for AnalyticDB for PostgreSQL.|
-|Alibaba Cloud services that support STS|STS is available for Cloud Enterprise Network.|2019-10|N/A|-   [Alibaba Cloud services that support STS](/intl.en-US/Product Introduction/Alibaba Cloud services that support STS.md)
+|Alibaba Cloud services that support STS|STS is available for Cloud Enterprise Network \(CEN\).|2019-10|N/A|-   [Alibaba Cloud services that support STS](/intl.en-US/Product Introduction/Alibaba Cloud services that support STS.md)
 -   [RAM authentication]() |
 |STS is available for E-MapReduce.|[Alibaba Cloud services that support STS](/intl.en-US/Product Introduction/Alibaba Cloud services that support STS.md)|
 
@@ -92,11 +113,11 @@ This topic describes the release notes of Resource Access Management \(RAM\) fea
 
 |Feature|Description|Release time|Region|Documentation|
 |-------|:----------|:-----------|------|:------------|
-|SSO|Alibaba Cloud supports SAML 2.0-based SSO. This feature is also known as identity federation.SSO can be implemented between an enterprise identity service and Alibaba Cloud.|2019-04-04|All|[SSO overview](/intl.en-US/SSO Management/SSO overview.md)|
+|SSO|Alibaba Cloud supports SAML 2.0-based SSO. This feature is also known as identity federation. SSO can be implemented between an enterprise identity service and Alibaba Cloud.|2019-04-04|All|[SSO overview](/intl.en-US/SSO Management/SSO overview.md)|
 
 ## November 2018
 
 |Feature|Description|Release time|Region|Documentation|
 |-------|:----------|:-----------|------|:------------|
-|RAM console|The RAM console is updated.|2018-11-15|All|RAM documentationRAM documentation|
+|RAM console|The RAM console is updated.|2018-11-15|All|[RAM documentation](https://www.alibabacloud.com/help/product/28625.htm)|
 
