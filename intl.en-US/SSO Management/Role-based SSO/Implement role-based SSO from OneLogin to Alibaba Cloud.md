@@ -12,7 +12,7 @@ For more information about OneLogin, see [OneLogin documentation](https://onelog
 
 2.  In the left side of the profile picture, click **Administration** to go to the Administration page.
 
-3.  In the top navigation bar, choose**Applications** \> **Applications**.
+3.  In the top navigation bar, choose **Applications** \> **Applications**.
 
 4.  In the upper-right corner of the Applications page, click **Add App**.
 
@@ -79,7 +79,7 @@ For more information about OneLogin, see [OneLogin documentation](https://onelog
 
 3.  Configure the application.
 
-    1.  In the top navigation bar, choose**Applications** \> **Applications**.
+    1.  In the top navigation bar, choose **Applications** \> **Applications**.
 
     2.  On the Applications page, click LoginToAliyun that you created in [Step 1: Create an application in OneLogin](#section_78j_9js_fuc).
 
@@ -103,7 +103,7 @@ For more information about OneLogin, see [OneLogin documentation](https://onelog
     7.  Click the ![Create icon](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/2626542261/p269249.png) icon again to create the second custom application attribute.
 
         1.  In the New Field dialog box, set the **Field name** parameter to `https://www.aliyun.com/SAML-Role/Attributes/RoleSessionName`, select **Include in SAML assertion**, and then click **Save**.
-        2.  In the Edit Field https://www.aliyun.com/SAML-Role/Attributes/RoleSessionName dialog box, select **Email** from the drop-down list in the **Value** section and click **Save** .
+        2.  In the Edit Field https://www.aliyun.com/SAML-Role/Attributes/RoleSessionName dialog box, select **Email** from the drop-down list in the **Value** section and click **Save**.
 
             **Note:** You can also select another value such as **Username** or **userPrincipalName** from the drop-down list in the **Value** section based on your business requirements.
 
