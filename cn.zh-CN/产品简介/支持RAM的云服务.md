@@ -488,7 +488,7 @@
 |Serverless应用引擎|-|√|√|服务级别|-   AliyunSAEFullAccess
 -   AliyunSAEReadOnlyAccess
 
-|[Serverless应用引擎的RAM鉴权](/cn.zh-CN/.md)|
+|[Serverless应用引擎的RAM鉴权](/cn.zh-CN/权限管理/权限策略和示例.md)|
 |服务网格|-|√|√|资源级别|-|[服务网格的RAM鉴权](https://help.aliyun.com/document_detail/169466.html)|
 |事件总线|-|√|√|资源级别|-   AliyunEventBridgeFullAccess
 -   AliyunEventBridgeReadOnlyAccess
@@ -646,7 +646,7 @@
 
 |云服务|子服务/子模块|控制台|API|授权粒度|系统策略|相关文档|
 |:--|-------|:--|:--|:---|:---|:---|
-|移动用户反馈|-|√|√|服务级别|-   AliyunFeedbackFullAccess
+|移动用户反馈|-|√|○|服务级别|-   AliyunFeedbackFullAccess
 -   AliyunFeedbackReadOnlyAccess
 
 |[移动用户反馈的RAM鉴权](https://help.aliyun.com/document_detail/55906.html)|
@@ -712,7 +712,11 @@
 |云服务|子服务/子模块|控制台|API|授权粒度|系统策略|相关文档|
 |:--|-------|:--|:--|:---|:---|:---|
 |货架商品识别与管理|-|√|√|资源级别|-|-|
-|三维空间重建|-|√|○|服务级别|AliyunTDSRFullAccess|-|
+|三维空间重建|-|√|○|服务级别|-   AliyunTDSRFullAccess
+-   AliyunTDSRreadOnlyAccess
+-   AliyunTDSRDataCollectionAccess
+
+|-|
 |智能语义理解|-|√|√|资源级别|-   AliyunIQAFullAccess
 -   AliyunIQAReadOnlyAccess
 
@@ -744,7 +748,7 @@
 
 |[图像搜索的RAM鉴权](https://help.aliyun.com/document_detail/179180.html)|
 |机器翻译|-|√|√|服务级别|-|-|
-|图像识别|-|√|×|服务级别|-|-|
+|图像识别|-|√|√|服务级别|-|-|
 |印刷文字识别|-|√|√|服务级别|-|-|
 |城市视觉智能引擎|-|√|√|资源级别|-|-|
 |交通云控平台|-|√|√|服务级别|-|-|
@@ -835,7 +839,7 @@
 |日志服务|-|√|√|资源级别|-   AliyunLogFullAccess
 -   AliyunLogReadOnlyAccess
 
-|[日志服务的RAM鉴权](/cn.zh-CN/开发指南/API 参考/鉴权规则/鉴权规则.md)|
+|[日志服务的RAM鉴权](/cn.zh-CN/开发指南/API参考/鉴权规则/鉴权规则.md)|
 |智能推荐|-|√|√|资源级别|-   AliyunAIRecFullAccess
 -   AliyunAIRecReadOnlyAccess
 
@@ -864,7 +868,7 @@
 |交互式分析|-|√|√|资源级别|-   AliyunHologresFullAccess
 -   AliyunHologresReadOnlyAccess
 
-|[RAM用户使用Hologres](/cn.zh-CN/准备工作/RAM用户使用Hologres.md)|
+|[RAM用户使用Hologres快速入门](/cn.zh-CN/快速入门/RAM用户使用Hologres快速入门.md)|
 |智能数据构建与管理Dataphin|-|√|√|服务级别|-|-|
 
 ## 开发者服务
@@ -992,8 +996,9 @@
 |[RAM鉴权](/cn.zh-CN/API参考/API参考（RAM）/RAM鉴权.md)|
 |操作审计|-|√|√|操作级别|-   AliyunActionTrailFullAccess
 -   AliyunActionTrailReadOnlyAccess
+-   AliyunActionTrailDeliveryPolicy
 
-|[操作审计的RAM鉴权](/cn.zh-CN/API参考/API参考（2017-12-04）/RAM鉴权.md)|
+|[操作审计的RAM鉴权](/cn.zh-CN/API参考/API参考（2017-12-04）（不推荐）/RAM鉴权.md)|
 |终端访问控制系统|-|√|○|操作级别|-   AliyunUEMFullAccess
 -   AliyunUEMReadOnlyAccess
 
@@ -1037,6 +1042,8 @@
 -   AliyunBSSReadOnlyAccess
 -   AliyunBSSOrderAccess
 -   AliyunBSSRefundAccess
+-   AliyunBSSRenewReadOnlyAccess
+-   AliyunBSSRenewFullAccess
 
 |[费用中心的RAM鉴权](https://help.aliyun.com/document_detail/88883.html)
 
