@@ -522,11 +522,11 @@
 |日志服务|-|√|√|资源级别|-   AliyunLogFullAccess
 -   AliyunLogReadOnlyAccess
 
-|[日志服务的RAM鉴权](/intl.zh-CN/开发指南/API 参考/RAM/STS/鉴权规则.md)|
+|[日志服务的RAM鉴权](/intl.zh-CN/开发指南/API参考/RAM/STS/鉴权规则.md)|
 |交互式分析|-|√|√|资源级别|-   AliyunHologresFullAccess
 -   AliyunHologresReadOnlyAccess
 
-|[RAM用户使用Hologres](/intl.zh-CN/准备工作/RAM用户使用Hologres.md)|
+|[RAM用户使用Hologres快速入门](/intl.zh-CN/快速入门/RAM用户使用Hologres快速入门.md)|
 
 ## 开发者服务
 
@@ -607,7 +607,7 @@
 |[RAM鉴权](/intl.zh-CN/API参考/API参考（RAM）/RAM鉴权.md)|
 |操作审计|-|√|√|操作级别|-
 
-|[操作审计的RAM鉴权](/intl.zh-CN/API参考/API参考（2017-12-04）/RAM鉴权.md)|
+|[操作审计的RAM鉴权](/intl.zh-CN/API参考/API参考（2017-12-04）（不推荐）/RAM鉴权.md)|
 
 ## 支持与服务
 
@@ -629,6 +629,8 @@
 -   AliyunBSSReadOnlyAccess
 -   AliyunBSSOrderAccess
 -   AliyunBSSRefundAccess
+-   AliyunBSSRenewReadOnlyAccess
+-   AliyunBSSRenewFullAccess
 
 |- |
 |备案|-|√|○|服务级别|AliyunBeianFullAccess|-|
