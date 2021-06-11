@@ -28,7 +28,7 @@
         <dependency>
             <groupId>com.aliyun</groupId>
             <artifactId>aliyun-java-sdk-ram</artifactId>
-            <version>2.0.7</version>
+            <version>3.2.0</version>
         </dependency>
         <dependency>
             <groupId>com.aliyun</groupId>
@@ -37,8 +37,10 @@
         </dependency>
         ```
 
-        **说明：** 请访问[Maven仓库](https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-core)获取`aliyun-java-sdk-core`的最新版本。
+        **说明：** 请访问以下路径查看并使用SDK最新版本：
 
+        -   [阿里云Java SDK基础包](https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-core)
+        -   [RAM接口定义包（Java）](https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-ram)
 -   方法二：手动下载并导入SDK的JAR文件
 
     无论您使用Eclipse还是IntelliJ作为集成开发环境，都可以通过手动下载并导入JAR文件的方式安装Java SDK。JAR文件下载地址如下：
@@ -69,7 +71,7 @@ public class CreateUser {
         DefaultProfile profile = DefaultProfile.getProfile("<accessKeyId>", "<accessKeySecret>");
         IAcsClient client = new DefaultAcsClient(profile);
         
-        //构建请求，设置参数。
+        //构建请求，设置参数。关于参数含义和设置方法，请参见API参考。
         CreateUserRequest request = new CreateUserRequest();
         request.setUserName("<UserName>");
         
