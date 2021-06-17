@@ -8,7 +8,7 @@
 
 ![场景](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4726498951/p44059.png)
 
-## 步骤1：在AAD库中添加应用程序
+## 步骤一：在AAD库中添加应用程序
 
 1.  管理员用户登录[Azure门户](https://portal.azure.com/?l=en.en-us#home)。
 
@@ -22,18 +22,18 @@
 
 6.  输入应用名称，然后单击**创建**。
 
-    本示例中，使用默认应用名称**Alibaba Cloud Service \(Role-based SSO\)**，您也可以自定义应用名称。
+    本示例中，使用默认应用名称`Alibaba Cloud Service (Role-based SSO)`，您也可以自定义应用名称。
 
 7.  在Alibaba Cloud Service \(Role-based SSO\)页面，单击左侧导航栏的**属性**，复制并保存**对象ID**。
 
 
-## 步骤2：配置AAD SSO
+## 步骤二：配置AAD SSO
 
 1.  在Alibaba Cloud Service \(Role-based SSO\)页面，单击左侧导航栏的**单一登录**。
 
 2.  在选择单一登录方法页面，单击**SAML**。
 
-3.  在设置SAML单一登录页面进行配置。
+3.  在设置SAML单一登录页面，配置SSO信息。
 
     1.  在页面左上角，单击**上传元数据文件**，选择文件后，单击**添加**。
 
@@ -56,19 +56,19 @@
         -   在**名称**区域，输入`Role`。
         -   在**命名空间**区域，输入`https://www.aliyun.com/SAML-Role/Attributes`。
         -   在**源**区域，选择**属性**。
-        -   在**源属性**区域，从下拉列表中选择`user.assignedroles`。
+        -   在**源属性**区域，从下拉列表中选择**user.assignedroles**。
     5.  重复上述步骤，添加一个新的声明。
 
         -   在**名称**区域，输入`RoleSessionName`。
         -   在**命名空间**区域，输入`https://www.aliyun.com/SAML-Role/Attributes`。
         -   在**源**区域，选择**属性**。
-        -   在**源属性**区域，从下拉列表中选择`user.userprincipalname`。
+        -   在**源属性**区域，从下拉列表中选择**user.userprincipalname**。
     6.  在**SAML签名证书**区域，单击**下载**，获取**联合元数据XML**。
 
         ![下载联合元数据XML](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0929896061/p44054.png)
 
 
-## 步骤3：在阿里云创建身份提供商
+## 步骤三：在阿里云创建身份提供商
 
 1.  阿里云账号（Account1）登录[RAM控制台](https://ram.console.aliyun.com/)。
 
@@ -80,12 +80,12 @@
 
 5.  在**元数据文档**区域，单击**上传文件**。
 
-    **说明：** 上传在[步骤2：配置AAD SSO](#section_hcw_ey6_57b)中下载的**联合元数据XML**。
+    **说明：** 上传在[步骤二：配置AAD SSO](#section_hcw_ey6_57b)中下载的**联合元数据XML**。
 
 6.  单击**确定**。
 
 
-## 步骤4：在阿里云创建RAM角色
+## 步骤四：在阿里云创建RAM角色
 
 1.  创建身份提供商后，单击**前往新建RAM角色**。
 
@@ -104,7 +104,7 @@
 6.  单击**关闭**。
 
 
-## 步骤5：将阿里云RAM角色与AAD用户进行关联
+## 步骤五：将阿里云RAM角色与AAD用户进行关联
 
 1.  在AAD中创建角色。
 
@@ -172,9 +172,9 @@
         }
         ```
 
-        **说明：** 您可以根据需要创建多个RAM角色，AAD将在SAML中将这些角色作为声明值进行传送，但是您只能在`msiam_access`后添加新的角色。
+        **说明：** 您可以根据需要创建多个角色，AAD将在SAML中将这些角色作为声明值进行传送，但是您只能在`msiam_access`后添加新的角色。
 
-2.  将RAM角色添加到用户（u2）中。
+2.  将角色添加到用户（u2）中。
 
     1.  管理员用户登录**Azure门户**。
 
@@ -196,10 +196,10 @@
 
         ![查看分配的角色](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/5726498951/p44185.png)
 
-        **说明：** 如果您分配了用户（u2），创建的RAM角色会自动附加给用户。如果您创建了多个角色，您需要根据需要合理分配角色。如果您需要完成AAD与多个阿里云账号的角色SSO，请重复上述配置步骤。
+        **说明：** 如果您分配了用户（u2），创建的RAM角色会自动附加给该用户。如果您创建了多个角色，您可以根据需要合理分配角色。
 
 
-## 配置验证
+## 结果验证
 
 1.  获取用户访问URL。
 
@@ -218,5 +218,94 @@
     系统将自动单点登录并重定向到您指定的**中继状态**页面。如果未指定**中继状态**或超出允许范围，则系统会访问如下阿里云控制台首页。
 
     ![角色SSO成功](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8890507061/p187952.png)
+
+
+## （可选）配置AAD与多个阿里云账号的角色SSO
+
+假设您有两个阿里云账号（Account1和Account2），您希望经过配置，使得企业员工用户（u2）在登录Azure AD后，通过角色SSO既能访问阿里云账号（Account1），也能访问阿里云账号（Account2）。
+
+1.  在AAD库中添加应用程序。
+
+    同单账号配置步骤，请参见[步骤一：在AAD库中添加应用程序](#section_mjz_zwm_jhb)。
+
+2.  配置AAD SSO。
+
+    同单账号配置步骤，请参见[步骤二：配置AAD SSO](#section_hcw_ey6_57b)。
+
+3.  在阿里云创建身份提供商。
+
+    您需要在两个阿里云账号（Account1和Account2）中分别创建身份提供商`AAD`。每个阿里云账号内的具体操作，请参见[步骤三：在阿里云创建身份提供商](#section_pc7_e43_i5z)。
+
+4.  在阿里云创建RAM角色。
+
+    您需要在两个阿里云账号（Account1和Account2）中分别创建RAM角色，本示例中假设在阿里云账号（Account1）中创建两个RAM角色，在阿里云账号（Account2）中创建一个RAM角色。具体如下：
+
+    -   阿里云账号（Account1）的RAM角色：`adminaad`和`readaad`。
+    -   阿里云账号（Account2）的RAM角色：`financeaad`。
+    每个阿里云账号内的具体操作，请参见[步骤四：在阿里云创建RAM角色](#section_nc7_n72_27i)。
+
+5.  将阿里云RAM角色与AAD用户进行关联。
+
+    具体操作与[步骤五：将阿里云RAM角色与AAD用户进行关联](#section_1p2_4hh_yah)大致相同，差异点如下：
+
+    1.  在AAD中创建角色。
+
+        在[AAD Graph浏览器](https://developer.microsoft.com/en-us/graph/graph-explorer)中配置的信息如下：
+
+        ```
+        {
+          "appRoles": [
+            {
+              "allowedMemberTypes":[
+                "User"
+              ],
+              "description": "msiam_access",
+              "displayName": "msiam_access",
+              "id": "7dfd756e-8c27-4472-b2b7-38c17fc5****",
+              "isEnabled": true,
+              "origin": "Application",
+              "value": null
+            },
+            { "allowedMemberTypes": [
+                "User"
+            ],
+            "description": "Accout1Admin,AzureADProd",
+            "displayName": "Accout1Admin,AzureADProd",
+            "id": "68adae10-8b6b-47e6-9142-6476078c****", //自定义ID
+            "isEnabled": true,
+            "origin": "ServicePrincipal",
+            "value": "acs:ram::187125022711****:role/adminaad,acs:ram::187125022711****:saml-provider/AAD" //阿里云账号（Account1）的身份提供商和RAM角色的ARN
+            },
+            { "allowedMemberTypes": [
+                "User"
+            ],
+            "description": "Accout1Read,AzureADProd",
+            "displayName": "Accout1Read,AzureADProd",
+            "id": "68adae10-8b6b-47e6-9142-6476077c****", //自定义ID
+            "isEnabled": true,
+            "origin": "ServicePrincipal",
+            "value": "acs:ram::187125022711****:role/readaad,acs:ram::187125022711****:saml-provider/AAD" //阿里云账号（Account1）的身份提供商和另一RAM角色的ARN
+            },
+            { "allowedMemberTypes": [
+                "User"
+            ],
+            "description": "Accout2Finance,AzureADProd",
+            "displayName": "Accout2Finance,AzureADProd",
+            "id": "68adae10-8b6b-47e6-9142-6476046c****", //自定义ID
+            "isEnabled": true,
+            "origin": "ServicePrincipal",
+            "value": "acs:ram::177125022722****:role/financeaad,acs:ram::177125022722****:saml-provider/AAD" //阿里云账号（Account2）的身份提供商和RAM角色的ARN
+            }
+          ]
+        }
+        ```
+
+    2.  将角色添加到用户（u2）中。
+
+        您需要将角色`Accout1Admin,AzureADProd`、`Accout1Read,AzureADProd`和`Accout2Finance,AzureADProd`分别添加到用户（u2）中。
+
+6.  用户（u2）通过角色SSO访问阿里云。
+
+    您需要根据界面提示选择要访问的阿里云账号（Account1或Account2）及其角色。
 
 
