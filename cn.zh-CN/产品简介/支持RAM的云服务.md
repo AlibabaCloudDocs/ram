@@ -108,7 +108,7 @@
 
 |[容器镜像服务的RAM鉴权](https://help.aliyun.com/document_detail/67992.html)|
 |云桌面|云桌面|√|○|服务级别|AliyunGwsFullAccess|-|
-|云桌面|弹性云桌面|√|√|资源级别|-   AliyunECDFullAccess
+|云桌面|弹性云桌面|√|√|操作级别|-   AliyunECDFullAccess
 -   AliyunECDReadOnlyAccess
 -   AliyunECDRamUserAccess
 
