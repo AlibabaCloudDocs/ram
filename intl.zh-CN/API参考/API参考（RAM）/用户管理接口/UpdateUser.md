@@ -19,12 +19,16 @@
  长度为1~64个字符，可包含英文字母、数字、半角句号（.）、短划线（-）和下划线（\_）。 |
 |NewDisplayName|String|否|xiaoq\*\*\*\*|RAM用户的新显示名称。
 
- 长度为1~128个字符或汉字，可包含英文字母、数字、半角句号（.）、at（@）、短划线（-）和空格。 |
+ 长度为1~128个字符。 |
 |NewMobilePhone|String|否|86-1860000\*\*\*\*|RAM用户的新手机号码。
 
- 格式：国际区号-号码。 |
-|NewEmail|String|否|xiaoq\*\*\*\*@example.com|RAM用户的新邮箱。 |
-|NewComments|String|否|这是一位云计算工程师|新备注。
+ 格式：国际区号-号码。
+
+ **说明：** 该参数仅适用于中国站。 |
+|NewEmail|String|否|xiaoq\*\*\*\*@example.com|RAM用户的新电子邮箱。
+
+ **说明：** 该参数仅适用于中国站。 |
+|NewComments|String|否|This is a cloud computing engineer.|新备注。
 
  长度为1~128个字符。 |
 
@@ -36,13 +40,17 @@
 |--|--|---|--|
 |User|Object| |RAM用户信息。 |
 |DisplayName|String|xiaoq\*\*\*\*|RAM用户的显示名称。 |
-|Email|String|xiaoq\*\*\*\*@example.com|RAM用户的邮箱。 |
-|UpdateDate|String|2015-02-11T03:15:21Z|RAM用户的更新时间。 |
-|MobilePhone|String|86-1860000\*\*\*\*|RAM用户的手机号码。 |
-|UserId|String|122748924538\*\*\*\*|RAM用户唯一标识。 |
-|Comments|String|这是一位云计算工程师|备注。 |
-|CreateDate|String|2015-01-23T12:33:18Z|RAM用户的创建时间。 |
-|UserName|String|xiaoq\*\*\*\*|RAM用户名称。 |
+|Email|String|xiaoq\*\*\*\*@example.com|RAM用户的电子邮箱。
+
+ **说明：** 该参数仅适用于中国站。 |
+|UpdateDate|String|2015-02-11T03:15:21Z|RAM用户的更新时间（UTC时间）。 |
+|MobilePhone|String|86-1860000\*\*\*\*|RAM用户的手机号码。
+
+ **说明：** 该参数仅适用于中国站。 |
+|UserId|String|122748924538\*\*\*\*|RAM用户的唯一标识。 |
+|Comments|String|This is a cloud computing engineer.|备注。 |
+|CreateDate|String|2015-01-23T12:33:18Z|RAM用户的创建时间（UTC时间）。 |
+|UserName|String|xiaoq\*\*\*\*|RAM用户的名称。 |
 |RequestId|String|04F0F334-1335-436C-A1D7-6C044FE73368|请求ID。 |
 
 ## 示例
@@ -64,17 +72,19 @@ https://ram.aliyuncs.com/?Action=UpdateUser
 HTTP/1.1 200 OK
 Content-Type:application/xml
 
-<RequestId>04F0F334-1335-436C-A1D7-6C044FE73368</RequestId>
-<User>
-    <UserId>122748924538****</UserId>
-    <UserName>xiaoq****</UserName>
-    <DisplayName>xiaoq*****</DisplayName>
-    <MobilePhone>86-1860000****</MobilePhone>
-    <Email>xiaoq****@example.com</Email>
-    <Comments>这是一位云计算工程师</Comments>
-    <CreateDate>2015-01-23T12:33:18Z</CreateDate>
-    <UpdateDate>2015-02-11T03:15:21Z</UpdateDate>
-</User>
+<UpdateUserResponse>
+    <RequestId>04F0F334-1335-436C-A1D7-6C044FE73368</RequestId>
+    <User>
+        <UserId>122748924538****</UserId>
+        <UserName>xiaoq****</UserName>
+        <DisplayName>xiaoq*****</DisplayName>
+        <MobilePhone>86-1860000****</MobilePhone>
+        <Email>xiaoq****@example.com</Email>
+        <Comments>This is a cloud computing engineer.</Comments>
+        <CreateDate>2015-01-23T12:33:18Z</CreateDate>
+        <UpdateDate>2015-02-11T03:15:21Z</UpdateDate>
+    </User>
+</UpdateUserResponse>
 ```
 
 `JSON`格式
@@ -91,7 +101,7 @@ Content-Type:application/json
     "DisplayName" : "xiaoq*****",
     "MobilePhone" : "86-1860000****",
     "Email" : "xiaoq****@example.com",
-    "Comments" : "这是一位云计算工程师",
+    "Comments" : "This is a cloud computing engineer.",
     "CreateDate" : "2015-01-23T12:33:18Z",
     "UpdateDate" : "2015-02-11T03:15:21Z"
   }
