@@ -6,7 +6,7 @@
 
 当管理员在完成用户SSO的相关配置后，企业员工Alice可以通过如下图所示的方法登录到阿里云。
 
-![用户SSO基本流程](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0878139161/p40784.png)
+![用户SSO基本流程](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/5637275261/p40784.png)
 
 1.  Alice使用浏览器登录阿里云，阿里云将SAML认证请求返回给浏览器。
 
@@ -39,7 +39,7 @@
 
 3.  企业IdP和阿里云均配置完成后，企业需要使用SDK、CLI或登录到RAM控制台创建与企业IdP匹配的RAM用户。
 
-    更多信息，请参见[创建RAM用户](/intl.zh-CN/用户管理/创建RAM用户.md)。
+    更多信息，请参见[创建RAM用户](/intl.zh-CN/用户管理/基本操作/创建RAM用户.md)。
 
 
 ## 配置示例
