@@ -6,7 +6,7 @@ If Alibaba Cloud and the identity management system of an enterprise work togeth
 
 After an administrator configures user-based SSO, the employee Alice can log on to the Alibaba Cloud Management Console. The following list describes the process.
 
-![Process](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6292542261/p40784.png)
+![Process](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/1737275261/p40784.png)
 
 1.  Alice uses a browser to log on to the Alibaba Cloud Management Console. Then, the Alibaba Cloud Management Console returns a Security Assertion Markup Language \(SAML\) authentication request to the browser.
 
