@@ -109,11 +109,11 @@
 -   AliyunContainerRegistryReadOnlyAccess
 
 |[容器镜像服务的RAM鉴权](https://www.alibabacloud.com/help/zh/doc-detail/67992.htm)|
-|云桌面|弹性云桌面|√|√|操作级别|-   AliyunECDFullAccess
+|云桌面|无影云桌面|√|√|操作级别|-   AliyunECDFullAccess
 -   AliyunECDReadOnlyAccess
 -   AliyunECDRamUserAccess
 
-|-|
+|[为RAM用户授权]()|
 |弹性容器实例|-|√|√|资源级别|-   AliyunECIFullAccess
 -   AliyunECIReadOnlyAccess
 
@@ -252,7 +252,6 @@
 -   AliyunHBRReadOnlyAccess
 
 |[用户权限管理](/intl.zh-CN/最佳实践/用户权限管理.md)|
-|混合云存储|-|×|○|-|-|-|
 
 ## 云通信
 
