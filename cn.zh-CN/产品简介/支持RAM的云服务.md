@@ -165,7 +165,7 @@
 |云数据库Redis版|-|√|√|资源级别|-   AliyunKvstoreFullAccess
 -   AliyunKvstoreReadOnlyAccess
 
-|[Redis的RAM鉴权](/cn.zh-CN/API参考/RAM鉴权.md)|
+|[Redis的RAM鉴权](/cn.zh-CN/API与SDK参考/API参考/RAM鉴权.md)|
 |云数据库Memcache版|-|√|√|服务级别|-   AliyunOCSFullAccess
 -   AliyunOCSReadOnlyAccess
 
@@ -386,7 +386,7 @@
 |IPv6转换服务|-|√|√|资源级别|-   AliyunIPv6TranslationFullAccess
 -   AliyunIPv6TranslationReadOnlyAccess
 
-|[IPv6转换服务的RAM鉴权](/cn.zh-CN/API参考/RAM鉴权.md)|
+|-|
 |云企业网|-|√|√|资源级别|-   AliyunCENReadOnlyAccess
 -   AliyunCENFullAccess
 
@@ -480,7 +480,7 @@
 |消息队列Kafka版|-|√|√|服务级别|-   AliyunKafkaFullAccess
 -   AliyunKafkaReadOnlyAccess
 
-|[消息队列Kafka版的RAM鉴权](/cn.zh-CN/权限控制/RAM主子账号授权.md)|
+|[消息队列Kafka版的RAM鉴权](/cn.zh-CN/访问控制（权限管理）/RAM主子账号授权.md)|
 |应用高可用服务|-|√|√|服务级别|-   AliyunAHASFullAccess
 -   AliyunAHASReadOnlyAccess
 
