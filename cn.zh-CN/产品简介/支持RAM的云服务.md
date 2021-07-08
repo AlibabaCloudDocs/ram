@@ -24,6 +24,7 @@
 -   [安全](#section_14)
 -   [支持与服务](#section_l28_67n_cri)
 -   [云市场](#section_15)
+-   [行业引擎](#section_a0z_j7l_1e4)
 -   [其它](#section_9k9_8u5_zca)
 
 本文的每个表格包含以下信息：
@@ -108,11 +109,11 @@
 
 |[容器镜像服务的RAM鉴权](https://help.aliyun.com/document_detail/67992.html)|
 |云桌面|云桌面|√|○|服务级别|AliyunGwsFullAccess|-|
-|云桌面|弹性云桌面|√|√|操作级别|-   AliyunECDFullAccess
+|云桌面|无影云桌面|√|√|操作级别|-   AliyunECDFullAccess
 -   AliyunECDReadOnlyAccess
 -   AliyunECDRamUserAccess
 
-|-|
+|[为RAM用户授权]()|
 |弹性容器实例|-|√|√|资源级别|-   AliyunECIFullAccess
 -   AliyunECIReadOnlyAccess
 
@@ -290,7 +291,10 @@
 
 |-|
 |归档存储|-|×|○|-|-|-|
-|混合云存储|-|×|○|-|-|-|
+|混合云存储阵列|-|√|○|操作级别|-   AliyunHgwFullAccess
+-   AliyunHgwReadOnlyAccess
+
+|-|
 |闪电立方|-|√|○|服务级别|AliyunMGWFullAccess|-|
 |内容协作平台|-|√|√|服务级别|-   AliyunCCPFullAccess
 -   AliyunCCPReadOnlyAccess
@@ -1033,6 +1037,15 @@
 |云服务|子服务/子模块|控制台|API|授权粒度|系统策略|相关文档|
 |:--|-------|:--|:--|:---|:---|:---|
 |云市场|-|√|×|服务级别|AliyunMarketplaceFullAccess|-|
+
+## 行业引擎
+
+|云服务|子服务/子模块|控制台|API|授权粒度|系统策略|相关文档|
+|:--|-------|:--|:--|:---|:---|:---|
+|基因分析平台|-|√|√|资源级别|-   AliyunEasyGeneFullAccess
+-   AliyunEasyGeneReadOnlyAccess
+
+|[RAM鉴权]()|
 
 ## 其它
 
