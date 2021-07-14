@@ -27,7 +27,7 @@ For more information about OneLogin, see [OneLogin documentation](https://onelog
 
 ## Step 2: Create an IdP in the Alibaba Cloud Management Console
 
-1.  Log on to the [RAM console](https://ram.console.aliyun.com/) by using the Alibaba Cloud account.
+1.  Log on to the [RAM console](https://ram.console.aliyun.com/) by using your Alibaba Cloud account.
 
 2.  In the left-side navigation pane, click **SSO**.
 
@@ -44,7 +44,7 @@ For more information about OneLogin, see [OneLogin documentation](https://onelog
 
 ## Step 3: Create a RAM role in the Alibaba Cloud Management Console
 
-1.  Log on to the [RAM console](https://ram.console.aliyun.com/) by using the Alibaba Cloud account.
+1.  Log on to the [RAM console](https://ram.console.aliyun.com/) by using your Alibaba Cloud account.
 
 2.  In the left-side navigation pane, click **RAM Roles**.
 
@@ -130,7 +130,7 @@ For more information about OneLogin, see [OneLogin documentation](https://onelog
 
     The value of the **Aliyun Roles for SSO** parameter consists of the ARN of the RAM role and the ARN of the IdP. The ARNs are separated by commas \(,\). The value must be in the `acs:ram::<account_id>:role/RoleName,acs:ram::<account_id>:saml-provider/ProviderName` format. The ARN of the RAM role is obtained from [Step 3: Create a RAM role in the Alibaba Cloud Management Console](#section_efr_wq8_8lw), the ARN of the IdP is obtained from [Step 2: Create an IdP in the Alibaba Cloud Management Console](#section_7fz_jfo_srq), and <account\_id\> is the ID of the Alibaba Cloud account.
 
-    **Note:** If a user corresponds to multiple RAM roles, you can configure more than one value. The values are separated by semicolons \(;\). For example, you can set `acs:ram::125022144354xxxx:role/reader-onelogin,acs:ram::125022144354xxxx:saml-provider/OneLogin;acs:ram::125022144354xxxx:role/administrator-onelogin,acs:ram::125022144354xxxx:saml-provider/OneLogin;acs:ram::158622887609xxxx:role/finance,acs:ram::158622887609xxxx:saml-provider/OneLogin2` for the Aliyun Roles for SSO parameter.
+    **Note:** If a user corresponds to multiple RAM roles, you can configure more than one value. The values are separated by semicolons \(;\). For example, you can set `acs:ram::125022144354****:role/reader-onelogin,acs:ram::125022144354****:saml-provider/OneLogin;acs:ram::125022144354****:role/administrator-onelogin,acs:ram::125022144354****:saml-provider/OneLogin;acs:ram::158622887609****:role/finance,acs:ram::158622887609****:saml-provider/OneLogin2` for the Aliyun Roles for SSO parameter.
 
 5.  Assign the application to the user.
 
