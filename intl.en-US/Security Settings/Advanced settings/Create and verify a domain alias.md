@@ -1,39 +1,39 @@
 # Create and verify a domain alias
 
-This topic describes how to create and verify a domain alias for an Alibaba Cloud account. A domain alias is an alias of your default domain name. After you create and verify a domain alias, RAM users of the Alibaba Cloud account can use this domain alias to log on to the RAM console.
+This topic describes how to create and verify a domain alias for an Alibaba Cloud account. A domain alias is an alias of your default domain name. After you create and verify a domain alias, Resource Access Management \(RAM\) users of the Alibaba Cloud account can use this domain alias to log on to the RAM console.
 
-The domain alias must be publicly resolvable. Before the domain alias can be used, you must verify that you own the domain alias.
+You own a domain name that is publicly resolvable.
 
 1.  Create a domain alias in the RAM console.
 
-    1.  Log on to the [RAM console](https://ram.console.aliyun.com/) with your Alibaba Cloud account.
+    1.  Log on to the [RAM console](https://ram.console.aliyun.com/) by using your Alibaba Cloud account.
 
-    2.  In the left-side navigation pane, click **Settings** under **Identities**.
+    2.  In the left-side navigation pane, choose **Identities** \> **Settings**.
 
-    3.  On the **Advanced** tab, click **Create Domain Alias**.
+    3.  On the Settings page, click the **Advanced** tab.
 
-    4.  Set the **Domain Name** parameter.
+    4.  In the **Domain Alias** section, click **Create Domain Alias**.
 
-    5.  Click **OK** and then copy the verification code.
+    5.  In the Create Domain Alias panel, specify **Domain Name** and click **OK**.
 
-2.  Add a TXT record in the system at your DNS hosting provider.
+    6.  Copy the verification code.
 
-    If you use the Alibaba Cloud DNS service, configure the TXT record, as shown in the following figure. Note that you must enter the verification code in the **Value** field. For more information, see [Add DNS records](https://www.alibabacloud.com/help/zh/faq-detail/29725.html).
+2.  Add a TXT record in the system of your DNS service provider.
 
-    ![Add a TXT record](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/9500788951/p131551.png)
+    If you use Alibaba Cloud DNS, configure the TXT record in the Alibaba Cloud DNS console. You must enter the verification code that you copied in Step [1](#step_i79_zjw_ai1) in the **Value** field. For more information, see [Add DNS records](https://www.alibabacloud.com/help/faq-detail/29725.html).
 
-3.  Log on to the RAM console to verify that you own the domain name.
+    ![Add a TXT record](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/9500788951/p131551.png)
 
-    1.  In the left-side navigation pane, click **Settings** under **Identities**.
+3.  Log on to the RAM console to verify the ownership of the domain name.
 
-    2.  On the **Advanced** tab, click **Domain Ownership Verification**.
+    1.  In the left-side navigation pane, choose **Identities** \> **Settings**.
 
-    3.  Click **OK**.
+    2.  In the **Domain Alias** section of the **Advanced** tab, click **Domain Ownership Verification**.
+
+    3.  In the Verify Domain Ownership message, view the verification result and click **OK**.
 
 
-After the domain alias is created, the RAM users of your Alibaba Cloud account can use the domain alias to log on to the [RAM console](https://signin.alibabacloud.com/login.htm).
+After the domain alias is created, the RAM users of your Alibaba Cloud account can use the domain alias to log on to the [RAM console](https://signin.alibabacloud.com/login.htm). The logon name of a RAM user follows the format of `<UserName>@<DomainAlias>`. For more information, see [Log on to the console as a RAM user](/intl.en-US/RAM User Management/Logon management/Log on to the console as a RAM user.md).
 
-The logon name of a RAM user follows the format of `<$username>@<$DomainAlias>`. For more information, see [Log on to the console as a RAM user](/intl.en-US/RAM User Management/Log on to the console as a RAM user.md).
-
-You can use the domain alias to simplify the procedure of configuring user-based SSO. For more information, see [Configure the SAML settings of Alibaba Cloud for user-based SSO](/intl.en-US/SSO Management/User-based SSO/Configure the SAML settings of Alibaba Cloud for user-based SSO.md).
+You can use the domain alias to simplify the procedure of configuring user-based single sign-on \(SSO\). For more information, see [Configure the SAML settings of Alibaba Cloud for user-based SSO](/intl.en-US/SSO Management/User-based SSO/Configure the SAML settings of Alibaba Cloud for user-based SSO.md).
 
