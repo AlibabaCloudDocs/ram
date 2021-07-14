@@ -18,7 +18,7 @@ Role-based SSO allows employees of the enterprise to access Alibaba Cloud by log
 
         In this example, the IdP is Microsoft Active Directory Federation Services \(AD FS\). Therefore, the logon URL is `https://ADFSServiceName/adfs/ls/IdpInitiatedSignOn.aspx`.
 
-        **Note:** Some IdPs require users to log on before users select the SSO application that represents Alibaba Cloud.
+        **Note:** Some IdPs require users to log on before users can select the SSO application that represents Alibaba Cloud.
 
     2.  The IdP generates a Security Assertion Markup Language \(SAML\) response and returns the response to the browser.
     3.  The browser redirects Alice to the SSO service page and forwards the SAML response to the SSO service.
@@ -57,16 +57,17 @@ Before you can implement role-based SSO, you must establish trust between Alibab
 
     For more information, see [Create a RAM role for a trusted IdP](/intl.en-US/RAM Role Management/Create a RAM role/Create a RAM role for a trusted IdP.md).
 
-3.  Configure Alibaba Cloud as a trusted SAML SP and configure SAML assertions in your IdP to make sure that Alibaba Cloud is trusted by your IdP.
+3.  Configure Alibaba Cloud as a trusted SAML SP and configure SAML assertions in your IdP to ensure that Alibaba Cloud is trusted by your IdP.
 
     For more information, see [Configure Alibaba Cloud as a trusted SP for role-based SSO](/intl.en-US/SSO Management/Role-based SSO/Configure Alibaba Cloud as a trusted SP for role-based SSO.md).
 
 
 ## Examples
 
-The following list provides examples of how to implement role-based SSO to Alibaba Cloud from common enterprise IdPs, such as AD FS, Okta, and Azure AD:
+The following list provides examples on how to implement role-based SSO to Alibaba Cloud from common enterprise IdPs, such as AD FS, Okta, Azure AD, and OneLogin:
 
 -   [Implement role-based SSO by using Active Directory Federation Services](/intl.en-US/SSO Management/Role-based SSO/Implement role-based SSO by using Active Directory Federation Services.md)
 -   [Implement role-based SSO from Okta](/intl.en-US/SSO Management/Role-based SSO/Implement role-based SSO from Okta.md)
 -   [Implement role-based SSO by using Azure Active Directory](/intl.en-US/SSO Management/Role-based SSO/Implement role-based SSO by using Azure Active Directory.md)
+-   [Implement role-based SSO from OneLogin to Alibaba Cloud](/intl.en-US/SSO Management/Role-based SSO/Implement role-based SSO from OneLogin to Alibaba Cloud.md)
 
