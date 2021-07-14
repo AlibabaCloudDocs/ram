@@ -2,7 +2,7 @@
 
 A user credential report contains the details of your Alibaba Cloud account and Resource Access Management \(RAM\) users. The details include logon passwords, AccessKey pairs, and multi-factor authentication \(MFA\) devices. User credential reports can be generated and downloaded in the RAM console. You can use the user credential reports for compliance checks and auditing.
 
-1.  Log on to the [RAM console](https://ram.console.aliyun.com/) by using an Alibaba Cloud account. You can also log on as a RAM user that is attached with the AliyunRAMFullAccess policy.
+1.  Log on to the [RAM console](https://ram.console.aliyun.com/) by using your Alibaba Cloud account. You can also log on as a RAM user that is attached with the AliyunRAMFullAccess policy.
 
 2.  In the left-side navigation pane, click **Overview**.
 
